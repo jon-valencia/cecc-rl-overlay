@@ -1,4 +1,6 @@
-import toPercent from '../functions/toPercent';
+import PropTypes from 'prop-types';
+
+import toPercent from '../../functions/toPercent';
 
 const PlayerCard = (props) => {
     const { player } = props;

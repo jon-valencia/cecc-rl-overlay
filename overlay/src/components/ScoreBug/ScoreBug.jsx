@@ -1,4 +1,6 @@
-import secondsToMinutes from '../functions/secondsToMinutes';
+import PropTypes from 'prop-types';
+
+import secondsToMinutes from '../../functions/secondsToMinutes';
 
 const ScoreBug = (props) => {
     const { game } = props;

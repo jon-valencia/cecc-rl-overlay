@@ -3,8 +3,8 @@ import SocketContext from './contexts/SocketContexts';
 import './App.css';
 
 import isEmpty from './functions/isEmpty';
-import ScoreBug from './components/ScoreBug';
-import PlayerCard from './components/PlayerCard';
+import ScoreBug from './components/ScoreBug/ScoreBug';
+import PlayerCard from './components/PlayerCards/PlayerCard';
 
 
 function App() {

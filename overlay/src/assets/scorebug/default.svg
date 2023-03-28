@@ -1,0 +1,14 @@
+<!-- sample rectangle -->
+<svg width="670" height="220" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="650" height="25" fill="navy"/>
+  <rect x="10" y="10" width="125" height="200" fill="navy"/>
+  <rect x="135" y="35" width="125" height="175" fill="midnightblue"/>
+  <rect x="260" y="35" width="400" height="87.5" fill="blue"/>
+  <rect x="260" y="122.5" width="400" height="87.5" fill="orange"/>
+  <rect x="360" y="35" width="1" height="175"/>
+  <rect x="560" y="35" width="1" height="175"/>
+  <text text-anchor="middle" x="460" y="78.75" fill="white">TEAM ABV</text>
+  <text text-anchor="middle" x="460" y="166.25" fill="white">TEAM ABV</text>
+  <text text-anchor="middle" x="460" y="78.75" fill="white">TEAM ABV</text>
+  <text text-anchor="middle" x="460" y="166.25" fill="white">TEAM ABV</text>
+</svg>
