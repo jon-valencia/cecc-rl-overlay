@@ -1,16 +1,18 @@
-import PropTypes from 'prop-types';
+import { SvgLoader, SvgProxy } from 'react-svgmt';
 
 import secondsToMinutes from '../../functions/secondsToMinutes';
 
 const ScoreBug = (props) => {
     const { game } = props;
+    let theme = 'assets/scorebug/default.svg';
     return (
-        <div>
-            <svg  xmlns="http://www.w3.org/2000/svg">
-                <rect height="70" width="600" stroke="black" fill="transparent"></rect>
-                <text x="25" y="25">{secondsToMinutes(game.time_seconds)}</text>
-            </svg>
-        </div>
+        <SvgLoader path={theme}>
+            <SvgProxy selector="#Clock">{secondsToMinutes(game.time_seconds)}</SvgProxy>
+            <SvgProxy selector="#BlueName">{`${game.teams[0].name}`}</SvgProxy>
+            <SvgProxy selector="#OrangeName">{game.teams[1].name}</SvgProxy>
+            <SvgProxy selector="#BlueScore">{`${game.teams[0].score}`}</SvgProxy>
+            <SvgProxy selector="#OrangeScore">{game.teams[1].score}</SvgProxy>
+        </SvgLoader>
     )
 }
 
