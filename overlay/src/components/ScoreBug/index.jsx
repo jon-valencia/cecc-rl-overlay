@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
+/*import { useContext, useEffect, useState } from 'react';
 import SocketContext from '../../contexts/SocketContexts';
 
 import isEmpty from '../../functions/isEmpty';
@@ -26,4 +26,4 @@ function ScoreBugApp() {
   );
 }
 
-export default ScoreBugApp;
+export default ScoreBugApp;*/

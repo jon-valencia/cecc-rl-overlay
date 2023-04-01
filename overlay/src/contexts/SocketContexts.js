@@ -1,4 +1,4 @@
-import React from 'react';
+import { createContext } from 'react';
 import socketIOClient from 'socket.io-client';
 
 const socket = socketIOClient('http://localhost:6969', {
@@ -10,6 +10,6 @@ socket.on('connect', () => {
     socket.emit('watchGame')
 });
 
-const SocketContext = React.createContext(socket);
+const SocketContext = createContext(socket);
 
 export default SocketContext;
