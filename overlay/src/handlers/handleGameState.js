@@ -6,3 +6,5 @@ const handleGameState = (update) => {
 
     return { ...info };
 }
+
+export default handleGameState;

@@ -1,15 +1,17 @@
-const handleSpecPlayer = ({ game, players }) => {
-    const spec = {}
-    if (game.hasTarget !== false) {
-        let target = game.data.target;
+const handleSpecPlayer = (update) => {
+    let spec = {}
+    if (update.data.game.hasTarget !== false) {
+        let target = update.data.game.target;
         spec = {
-            player: players[target].name,
-            team: players[target].team,
-            score: players[target].score,
-            goals: players[target].goals,
-            saves: players[target].saves,
-            assists: players[target].assists
+            player: update.data.players[target].name,
+            team: update.data.players[target].team,
+            score: update.data.players[target].score,
+            goals: update.data.players[target].goals,
+            saves: update.data.players[target].saves,
+            assists: update.data.players[target].assists
         }
     }
     return { ...spec }
 }
+
+export default handleSpecPlayer;
