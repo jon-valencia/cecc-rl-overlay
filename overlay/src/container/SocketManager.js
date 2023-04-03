@@ -2,6 +2,11 @@ import { useEffect, useContext, useState } from 'react';
 import { io } from 'socket.io-client';
 import { SocketContext } from 'contexts/SocketContexts';
 
+import handleGame from 'handlers/handleGame';
+import handleGameState from 'hanlders/handleGameState';
+import handlePlayers from 'handlers/handlePlayers';
+import handleSpecPlayer from 'handlers/handleSpecPlayer';
+
 import isEmpty from 'functions/isEmpty';
 
 const SocketManager = (props) => {
@@ -17,10 +22,10 @@ const SocketManager = (props) => {
     if(!isEmpty(game) && !isEmpty(players) && !isEmpty(specPlayer) && !isEmpty(gamestate)) {
       setState({
         ...state,
-        game: {...game },
+        game: { ...game },
         gamestate: {
           inProgress: gamestate.inProgress,
-          id: gamestate.id
+          matchID: gamestate.matchID
         },
         players: { ...players },
         specPlayer: { 
@@ -48,17 +53,23 @@ const SocketManager = (props) => {
     socket.on('update', (update) => {
       if (update.event === 'game:update_state') {
         // game object
-        setGame({ ...update.data.game });
+        setGame(handleGame(update));
+        //setGame({ ...update.data.game });
+
         // gamestate object
-        const info = {
+        setGamestate(handleGameState(update));
+        /*const info = {
           inProgress: update.data.hasGame,
           id: update.data.match_guid
         }
-        setGamestate({ ...info }) 
+        setGamestate({ ...info })*/ 
+        
         if(!isEmpty(update.data.players)) {
           // player object
-          setPlayers({...update.data.players && { ...update.data.players }});
-          if(update.data.game.hasTarget !== false) {
+          setPlayers(handlePlayers(update));
+          //setPlayers({...update.data.players && { ...update.data.players }});
+          setSpecPlayer(handleSpecPlayer(props));
+          /*if(update.data.game.hasTarget !== false) {
             // update spec'd player stats/info
             let target = update.data.game.target;
             const spec = {
@@ -70,7 +81,7 @@ const SocketManager = (props) => {
               saves: update.data.players[target].saves,
             }
             setSpecPlayer({ ...spec })
-          }
+          }*/
         }
       }
     });

@@ -10,7 +10,7 @@ const SocketContextProvider = (props) => {
         game: {},
         gamestate: {
             inProgress: false,
-            match_id: 0,
+            matchID: 0,
         },
         players: {},
         specPlayer: {
