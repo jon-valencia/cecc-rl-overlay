@@ -1,34 +1,26 @@
-import { createContext, useEffect, useState } from 'react';
-import socketIOClient from 'socket.io-client';
+import { createContext, useState } from 'react';
 
 import SocketManager from 'container/SocketManager';
 
-/*
-const socket = socketIOClient('http://localhost:6969', {
-    withCredentials: true,
-});
-
-socket.on('connect', () => {
-    socket.emit('join', 'REACTLOCAL')
-    socket.emit('watchGame')
-});
-*/
-
-//export const SocketContext = createContext(socket);
-export const SocketContext = createContext({});
+export const SocketContext = createContext();
 
 const SocketContextProvider = (props) => {
+    // Global Context Object
     const [state, setState] = useState({
         game: {},
+        gamestate: {
+            inProgress: false,
+            match_id: 0,
+        },
         players: {},
-        /*specPlayer: {
+        specPlayer: {
             player: '',
-            team: '',
+            team: 0,
             score: 0,
             goals: 0,
             assists: 0,
             saves: 0,
-        }*/
+        }
     });
 
     return (
