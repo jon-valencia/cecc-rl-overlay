@@ -9,7 +9,7 @@ function ScoreBugApp() {
     <div className="scorebug">
       <ScoreBug/>
     </div>
-  );
+  )
 }
 
 export default ScoreBugApp;
