@@ -1,0 +1,17 @@
+#clock {
+    font-family: MontserratNormal;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#team1Name, #team2Name {
+    font-family: MontserratNormal;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#team1Score, #team2Score {
+    font-family: MontserratNormal;
+    font-size: 60px;
+    font-weight: bold;
+}

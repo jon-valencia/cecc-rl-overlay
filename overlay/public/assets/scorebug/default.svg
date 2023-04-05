@@ -1,14 +1,41 @@
+<!-- sample rectangle -->
 <svg width="670" height="220" xmlns="http://www.w3.org/2000/svg">
-  <rect x="10" y="10" width="650" height="25" fill="navy"/>
-  <rect x="10" y="10" width="125" height="200" fill="navy"/>
-  <rect x="135" y="35" width="125" height="175" fill="midnightblue"/>
-  <rect x="260" y="35" width="400" height="87.5" fill="blue"/>
-  <rect x="260" y="122.5" width="400" height="87.5" fill="orange"/>
-  <rect x="360" y="35" width="1" height="175"/>
-  <rect x="560" y="35" width="1" height="175"/>
-  <text text-anchor="middle" x="197.5" y="78.75" fill="white" id="Clock">00:00</text>
-  <text text-anchor="middle" x="460" y="78.75" fill="white" id="BlueName">UHM</text>
-  <text text-anchor="middle" x="460" y="166.5" fill="white" id="OrangeName">BSU</text>
-  <text text-anchor="middle" x="610" y="78.75" fill="white" id="BlueScore">10</text>
-  <text text-anchor="middle" x="610" y="166.5" fill="white" id="OrangeScore">10</text>
+  <defs>
+    <defs>
+    <linearGradient id="team1Gradient">
+      <stop offset="25%" stop-color="#024731" id="primaryColor1"/>
+      <stop offset="100%" stop-color="black" id="secondaryColor1"/>    
+    </linearGradient>
+    <linearGradient id="team2Gradient">
+      <stop offset="25%" stop-color="#0010FF" id="primaryColor2"/>
+      <stop offset="100%" stop-color="#FF6A00" id="secondaryColor2"/>
+    </linearGradient>
+    <linearGradient id="topGradient">
+      <stop offset="83%" stop-color="#092941"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+  </defs>
+  </defs>
+  <g>
+    <rect x="10" y="10" width="650" height="25" fill="#092941"/>
+    <rect x="10" y="10" width="125" height="200" fill="#092941"/>
+    <g>
+      <rect x="135" y="35" width="125" height="175" fill="#021129"/>
+      <text text-anchor="middle" x="197.5" y="88.75" fill="white" id="clock">00:00</text>
+    </g>
+    <g>
+      <g>
+        <rect x="260" y="35" width="400" height="87.5" fill="url('#team1Gradient')"/>
+        <text text-anchor="middle" x="460" y="88.75" fill="white" id="team1Name">UHM</text>
+        <text text-anchor="middle" x="610" y="98.75" fill="white" id="team1Score">10</text>
+      </g>
+      <g>
+        <rect x="260" y="122.5" width="400" height="87.5" fill="url('#team2Gradient')"/>
+        <text text-anchor="middle" x="460" y="176.5" fill="white" id="team2Name">BSU</text>
+        <text text-anchor="middle" x="610" y="186.5" fill="white" id="team2Score">10</text>
+      </g>
+    </g>
+    <rect x="360" y="35" width="1" height="175"/>
+    <rect x="560" y="35" width="1" height="175"/>
+  </g>
 </svg>

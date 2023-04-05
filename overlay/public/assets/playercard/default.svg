@@ -1,7 +1,13 @@
-<svg width="270" height="80" xmlns="http://www.w3.org/2000/svg">
-  <rect width="250" height="60" x="10" y="10" rx="3" fill="black"/>
-  <rect width="240" height="5" x="15" y="60" rx="2" fill="gray"/>
-  <text x="15" y="25" fill="white" id="PlayerName">PLAYER NAME</text>
-  <text x="255" y="25" text-anchor="end" fill="white" id="PlayerBoost">100</text>
-  <rect width="20" height="5" x="15" y="60" rx="2" fill="white" id="BoostBar"/>
+<svg width="320" height="50" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect width="320" height="50" x="0" y="0" fill="black"/>
+    <g>
+      <text x="10" y="25" fill="white" text-anchor="start" id="playerName">WRESTLE_MANIA32</text>
+      <text x="310" y="25" fill="white" text-anchor="end" id="playerBoost">100</text>
+    </g>
+    <g>
+      <rect width="320" height="10" fill="#282a2d" x="0" y="40"/>
+      <rect width="50" height="10" fill="#024731" x="0" y="40" id="boostBar"/>
+    </g>
+  </g>
 </svg>
