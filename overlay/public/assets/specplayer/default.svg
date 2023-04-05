@@ -1,0 +1,35 @@
+<!-- sample rectangle -->
+<svg width="500" height="90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" gradientTransform="rotate(90)">
+      <stop offset="30%" stop-color="#024731" id="primaryColor"/>
+      <stop offset="80%" stop-color="black" id="secondaryColor"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect width="500" height="90" fill="url('#gradient')" id="specCard"/>
+    <g>
+      <rect width="450" height="10" x="25" y="60" fill="#282a2d" fill-opacity="0.80" rx="5"/>
+      <rect width="225" height="10" x="25" y="60" fill="white" rx="5" id="specBoost"/>
+    </g>
+    <text x="120" y="40" text-anchor="middle" fill="white" id="specName">WRESTLE_MANIA32</text>
+    <g>
+      <g>
+        <text x="250" y="20" fill="white" text-anchor="middle">SCORE</text>
+        <text x="250" y="40" fill="white" text-anchor="middle" id="specScore">0</text>
+      </g>   
+      <g>
+        <text x="320" y="20" fill="white" text-anchor="middle">GOALS</text>
+        <text x="320" y="40" fill="white" text-anchor="middle" id="specGoals">0</text>
+      </g>
+      <g>
+        <text x="390" y="20" fill="white" text-anchor="middle">ASSISTS</text>
+        <text x="390" y="40" fill="white" text-anchor="middle" id="specAssists">0</text>
+      </g>
+      <g>
+        <text x="460" y="20" fill="white" text-anchor="middle">SAVES</text>
+        <text x="460" y="40" fill="white" text-anchor="middle" id="specSaves">0</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -3,20 +3,20 @@ import { SvgLoader, SvgProxy } from 'react-svgmt';
 
 import secondsToMinutes from 'functions/secondsToMinutes';
 
-const ScoreBug = (game) => {
-    ScoreBug.propTypes = {
-        game:PropTypes.object
-    }
-
-
+const ScoreBug = () => {
+    
     let theme = 'assets/scorebug/default.svg';
     return (
         <SvgLoader path={theme}>
-            <SvgProxy selector="#Clock">{`${secondsToMinutes(game.time_seconds)}`}</SvgProxy>
-            <SvgProxy selector="#BlueName">{`${game.teams[0].name}`}</SvgProxy>
-            <SvgProxy selector="#OrangeName">{`${game.teams[1].name}`}</SvgProxy>
-            <SvgProxy selector="#BlueScore">{`${game.teams[0].score}`}</SvgProxy>
-            <SvgProxy selector="#OrangeScore">{`${game.teams[1].score}`}</SvgProxy>
+            <SvgProxy selector="#primaryColor1"/>
+            <SvgProxy selector="#secondaryColor1"/>
+            <SvgProxy selector="#primaryColor2"/>
+            <SvgProxy selector="#secondaryColor2"/>
+            <SvgProxy selector="#clock"></SvgProxy>
+            <SvgProxy selector="#team1Name"></SvgProxy>
+            <SvgProxy selector="#team1Score"></SvgProxy>
+            <SvgProxy selector="#team2Name"></SvgProxy>
+            <SvgProxy selector="#team2Score"></SvgProxy>
         </SvgLoader>
     )
 }

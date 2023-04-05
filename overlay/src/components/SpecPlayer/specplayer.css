@@ -1,0 +1,22 @@
+.specplayer {
+    font-family: MontserratNormal;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+#specScore, #specGoals, #specAssists, #specSaves {
+    font-family: MontserratNormal;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#specName {
+    font-family: MontserratNormal;
+    font-size: 20px;
+    font-weight: bold;
+}
