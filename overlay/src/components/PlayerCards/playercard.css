@@ -1,4 +1,10 @@
-.player-card {
+.team1-card {
+    font-family: MontserratNormal;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.team2-card {
     font-family: MontserratNormal;
     font-size: 20px;
     font-weight: bold;

@@ -1,16 +1,21 @@
 import { useContext } from 'react';
 import { SocketContext } from 'contexts/SocketContexts';
 
-import PlayerCard from './PlayerCard';
+import isEmpty from 'functions/isEmpty';
+
+import Card from './Card';
 import './playercard.css';
 
 function PlayerCardApp() {
     const [state] = useContext(SocketContext);
-    return (
-        <div className="player-card">
-            <PlayerCard/>
-        </div>
-    )   
+    
+    if(!isEmpty(state.players)) {
+        return (
+            <div className="playercard-container">
+                <Card players={state.players}/>
+            </div>
+        )
+    }
 }
 
 export default PlayerCardApp;
