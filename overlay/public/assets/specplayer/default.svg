@@ -6,15 +6,15 @@
       <stop offset="80%" stop-color="black" id="secondaryColor"/>
     </linearGradient>
   </defs>
-  <g>
-    <rect width="500" height="90" fill="url('#gradient')" id="specCard"/>
-    <g>
+  <g id="card">
+    <rect width="500" height="90" fill="url('gradient')" id="specCard"/>
+    <g id="boostBar">
       <rect width="450" height="10" x="25" y="60" fill="#282a2d" fill-opacity="0.80" rx="5"/>
       <rect width="225" height="10" x="25" y="60" fill="white" rx="5" id="specBoost"/>
     </g>
     <text x="120" y="40" text-anchor="middle" fill="white" id="specName">WRESTLE_MANIA32</text>
-    <g>
-      <g>
+    <g id="stats">
+      <g id="score">
         <text x="250" y="20" fill="white" text-anchor="middle">SCORE</text>
         <text x="250" y="40" fill="white" text-anchor="middle" id="specScore">0</text>
       </g>   

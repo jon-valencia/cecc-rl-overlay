@@ -1,24 +1,30 @@
-import isEmpty from 'functions/isEmpty';
 import PropTypes from 'prop-types';
+import { SvgLoader, SvgProxy } from 'react-svgmt';
 
-import PlayerCard from './PlayerCard';
+import toPercent from 'functions/toPercent';
 
-const Card = ({ players }) => {
+const Card = ({ player, gamestate }) => {
     Card.propTypes = {
-        players:PropTypes.object
+        player:PropTypes.object,
+        gamestate:PropTypes.object
     }
-    
-    if(!isEmpty(players)) {
-        return (
-            Object.keys(players).map((id) => {
-                return (
-                <div className={players[id].team ? `team2-card ${players[id].id}` : `team1-card ${players[id].id}`}>
-                    <PlayerCard player={players[id]}/>
-                </div>
-                )
-            })
+    let theme = 'assets/playercard/default.svg';
+    return (
+        player && 
+        (
+            <div className={player.team ? `team2-card ${player.id}`: `team1-card ${player.id}`}>
+                <SvgLoader path={theme}>
+                    <SvgProxy selector="#primaryColor" stop-color={player.team ? gamestate.teamColors[1].primary : gamestate.teamColors[0].primary}/>
+                    <SvgProxy selector="#secondaryColor" stop-color={player.team ? gamestate.teamColors[1].secondary : gamestate.teamColors[0].secondary}/>
+                    <SvgProxy selector="#primaryColor" stop-color={player.id === gamestate.specPlayer ? gamestate.teamColors[player.team].primary : "black"}/>
+                    <SvgProxy selector="#secondaryColor" stop-color={player.id === gamestate.specPlayer ? gamestate.teamColors[player.team].secondary : "black"}/>
+                    <SvgProxy selector="#playerName" text-anchor={player.team ? `start` : `end`} x={player.team ? "10" : "310"}>{`${player.name}`}</SvgProxy>
+                    <SvgProxy selector="#playerBoost" text-anchor={player.team ? `end` : `start`} x={player.team ? "310" : "10"}>{`${player.boost}`}</SvgProxy>
+                    <SvgProxy selector="#boostBar" width={`${toPercent(player.boost, 320)}`} fill={player.team ? gamestate.teamColors[1].primary : gamestate.teamColors[0].primary}/>
+                </SvgLoader>
+            </div>
         )
-    }
-}
+    );
+};
 
 export default Card;

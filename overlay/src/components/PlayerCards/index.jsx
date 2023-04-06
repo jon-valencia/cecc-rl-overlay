@@ -3,17 +3,15 @@ import { SocketContext } from 'contexts/SocketContexts';
 
 import isEmpty from 'functions/isEmpty';
 
-import Card from './Card';
+import PlayerCards from './PlayerCards';
 import './playercard.css';
 
 function PlayerCardApp() {
     const [state] = useContext(SocketContext);
     
-    if(!isEmpty(state.players)) {
+    if(!isEmpty(state.players) && !isEmpty(state.gamestate)) {
         return (
-            <div className="playercard-container">
-                <Card players={state.players}/>
-            </div>
+            <PlayerCards players={state.players} gamestate={state.gamestate}/>
         )
     }
 }

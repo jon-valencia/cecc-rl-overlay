@@ -8,13 +8,13 @@ import isEmpty from 'functions/isEmpty';
 
 function ScoreBugApp() {
   const [state] = useContext(SocketContext);
-  if(!isEmpty(state.game)) {
+  if(!isEmpty(state.game) && !isEmpty(state.gamestate)) {
     return (
       <div className="scorebug">
-        <ScoreBug game={state.game}/>
+        <ScoreBug game={state.game} gamestate={state.gamestate}/>
       </div>
     )
-  }
+  };
 }
 
 export default ScoreBugApp;

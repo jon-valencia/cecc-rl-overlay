@@ -11,15 +11,29 @@ const SocketContextProvider = (props) => {
         gamestate: {
             inProgress: false,
             matchID: 0,
+            playersLoaded: false,
+            specPlayer: "",
+            hasTarget: false,
+            teamColors: [
+                {
+                    primary: "",
+                    secondary: ""
+                },
+                {
+                    primary: "",
+                    secondary: ""
+                }
+            ]
         },
         players: {},
         specPlayer: {
-            player: '',
+            player: "",
             team: 0,
             score: 0,
             goals: 0,
             assists: 0,
             saves: 0,
+            boost: 0
         }
     });
 

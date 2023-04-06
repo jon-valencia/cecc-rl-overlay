@@ -21,7 +21,7 @@
     <rect x="10" y="10" width="125" height="200" fill="#092941"/>
     <g>
       <rect x="135" y="35" width="125" height="175" fill="#021129"/>
-      <text text-anchor="middle" x="197.5" y="88.75" fill="white" id="clock">00:00</text>
+      <text text-anchor="middle" x="197.5" y="88.75" fill="white" id="clock" textLength="100">00:00</text>
     </g>
     <g>
       <g>

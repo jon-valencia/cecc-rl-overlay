@@ -19,25 +19,13 @@ const SocketManager = (props) => {
   const [specPlayer, setSpecPlayer] = useState({});
 
   useEffect(() => {
-    if(!isEmpty(game) && !isEmpty(players) && !isEmpty(specPlayer) && !isEmpty(gamestate)) {
-      setState({
-        ...state,
-        game: { ...game },
-        gamestate: {
-          inProgress: gamestate.inProgress,
-          matchID: gamestate.matchID
-        },
-        players: { ...players },
-        specPlayer: { 
-          player: specPlayer.player,
-          team: specPlayer.team,
-          score: specPlayer.score,
-          goals: specPlayer.goals,
-          assists: specPlayer.assists,
-          saves: specPlayer.saves
-        }
-      })
-    }
+    setState({
+      ...state,
+      game: { ...game },
+      gamestate: { ...gamestate },
+      players: { ...players },
+      specPlayer: { ...specPlayer }
+    })
   // eslint-disable-next-line
   },[game, players, specPlayer, gamestate])
   
