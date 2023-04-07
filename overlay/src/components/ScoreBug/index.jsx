@@ -13,8 +13,8 @@ function ScoreBugApp() {
       <div className="scorebug">
         <ScoreBug game={state.game} gamestate={state.gamestate}/>
       </div>
-    )
-  };
-}
+    );
+  }
+};
 
 export default ScoreBugApp;

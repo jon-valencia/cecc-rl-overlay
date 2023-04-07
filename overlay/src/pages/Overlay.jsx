@@ -1,19 +1,16 @@
-import SocketContextProvider from 'contexts/SocketContexts';
+//import SocketContextProvider from 'contexts/SocketContexts';
 import ScoreBugApp from 'components/ScoreBug/index';
 import PlayerCardApp from 'components/PlayerCards/index';
 import SpecPlayerApp from 'components/SpecPlayer/index';
 
-
-import './App.css';
-
-function App() { 
+function Overlay() { 
     return (
-        <SocketContextProvider>
+        <div className="overlay-container">
             <ScoreBugApp/>
             <PlayerCardApp/>
             <SpecPlayerApp/>
-        </SocketContextProvider>
+        </div>
     );
 }
 
-export default App;
+export default Overlay;
