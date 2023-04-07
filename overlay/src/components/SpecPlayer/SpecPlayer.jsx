@@ -8,13 +8,14 @@ const SpecPlayer = ({ specPlayer, gamestate }) => {
         specPlayer:PropTypes.object,
         gamestate:PropTypes.object
     } 
+    let team1PC = gamestate.teamColors[0].primary;
+    let team2PC = gamestate.teamColors[1].primary;
     let theme = 'assets/specplayer/default.svg';
     return (
         gamestate && specPlayer &&
         (
             <SvgLoader path={theme}>
-                <SvgProxy selector="#primaryColor" stop-color={specPlayer.team ? gamestate.teamColors[1].primary : gamestate.teamColors[0].primary}/>
-                <SvgProxy selector="#secondaryColor" stop-color={specPlayer.team ? gamestate.teamColors[1].secondary : gamestate.teamColor[0].secondary}/>
+                <SvgProxy selector="#primaryColor" stop-color={specPlayer.team ? team2PC : team1PC}/>
                 <SvgProxy selector="#specName">{`${specPlayer.player}`}</SvgProxy>
                 <SvgProxy selector="#specScore">{`${specPlayer.score}`}</SvgProxy>
                 <SvgProxy selector="#specGoals">{`${specPlayer.goals}`}</SvgProxy>

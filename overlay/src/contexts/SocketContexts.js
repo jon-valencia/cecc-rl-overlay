@@ -35,12 +35,10 @@ const SocketContextProvider = (props) => {
             saves: 0,
             boost: 0
         },
-        seriesInfo: {
-            title: '',
-            gameinfo: '',
-            team1SS: 0,
-            team2SS: 0,
-            seriesBestOf: 3,
+        tournamentInfo: {
+           bestOfChoice: "",
+           gameInfo: "",
+           seriesTitle: " "
         }
     });
 
