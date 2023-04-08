@@ -1,10 +1,13 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { SocketContext } from "contexts/SocketContexts";
 
 import secondsToMinutes from "functions/secondsToMinutes";
 
 function ControlPanel() {
     const [state, setState] = useContext(SocketContext);
+
+    const [tInfo, setTInfo] = useState({});
+    
 
     function handleSubmit(e) {
         // Prevent the browser from reloading the page
@@ -19,11 +22,7 @@ function ControlPanel() {
     
         // Or you can work with it as a plain object:
         const formJson = Object.fromEntries(formData.entries());
-        
-        setState({ ...state,
-            tournamentInfo: { ...formJson } });
-
-        console.log(formJson);
+        setTInfo({ ...formJson });
       }
     
       return (
