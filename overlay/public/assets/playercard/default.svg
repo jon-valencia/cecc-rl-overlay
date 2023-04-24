@@ -1,12 +1,6 @@
 <svg width="320" height="50" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="gradient">
-      <stop offset="25%" stop-color="#0010FF" id="primaryColor"/>
-      <stop offset="100%" stop-color="#FF6A00" id="secondaryColor"/>
-    </linearGradient>
-  </defs>
   <g>
-    <rect width="320" height="50" x="0" y="0" fill="url('#gradient')" id="playercard"/>
+    <rect width="320" height="50" x="0" y="0" fill="black" id="playercard"/>
     <g>
       <text x="10" y="25" fill="white" text-anchor="start" id="playerName">WRESTLE_MANIA32</text>
       <text x="310" y="25" fill="white" text-anchor="end" id="playerBoost">100</text>

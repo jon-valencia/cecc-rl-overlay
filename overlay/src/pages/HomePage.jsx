@@ -3,8 +3,9 @@ import Button from "@mui/material/Button";
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Grid from '@mui/material/Grid';
 
-function HomePage() {
+import { useSelector } from 'react-redux';
 
+function HomePage() {
     return (
         <Grid
             container

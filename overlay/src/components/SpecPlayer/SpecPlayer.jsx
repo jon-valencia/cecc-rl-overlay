@@ -16,12 +16,13 @@ const SpecPlayer = ({ specPlayer, gamestate }) => {
         (
             <SvgLoader path={theme}>
                 <SvgProxy selector="#primaryColor" stop-color={specPlayer.team ? team2PC : team1PC}/>
-                <SvgProxy selector="#specName">{`${specPlayer.player}`}</SvgProxy>
+                <SvgProxy selector="#specName">{`${specPlayer.player.toUpperCase()}`}</SvgProxy>
                 <SvgProxy selector="#specScore">{`${specPlayer.score}`}</SvgProxy>
                 <SvgProxy selector="#specGoals">{`${specPlayer.goals}`}</SvgProxy>
                 <SvgProxy selector="#specAssists">{`${specPlayer.assists}`}</SvgProxy>
                 <SvgProxy selector="#specSaves">{`${specPlayer.saves}`}</SvgProxy>
-                <SvgProxy selector="#specBoost" width={`${toPercent(specPlayer.boost, 450)}`}/>
+                <SvgProxy selector="#specShots">{`${specPlayer.shots}`}</SvgProxy>
+                <SvgProxy selector="#specBoost" width={`${toPercent(specPlayer.boost, 550)}`}/>
             </SvgLoader>
         )
     )

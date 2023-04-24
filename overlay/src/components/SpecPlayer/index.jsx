@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { SocketContext } from 'contexts/SocketContexts';
+import { useSelector } from 'react-redux';
 
 import SpecPlayer from './SpecPlayer';
 import './specplayer.css';
@@ -7,12 +8,17 @@ import './specplayer.css';
 import isEmpty from 'functions/isEmpty';
 
 function SpecPlayerApp() {
-  const [state] = useContext(SocketContext);
-  if(!isEmpty(state.specPlayer) && !isEmpty(state.gamestate) && !isEmpty(state.players)) {
-    if(state.gamestate.hasTarget === true && state.game.isReplay === false) {
+  //const [state] = useContext(SocketContext);
+  const gameinfo = useSelector((state) => state.gameinfo);
+  const specPlayer = useSelector((state) => state.specPlayer);
+  const gamestate = useSelector((state) => state.gamestate);
+  const players = useSelector((state) => state.players.players);
+
+  if(!isEmpty(specPlayer) && !isEmpty(gamestate) && !isEmpty(players)) {
+    if(gamestate.hasTarget === true && gameinfo.isReplay === false) {
       return (
         <div className="specplayer">
-          <SpecPlayer specPlayer={state.specPlayer} gamestate={state.gamestate}/>
+          <SpecPlayer specPlayer={specPlayer} gamestate={gamestate}/>
         </div>
       )
     }

@@ -1,13 +1,15 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import SocketContextProvider from 'contexts/SocketContexts';
 import HomePage from 'pages/HomePage'
 import ErrorPage from "pages/ErrorPage";
 import Overlay from 'pages/Overlay';
 import ControlPanel from "pages/ControlPanel";
 
+import SocketContextProvider from 'contexts/SocketContexts';
+import { Provider } from 'react-redux';
+import store from 'redux/store';
+import SM from 'container/sm'
+
 import './App.css';
-
-
 const router = createBrowserRouter([
     {
         path: "/",
@@ -16,19 +18,26 @@ const router = createBrowserRouter([
     },
     {
         path: "overlay",
-        element: <Overlay/>
+        element: <Overlay />
     },
     {
         path: "control-panel",
-        element: <ControlPanel/>
+        element: <ControlPanel />
     }
 ]);
 
-function App() { 
+function App() {
+    
+    
     return (
-        <SocketContextProvider>
+        <>
+        <Provider store={store}>
+            <SM/>
             <RouterProvider router={router}/>
-        </SocketContextProvider>
+        </Provider>
+        {/*<SocketContextProvider>
+            <RouterProvider router={router}/> 
+    </SocketContextProvider>*/}</>  
     );
 }
 

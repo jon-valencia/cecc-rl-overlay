@@ -1,31 +1,37 @@
+import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { SvgLoader, SvgProxy } from 'react-svgmt';
 
 import secondsToMinutes from 'functions/secondsToMinutes';
 
-const ScoreBug = ({ game, gamestate, tournamentInfo }) => {
+const ScoreBug = ({ gameinfo, gamestate, sbElements }) => {
     ScoreBug.propTypes = {
-        game:PropTypes.object,
+        gameinfo:PropTypes.object,
         gamestate:PropTypes.object,
-        tournamentInfo:PropTypes.object
+        sbText:PropTypes.object
     }
-    
-    let clock = secondsToMinutes(game.time_seconds, game.isOT);
-    let theme = 'assets/scorebug/default.svg';
+    let team1Logo = 'default.png';
+    let team2Logo = 'default.png'
+
+    let clock = secondsToMinutes(gameinfo.time_seconds, gameinfo.isOT);
+    if(sbElements.team1Logo !== '' && sbElements.team1Logo !== ''){
+        team1Logo = sbElements.team1Logo;
+        team2Logo = sbElements.team2Logo;
+    }
+    let theme = 'assets/scorebug/default2.svg';
     return (
-       game &&
+       gameinfo &&
         (
             <SvgLoader path={theme}>
-                <SvgProxy selector="#seriesTitle">{tournamentInfo.seriesTitle}</SvgProxy>
-                <SvgProxy selector="#primaryColor1" stop-color={gamestate.teamColors[0].primary}/>
-                <SvgProxy selector="#secondaryColor1"stop-color={gamestate.teamColors[0].secondary}/>
-                <SvgProxy selector="#primaryColor2" stop-color={gamestate.teamColors[1].primary}/>
-                <SvgProxy selector="#secondaryColor2"stop-color={gamestate.teamColors[1].secondary}/>
+                <SvgProxy selector="#seriesTitle">{`${sbElements.seriesTitle}`}</SvgProxy>
+                <SvgProxy selector="#gameInfo">{`${sbElements.gameInfo}`}</SvgProxy>
                 <SvgProxy selector="#clock">{`${clock}`}</SvgProxy>
-                <SvgProxy selector="#team1Name">{`${game.teams[0].name}`}</SvgProxy>
-                <SvgProxy selector="#team1Score">{`${game.teams[0].score}`}</SvgProxy>
-                <SvgProxy selector="#team2Name">{`${game.teams[1].name}`}</SvgProxy>
-                <SvgProxy selector="#team2Score">{`${game.teams[1].score}`}</SvgProxy>
+                <SvgProxy selector="#team1Name">{`${gameinfo.teams[0].name}`}</SvgProxy>
+                <SvgProxy selector="#team1Score">{`${gameinfo.teams[0].score}`}</SvgProxy>
+                <SvgProxy selector="#team2Name">{`${gameinfo.teams[1].name}`}</SvgProxy>
+                <SvgProxy selector="#team2Score">{`${gameinfo.teams[1].score}`}</SvgProxy>
+                <SvgProxy selector="#team1Logo" href={`assets/logos/${team1Logo}`}/>
+                <SvgProxy selector="#team2Logo" href={`assets/logos/${team2Logo}`}/>
             </SvgLoader>
         )
     );
