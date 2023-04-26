@@ -25,6 +25,7 @@ function ControlPanel() {
   
       // Or you can work with it as a plain object:
       const formJson = Object.fromEntries(formData.entries());
+      console.log(formJson)
       socket.emit('payload', {
         type: 'control',
         data: { ...formJson }
@@ -33,18 +34,16 @@ function ControlPanel() {
     
     return (
       <form method="post" onSubmit={handleSubmit}>
-          <label>
-            Series Title: <input name="seriesTitle" />
-          </label>
-          <label>
-            Game info: <input name="gameInfo" />
-          </label>
-          <hr />
-          <p>
+        <h1>EMP ROCKET LEAGUE OVERLAY CONTROL PANEL</h1>
+        <hr/>
+        <div className="series-information">
+          <h2>Series Info</h2>
+          <div>
             Best Of:
             <label><input type="radio" name="bestOfChoice" value={5} defaultChecked={true} /> 5</label>
             <label><input type="radio" name="bestOfChoice" value={7} /> 7</label>
-          </p>
+          </div>
+          <br/>
           <div>
             Team 1 Series Score:
             <label><input type="radio" name="team1SeriesScore" value={0} defaultChecked={true}/>0</label>
@@ -61,7 +60,8 @@ function ControlPanel() {
             <label><input type="radio" name="team2SeriesScore" value={3}/>3</label>
             <label><input type="radio" name="team2SeriesScore" value={4}/>4</label>
           </div>
-          <p>
+          <br/>
+          <div>
             TEAMS:
             <select name="team1">
               <option value="brewton">Brewton-Parker</option>
@@ -99,11 +99,29 @@ function ControlPanel() {
               <option value="indian">Indian River State</option>
               <option value="wvu">West Virgina</option>
             </select>
-          </p>
-          <hr />
-          <button type="reset">Reset form</button>
-          <button type="submit">Submit form</button>
-        </form>
+          </div>
+          <br/>
+        </div>
+        <hr/>
+        <div className="scorebug-info">
+          <h2>Scorebug Text</h2>
+          <label for="seriesTitle">Series Title:</label><br/>
+          <input type="text" name="sbSeriesTitle"/><br/>
+          <label for="gameInfo">Game Info:</label><br/>
+          <input type="text" name="sbGameInfo"/><br/><br/>
+        </div>
+        <hr/>
+        <div className="postgame-info">
+          <h2>Postgame Scoreboard Text</h2>
+          <label for="seriesTitle">Series Title:</label><br/>
+          <input type="text" name="pgSeriesTitle"/><br/>
+          <label for="postgameTitle">Postgame Title:</label><br/>
+          <input type="text" name="pgTitle"/><br/><br/>
+        </div>
+        <hr />
+        <button type="reset">Reset form</button>
+        <button type="submit">Submit form</button>
+      </form>
     )
 };
 
