@@ -29,3 +29,5 @@ When you first open the app you'll see the homepage with buttons to take you to 
 ### _OBS/VMix Setup_
 To setup the overlay and postgame for use in broadcast create a new browser source and set the URL to "https://localhost:3000/overlay" for the overlay or "https://localhost:3000/postgame" for the postgame. After, make sure the width is set to 1920 and the height 1080.
 
+<img title="a title" alt="Alt text" src="/imgs/rl-guide-5.png" />
+
