@@ -1,6 +1,7 @@
 import { createContext, useState } from 'react';
 
 import SocketManager from 'container/SocketManager';
+import ControlPanel from 'pages/ControlPanel';
 
 export const SocketContext = createContext();
 
@@ -34,6 +35,11 @@ const SocketContextProvider = (props) => {
             assists: 0,
             saves: 0,
             boost: 0
+        },
+        scorebugText: {
+           bestOfChoice: "",
+           gameInfo: "",
+           seriesTitle: ""
         }
     });
 

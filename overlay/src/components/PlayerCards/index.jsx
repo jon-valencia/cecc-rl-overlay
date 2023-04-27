@@ -1,5 +1,4 @@
-import { useContext } from 'react';
-import { SocketContext } from 'contexts/SocketContexts';
+import { useSelector } from 'react-redux';
 
 import isEmpty from 'functions/isEmpty';
 
@@ -7,11 +6,12 @@ import PlayerCards from './PlayerCards';
 import './playercard.css';
 
 function PlayerCardApp() {
-    const [state] = useContext(SocketContext);
+    const players = useSelector((state) => state.players.players);
+    const gamestate = useSelector((state) => state.gamestate);
     
-    if(!isEmpty(state.players) && !isEmpty(state.gamestate)) {
+    if(!isEmpty(players) && !isEmpty(gamestate)) {
         return (
-            <PlayerCards players={state.players} gamestate={state.gamestate}/>
+            <PlayerCards players={players} gamestate={gamestate}/>
         )
     }
 }

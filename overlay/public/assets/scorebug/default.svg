@@ -19,6 +19,7 @@
   <g>
     <rect x="10" y="10" width="650" height="25" fill="#092941"/>
     <rect x="10" y="10" width="125" height="200" fill="#092941"/>
+    <text text-anchor="middle" x="335.5" y="27" fill="white" id="seriesTitle"></text>
     <g>
       <rect x="135" y="35" width="125" height="175" fill="#021129"/>
       <text text-anchor="middle" x="197.5" y="88.75" fill="white" id="clock" textLength="100">00:00</text>

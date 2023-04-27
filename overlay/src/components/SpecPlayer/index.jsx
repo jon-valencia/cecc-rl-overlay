@@ -1,5 +1,5 @@
-import { useContext } from 'react';
-import { SocketContext } from 'contexts/SocketContexts';
+import { SvgLoader } from 'react-svgmt';
+import { useSelector } from 'react-redux';
 
 import SpecPlayer from './SpecPlayer';
 import './specplayer.css';
@@ -7,19 +7,28 @@ import './specplayer.css';
 import isEmpty from 'functions/isEmpty';
 
 function SpecPlayerApp() {
-  const [state] = useContext(SocketContext);
-  if(!isEmpty(state.specPlayer) && !isEmpty(state.gamestate)) {
-    if(state.gamestate.hasTarget === true) {
+  const gameinfo = useSelector((state) => state.gameinfo);
+  const specPlayer = useSelector((state) => state.specPlayer);
+  const gamestate = useSelector((state) => state.gamestate);
+  const players = useSelector((state) => state.players.players);
+
+  let theme = 'assets/specplayer/default.svg'
+
+  if(!isEmpty(specPlayer) && !isEmpty(gamestate) && !isEmpty(players)) {
+    if(gamestate.hasTarget === true && gameinfo.isReplay === false) {
       return (
         <div className="specplayer">
-          <SpecPlayer specPlayer={state.specPlayer} gamestate={state.gamestate}/>
+          <SpecPlayer specPlayer={specPlayer} gamestate={gamestate}/>
         </div>
       )
     }
-    else {
-      <div className="specPlayer"></div>
-    }
-  };
+  } else {
+    return (
+      <div className="specplayer">
+        <SvgLoader path={theme}/>
+      </div>
+    )
+  }
 }
 
 export default SpecPlayerApp;

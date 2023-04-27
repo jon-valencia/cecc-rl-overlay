@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="704" height="120.69">
+  <defs>
+    <style>
+      #ballspeed {
+        font-size: 26px;
+      }
+
+      #ballspeed, #scorer, #rpMPH, #smallRP, #assister {
+        font-family: Industry-Bold, Industry;
+        font-weight: 700;
+      }
+
+      #scorer {
+        font-size: 32px;
+      }
+
+      #rpWing1, #rpWing2 {
+        font-family: Industry-Medium, Industry;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      #rpMPH {
+        font-size: 10px;
+      }
+
+      #smallRP {
+        font-size: 16px;
+      }
+    </style>
+    <linearGradient id="rpLG" x1="352" y1="120" x2="352" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="blue" stop-opacity=".7" id="rpTeamColor"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="rpDS1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="6"/>
+      <feFlood flood-color="red" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="rpDS2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="6"/>
+      <feFlood flood-color="red" flood-opacity="1"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="rpDS3" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-3" stdDeviation="6"/>
+      <feFlood flood-color="red" flood-opacity="1"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="rpDS4" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-4" stdDeviation="6"/>
+      <feFlood flood-color="red" flood-opacity="1"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="RL_Replay_v2_MCD" data-name="RL Replay v2 MCD">
+    <rect id="base_shape" data-name="base shape" fill="#101010" x="12" y="40" width="680" height="80"/>
+    <rect id="team_1_gradient" data-name="team 1 gradient" fill="url(#rpLG)" x="12" y="40" width="680" height="80"/>
+    <g id="ASSIST_copy_2" data-name="ASSIST copy 2">
+      <image width="128" height="128" transform="translate(531 88) scale(.25)" id="assistIcon"/>
+      <text transform="translate(532 110.22)" text-anchor="end" id="assister" fill="white"></text>
+    </g>
+    <g id="SPEED_copy_2" data-name="SPEED copy 2">
+      <path fill="white" d="m673.97,89.84c0-24.76-20.08-44.84-44.84-44.84s-44.84,20.08-44.84,44.84c0,9.65,3.05,18.84,8.24,26.16h73.2c5.19-7.32,8.24-16.51,8.24-26.16Zm-39.95,22.08l-4.81-15.89-4.83,15.89h-27.75c-3.16-5.61-6.86-15.51-6.86-22.08,0-20.6,18.76-39.9,39.36-39.9s39.36,19.29,39.36,39.9c0,6.57-3.71,16.48-6.86,22.08h-27.6Z"/>
+      <text transform="translate(629 82.28)" id="ballspeed" fill="white" text-anchor="middle">125</text>
+      <text id="rpMPH" transform="translate(629 93.7)" fill="white" text-anchor="middle">MPH</text>
+    </g>
+    <g id="GOAL_copy_2" data-name="GOAL copy 2">
+      <image width="128" height="128" transform="translate(105 48) scale(.5)" id="goalIcon"/>
+      <text transform="translate(170.96 90.22)" id="scorer" fill="white">COLTOON2000</text>
+    </g>
+    <g id="Replay_wings_copy_2" data-name="Replay wings copy 2">
+      <circle filter="url(#rpDS1)" fill="red" cx="23" cy="28" r="5"/>
+      <text id="rpWing1" transform="translate(32.35 35.01)" fill="red">REPLAY</text>
+      <circle filter="url(#rpDS1)" fill="red" cx="681" cy="28" r="5"/>
+      <text id="rpWing2" transform="translate(598.75 35.01)" fill="red">REPLAY</text>
+    </g>
+    <image width="1200" height="1051" transform="translate(29 46) scale(.05)" id="mcdsLogo"/>
+    <text id="smallRP" transform="translate(28.82 115.09)" fill="white">REPLAY</text>
+  </g>
+</svg>

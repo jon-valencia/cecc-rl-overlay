@@ -122,7 +122,8 @@ io.on('connection', (socket) => {
     // console.log(payload);
     // socket.to('REACTLOCAL').emit('payload', payload);
     // ! socket.to will NOT be received by the sender, change to io.to for single page apps if you want the sender to also receive the payload for state updates, etc. !
-    socket.to('game').emit('payload', payload);
+    // socket.to('game').emit('payload', payload);
+    io.to('game').emit('payload', payload);
   });
 
   // Emit payload data to clients
