@@ -14,8 +14,9 @@ function HomePage() {
       style={{ minHeight: '100vh' }}
     >
       <ButtonGroup size="large" variant="contained">
-        <Button component={Link} to="/overlay">OVERLAY</Button>
         <Button component={Link} to="/control-panel">CONTROL PANEL</Button>
+        <Button component={Link} to="/overlay">OVERLAY</Button>
+        <Button component={Link} to="/postgame">POSTGAME</Button>
       </ButtonGroup>
     </Grid> 
   )

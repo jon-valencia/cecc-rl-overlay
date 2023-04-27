@@ -33,9 +33,9 @@ const ScoreBug = ({ gameinfo, gamestate, control }) => {
           <SvgProxy selector="#seriesTitle">{`${control.sbElements.sbSeriesTitle}`}</SvgProxy>
           <SvgProxy selector="#gameInfo">{`${control.sbElements.sbGameInfo}`}</SvgProxy>
           <SvgProxy selector="#clock">{`${clock}`}</SvgProxy>
-          <SvgProxy selector="#team1Name">{`${gameinfo.teams[0].name}`}</SvgProxy>
+          <SvgProxy selector="#team1Name">{`${gameinfo.teams[0].name.toUpperCase()}`}</SvgProxy>
           <SvgProxy selector="#team1Score">{`${gameinfo.teams[0].score}`}</SvgProxy>
-          <SvgProxy selector="#team2Name">{`${gameinfo.teams[1].name}`}</SvgProxy>
+          <SvgProxy selector="#team2Name">{`${gameinfo.teams[1].name.toUpperCase()}`}</SvgProxy>
           <SvgProxy selector="#team2Score">{`${gameinfo.teams[1].score}`}</SvgProxy>
           <SvgProxy selector="#team1Logo" href={`assets/logos/${team1Logo}`}/>
           <SvgProxy selector="#team2Logo" href={`assets/logos/${team2Logo}`}/>
