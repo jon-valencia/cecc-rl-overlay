@@ -1,62 +1,37 @@
-import { useEffect, useContext, useState } from 'react';
-import { io } from 'socket.io-client';
-import { SocketContext } from 'contexts/SocketContexts';
+import { useEffect, useContext } from 'react';
+import { useDispatch } from 'react-redux';
+import { handleGameinfo } from 'redux/slices/gameinfoSlice';
+import { handlePlayers } from 'redux/slices/playerSlice';
+import { handleGamestate } from 'redux/slices/gamestateSlice';
+import { handleSpecPlayer } from 'redux/slices/specPlayerSlice';
+import { handlePayload } from 'redux/slices/payloadSlice';
+import { handleGoalScored } from 'redux/slices/goalScoredSlice';
 
-import handleGame from 'handlers/handleGame';
-import handleGameState from 'handlers/handleGameState';
-import handlePlayers from 'handlers/handlePlayers';
-import handleSpecPlayer from 'handlers/handleSpecPlayer';
+import SocketContext from 'contexts/SocketContext';
 
 import isEmpty from 'functions/isEmpty';
 
-const SocketManager = (props) => {
+const SocketManager = () => {
+    const socket = useContext(SocketContext);
+    const dispatch = useDispatch();
 
-  const [state, setState] = useContext(SocketContext);
-
-  const [gamestate, setGamestate] = useState({});
-  const [game, setGame] = useState({});
-  const [players, setPlayers] = useState({});
-  const [specPlayer, setSpecPlayer] = useState({});
-
-  useEffect(() => {
-    setState({
-      ...state,
-      game: { ...game },
-      gamestate: { ...gamestate },
-      players: { ...players },
-      specPlayer: { ...specPlayer }
-    })
-  // eslint-disable-next-line
-  },[game, players, specPlayer, gamestate])
-  
-  const subRocketSocket = async () => {
-    const socket = io('http://localhost:6969', {
-      withCredentials: true,
-    });
-
-    socket.on('connect', () => {
-      socket.emit('join', 'REACTLOCAL')
-      socket.emit('watchGame')
-    });
-
-    socket.on('update', (update) => {
-      if (update.event === 'game:update_state') {
-        setGame(handleGame(update));
-        setGamestate(handleGameState(update));
-        if(!isEmpty(update.data.players)) {
-          setPlayers(handlePlayers(update));
-          setSpecPlayer(handleSpecPlayer(update));
-        }
-      }
-    });
-  }
-  
-  useEffect(() => {
-    subRocketSocket();
-  },[]);
-
-  return props.children
-
+    useEffect(() => {
+        socket.on('payload', (payload) => {
+          dispatch(handlePayload(payload));
+          console.log(payload);
+        })
+        socket.on('update', (update) => {
+          if (update.event === 'game:update_state') {
+            dispatch(handleGameinfo(update.data.game));
+            dispatch(handleGamestate(update.data));
+            if(!isEmpty(update.data.players)) {
+              dispatch(handlePlayers(update.data.players));
+              dispatch(handleSpecPlayer(update.data));
+            }
+          }
+          update.event === 'game:goal_scored' && dispatch(handleGoalScored(update.data));
+        })
+    },[])
 }
 
 export default SocketManager;

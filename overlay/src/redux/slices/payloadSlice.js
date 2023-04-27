@@ -11,9 +11,11 @@ const initialState = {
       sbSeriesTitle: "",
       sbGameInfo: "",
     },
-    pgELements: {
+    pgElements: {
       pgSeriesTitle: "",
       pgTitle: "",
+      pgT1Name: "",
+      pgT2Name: ""
     }
   }
 }
@@ -25,14 +27,18 @@ export const payloadSlice = createSlice({
     handlePayload: (state, action) => {
       if (action.payload.type === 'control') {
         state.control.bestOfChoice = action.payload.data.bestOfChoice;
-        state.control.team1Logo = `${action.payload.data.team1}.png`;
-        state.control.team2Logo = `${action.payload.data.team2}.png`;
+        if (action.payload.data.team1 !== '' && action.payload.data.team2 !== '') {
+          state.control.team1Logo = `${action.payload.data.team1}.png`;
+          state.control.team2Logo = `${action.payload.data.team2}.png`;
+        }
         state.control.team1SeriesScore = action.payload.data.team1SeriesScore;
         state.control.team2SeriesScore = action.payload.data.team2SeriesScore;
         state.control.sbElements.sbSeriesTitle = action.payload.data.sbSeriesTitle;
         state.control.sbElements.sbGameInfo = action.payload.data.sbGameInfo;
-        state.control.pgELements.pgSeriesTitle = action.payload.data.pgSeriesTitle;
-        state.control.pgELements.pgTitle = action.payload.data.pgTitle;
+        state.control.pgElements.pgSeriesTitle = action.payload.data.pgSeriesTitle;
+        state.control.pgElements.pgTitle = action.payload.data.pgTitle;
+        state.control.pgElements.pgT1Name = action.payload.data.pgT1Name;
+        state.control.pgElements.pgT2Name = action.payload.data.pgT2Name;
       }
     }
   }

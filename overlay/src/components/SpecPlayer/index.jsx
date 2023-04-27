@@ -1,6 +1,4 @@
-import { useContext } from 'react';
-import { SocketContext } from 'contexts/SocketContexts';
-import { SvgLoader, SvgProxy } from 'react-svgmt';
+import { SvgLoader } from 'react-svgmt';
 import { useSelector } from 'react-redux';
 
 import SpecPlayer from './SpecPlayer';
@@ -9,7 +7,6 @@ import './specplayer.css';
 import isEmpty from 'functions/isEmpty';
 
 function SpecPlayerApp() {
-  //const [state] = useContext(SocketContext);
   const gameinfo = useSelector((state) => state.gameinfo);
   const specPlayer = useSelector((state) => state.specPlayer);
   const gamestate = useSelector((state) => state.gamestate);

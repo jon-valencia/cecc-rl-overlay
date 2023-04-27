@@ -1,5 +1,4 @@
 import { SvgLoader, SvgProxy } from 'react-svgmt';
-//import { SocketContext } from 'contexts/SocketContexts';
 import { useSelector } from 'react-redux';
 
 import ScoreBug from './ScoreBug';
@@ -10,7 +9,7 @@ import isEmpty from 'functions/isEmpty';
 function ScoreBugApp() {
   const gameinfo = useSelector((state) => state.gameinfo); 
   const gamestate = useSelector((state) => state.gamestate);
-  const sbElements = useSelector((state) => state.payload.control);
+  const control = useSelector((state) => state.payload.control);
   let theme = 'assets/scorebug/defaultBO5.svg'; 
 
   let team1SeriesScore = 1;
@@ -19,7 +18,7 @@ function ScoreBugApp() {
   if (!isEmpty(gameinfo.teams[0]) && !isEmpty(gameinfo.teams[1])) {
     return (
       <div className="scorebug">
-        <ScoreBug gameinfo={gameinfo} gamestate={gamestate} sbElements={sbElements} />
+        <ScoreBug gameinfo={gameinfo} gamestate={gamestate} control={control} />
       </div>
     );
   } else {

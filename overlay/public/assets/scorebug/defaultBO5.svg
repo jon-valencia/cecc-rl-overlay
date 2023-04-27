@@ -405,7 +405,7 @@
           <polygon id="team1Bo5Box3" data-name="BOX 3" points="465 135 430 135 434.5 126 469.5 126 465 135" />
           <polygon id="team1Bo5Box4" data-name="BOX 4" points="505 135 470 135 474.5 126 509.5 126 505 135" />
         </g>-->
-        <text id="team1Score" data-name="Score TXT" class="cls-31" transform="translate(525 126.93)" >14</text>
+        <text id="team1Score" data-name="Score TXT" class="cls-31" transform="translate(595 126.93)" text-anchor="end">14</text>
         <image id="team1Logo" data-name="SCHOOL LOGO" width="1080" height="1080" transform="translate(260 71) scale(.06)" href="assets/logos/default.png"/>
       </g>
       <g id="Team_2" data-name="Team 2">
@@ -428,14 +428,14 @@
           <polygon id="team2Bo5Box3" data-name="BOX 3" points="465 215 430 215 434.5 206 469.5 206 465 215" stroke="white"/>
           <polygon id="team2Bo5Box4" data-name="BOX 4" points="505 215 470 215 474.5 206 509.5 206 505 215" stroke="white"/>
         </g>-->
-        <text id="team2Score" data-name="Score TXT" class="cls-31" transform="translate(525 206.93)">3</text>
+        <text id="team2Score" data-name="Score TXT" class="cls-31" transform="translate(595 206.93)" text-anchor="end">3</text>
         <image id="team2Logo" data-name="school logo" width="1080" height="1080" transform="translate(260 151) scale(.06)" href="assets/logos/default.png"/>
       </g>
       <text class="cls-36" transform="translate(596 53.59)" text-anchor="end" id="gameInfo">BEST OF 5</text>
       <text class="cls-35" transform="translate(251.22 53.69)" id="seriesTitle">CECC GRAND FINALS</text>
       <g id="Timer_jet_out" data-name="Timer jet out">
         <rect class="cls-61" x="42" y="221" width="206" height="50"/>
-        <text id="clock" class="cls-37" transform="translate(88.06 262.59)">+00:00</text>
+        <text id="clock" class="cls-37" transform="translate(143 262.59)" text-anchor="middle">+00:00</text>
       </g>
       <g id="CECC_Logo" data-name="CECC Logo">
         <g>

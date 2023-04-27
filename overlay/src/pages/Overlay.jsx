@@ -2,6 +2,7 @@
 import ScoreBugApp from 'components/ScoreBug/index';
 import PlayerCardApp from 'components/PlayerCards/index';
 import SpecPlayerApp from 'components/SpecPlayer/index';
+import ReplayBugApp from 'components/ReplayBug';
 
 function Overlay() {  
   return (
@@ -9,6 +10,7 @@ function Overlay() {
       <ScoreBugApp/>
       <PlayerCardApp/>
       <SpecPlayerApp/>
+      <ReplayBugApp/>
     </div>
   );
 }

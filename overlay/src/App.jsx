@@ -3,11 +3,11 @@ import HomePage from 'pages/HomePage'
 import ErrorPage from "pages/ErrorPage";
 import Overlay from 'pages/Overlay';
 import ControlPanel from "pages/ControlPanel";
+import PostGame from 'pages/PostGame';
 
-import SocketContextProvider from 'contexts/SocketContexts';
 import { Provider } from 'react-redux';
 import store from 'redux/store';
-import SM from 'container/sm'
+import SocketManager from 'container/SocketManager'
 
 import './App.css';
 const router = createBrowserRouter([
@@ -23,6 +23,10 @@ const router = createBrowserRouter([
     {
         path: "control-panel",
         element: <ControlPanel />
+    },
+    {
+      path: "postgame",
+      element: <PostGame />
     }
 ]);
 
@@ -32,7 +36,7 @@ function App() {
     return (
         <>
         <Provider store={store}>
-            <SM/>
+            <SocketManager/>
             <RouterProvider router={router}/>
         </Provider>
         {/*<SocketContextProvider>
