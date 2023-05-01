@@ -66,7 +66,7 @@
     <rect id="base_shape" data-name="base shape" fill="#101010" x="12" y="40" width="680" height="80"/>
     <rect id="team_1_gradient" data-name="team 1 gradient" fill="url(#rpLG)" x="12" y="40" width="680" height="80"/>
     <g id="ASSIST_copy_2" data-name="ASSIST copy 2">
-      <image width="128" height="128" transform="translate(531 88) scale(.25)" id="assistIcon"/>
+      <image width="128" height="128" transform="translate(531 86) scale(.25)" id="assistIcon"/>
       <text transform="translate(532 110.22)" text-anchor="end" id="assister" fill="white"></text>
     </g>
     <g id="SPEED_copy_2" data-name="SPEED copy 2">
