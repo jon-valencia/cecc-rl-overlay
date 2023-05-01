@@ -86,6 +86,14 @@ function PostGame() {
         </SvgLoader>
       )
     )
+  } else {
+    return (
+      <SvgLoader path={theme}>
+        <SvgProxy selector="#halfPennant" href="assets/postgame/half_pennant.png"/>
+        <SvgProxy selector="#team1Logo" href="assets/logos/default.png"/>
+        <SvgProxy selector="#team2Logo" href="assets/logos/default.png"/>
+      </SvgLoader>
+    )
   }
 }
 

@@ -75,8 +75,8 @@
       <text id="rpMPH" transform="translate(629 93.7)" fill="white" text-anchor="middle">MPH</text>
     </g>
     <g id="GOAL_copy_2" data-name="GOAL copy 2">
-      <image width="128" height="128" transform="translate(105 48) scale(.5)" id="goalIcon"/>
-      <text transform="translate(170.96 90.22)" id="scorer" fill="white">COLTOON2000</text>
+      <image width="128" height="128" transform="translate(105 45) scale(.5)" id="goalIcon"/>
+      <text transform="translate(170.96 87.22)" id="scorer" fill="white">COLTOON2000</text>
     </g>
     <g id="Replay_wings_copy_2" data-name="Replay wings copy 2">
       <circle filter="url(#rpDS1)" fill="red" cx="23" cy="28" r="5"/>

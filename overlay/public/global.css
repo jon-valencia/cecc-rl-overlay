@@ -2,3 +2,8 @@
     font-family: MontserratNormal;
     src: url('./fonts/Montserrat-VariableFont_wght.ttf');
 }
+
+@font-face {
+  font-family: Industry;
+  src: url('./fonts/IndustryTest-Bold.otf');
+}
