@@ -1,8 +1,8 @@
 # ROCKET LEAGUE OVERLAY INSTRUCTIONS
 ## _Prerequisites_
 These are the things you NEED to download before running this application:
-- [NodeJS]("https://nodejs.org/en/download")
-- [BakkesMod]("https://bakkesplugins.com/")
+- [NodeJS](https://nodejs.org/en/download)
+- [BakkesMod](https://bakkesplugins.com/)
 
 ## _Initial Setup_
 - First, download this repository to your computer.
