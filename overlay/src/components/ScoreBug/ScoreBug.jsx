@@ -9,15 +9,15 @@ const ScoreBug = ({ gameinfo, gamestate, control }) => {
         gamestate:PropTypes.object,
         control:PropTypes.object
     }
-    let team1Logo = 'default.png';
-    let team2Logo = 'default.png';
+    //let team1Logo = 'default.png';
+    //let team2Logo = 'default.png';
     let theme = `assets/scorebug/defaultBO${control.bestOfChoice}.svg`
 
     let clock = secondsToMinutes(gameinfo.time_seconds, gameinfo.isOT);
-    if(control.team1Logo !== '' && control.team1Logo !== ''){
+    /*if(control.team1Logo !== '' && control.team1Logo !== ''){
         team1Logo = control.team1Logo;
         team2Logo = control.team2Logo;
-    }
+    }*/
     
     
     return (
@@ -37,8 +37,8 @@ const ScoreBug = ({ gameinfo, gamestate, control }) => {
           <SvgProxy selector="#team1Score">{`${gameinfo.teams[0].score}`}</SvgProxy>
           <SvgProxy selector="#team2Name">{`${gameinfo.teams[1].name.toUpperCase()}`}</SvgProxy>
           <SvgProxy selector="#team2Score">{`${gameinfo.teams[1].score}`}</SvgProxy>
-          <SvgProxy selector="#team1Logo" href={`assets/logos/${team1Logo}`}/>
-          <SvgProxy selector="#team2Logo" href={`assets/logos/${team2Logo}`}/>
+          {/*<SvgProxy selector="#team1Logo" href={`assets/logos/${team1Logo}`}/>
+          <SvgProxy selector="#team2Logo" href={`assets/logos/${team2Logo}`}/>*/}
           <SvgProxy selector="#team1Bo5Box1" fill={control.team1SeriesScore > 0 ? "white" : ""}/>
           <SvgProxy selector="#team1Bo5Box2" fill={control.team1SeriesScore > 1 ? "white" : ""}/>
           <SvgProxy selector="#team1Bo5Box3" fill={control.team1SeriesScore > 2 ? "white" : ""}/>

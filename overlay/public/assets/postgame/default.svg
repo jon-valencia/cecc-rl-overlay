@@ -185,7 +185,7 @@
       <text class="cls-10" transform="translate(1392.68 247.21)" text-anchor="middle">SHOTS</text>
       <text class="cls-10" transform="translate(1552.31 247.21)" text-anchor="middle">SAVES</text>
       <text class="cls-10" transform="translate(1714.82 247.21)" text-anchor="middle">DEMOS</text>
-      <image id="team1Logo" width="1000" height="1000" transform="translate(0 196) scale(.27)" href="assets/logos/default.svg"/>
+      <!--<image id="team1Logo" width="1000" height="1000" transform="translate(0 196) scale(.27)" href="assets/logos/default.svg"/>-->
       <g id="T1P1_copy_2" data-name="T1P1 copy 2">
         <text class="cls-7" transform="translate(307.41 320.73)" id="team1P1Name">PLAYER NAME 1</text>
         <text class="cls-7" transform="translate(916.2 320.73)" id="team1P1Score" text-anchor="middle">509</text>
@@ -226,7 +226,7 @@
       <text class="cls-10" transform="translate(1392.68 597.21)" text-anchor="middle">SHOTS</text>
       <text class="cls-10" transform="translate(1552.31 597.21)" text-anchor="middle">SAVES</text>
       <text class="cls-10" transform="translate(1714.82 597.21)" text-anchor="middle">DEMOS</text>
-      <image id="team2Logo" width="1080" height="1080" transform="translate(0 546) scale(.25)" href="assets/logos/default.svg"/>
+      <!--<image id="team2Logo" width="1080" height="1080" transform="translate(0 546) scale(.25)" href="assets/logos/default.svg"/>-->
       <g id="T1P1_copy" data-name="T1P1 copy">
         <text class="cls-7" transform="translate(307.41 670.73)" id="team2P1Name">PLAYER NAME 1</text>
         <text class="cls-7" transform="translate(916.2 670.73)" id="team2P1Score" text-anchor="middle">509</text>

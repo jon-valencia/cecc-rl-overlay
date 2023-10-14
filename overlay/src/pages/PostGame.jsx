@@ -10,15 +10,15 @@ function PostGame() {
   const control = useSelector((state) => state.payload.control);
 
   let theme = 'assets/postgame/default.svg';
-  let team1Logo = 'assets/logos/default.png';
-  let team2Logo ='assets/logos/default.png';
+  //let team1Logo = 'assets/logos/default.png';
+  //let team2Logo ='assets/logos/default.png';
   let team1 = [];
   let team2 = [];
 
-  if (control.team1Logo !== '' && control.team2Logo !== ''){
+  /*if (control.team1Logo !== '' && control.team2Logo !== ''){
     team1Logo = control.team1Logo;
     team2Logo = control.team2Logo;
-  }
+  }*/
   if (!isEmpty(players)) {
     Object.keys(players).forEach((id) => {
       players[id].team === 0 && team1.push(id);
@@ -35,8 +35,8 @@ function PostGame() {
           <SvgProxy selector="#pgTitle">{`${control.pgElements.pgTitle}`}</SvgProxy>
           <SvgProxy selector="#pgT1Name">{`${control.pgElements.pgT1Name}`}</SvgProxy>
           <SvgProxy selector="#pgT2Name">{`${control.pgElements.pgT2Name}`}</SvgProxy>
-          <SvgProxy selector="#team1Logo" href={`assets/logos/${team1Logo}`}/>
-          <SvgProxy selector="#team2Logo" href={`assets/logos/${team2Logo}`}/>
+          {/*<SvgProxy selector="#team1Logo" href={`assets/logos/${team1Logo}`}/>
+          <SvgProxy selector="#team2Logo" href={`assets/logos/${team2Logo}`}/>*/}
           <SvgProxy selector="#team1Score">{`${gameinfo.teams[0].score}`}</SvgProxy>
           <SvgProxy selector="#team2Score">{`${gameinfo.teams[1].score}`}</SvgProxy>
           <SvgProxy selector="#team1Grad" stop-color={gamestate.teamColors[0].primary}/>

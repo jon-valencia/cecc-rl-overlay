@@ -65,7 +65,7 @@ function ControlPanel() {
               <label><input type="radio" name="team2SeriesScore" value={4}/>4</label>
             </div>
             <br/>
-            <div>
+            {/*<div>
               TEAMS 1:
               <select name="team1">
                 <option value="brewton">Brewton-Parker</option>
@@ -106,7 +106,7 @@ function ControlPanel() {
                 <option value="wvu">West Virgina</option>
                 <option value="dominion">Old Dominion</option>
               </select>
-            </div>
+            </div>*/}
             <br/>
           </div>
           <hr/>
