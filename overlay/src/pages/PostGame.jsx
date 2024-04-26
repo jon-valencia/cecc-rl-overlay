@@ -15,10 +15,10 @@ function PostGame() {
   let team1 = [];
   let team2 = [];
 
-  /*if (control.team1Logo !== '' && control.team2Logo !== ''){
-    team1Logo = control.team1Logo;
-    team2Logo = control.team2Logo;
-  }*/
+  if (control.team1Banner !== '' && control.team2Banner !== ''){
+    var team1Banner = control.team1Banner;
+    var team2Banner = control.team2Banner;
+  }
   if (!isEmpty(players)) {
     Object.keys(players).forEach((id) => {
       players[id].team === 0 && team1.push(id);
@@ -30,19 +30,18 @@ function PostGame() {
     return (
       players && (
         <SvgLoader path={theme}>
-          <SvgProxy selector="#halfPennant" href="assets/postgame/half_pennant.png"/>
           <SvgProxy selector="#pgSeriesTitle">{`${control.pgElements.pgSeriesTitle}`}</SvgProxy>
           <SvgProxy selector="#pgTitle">{`${control.pgElements.pgTitle}`}</SvgProxy>
-          <SvgProxy selector="#pgT1Name">{`${control.pgElements.pgT1Name}`}</SvgProxy>
-          <SvgProxy selector="#pgT2Name">{`${control.pgElements.pgT2Name}`}</SvgProxy>
-          {/*<SvgProxy selector="#team1Logo" href={`assets/logos/${team1Logo}`}/>
-          <SvgProxy selector="#team2Logo" href={`assets/logos/${team2Logo}`}/>*/}
+          {/*<SvgProxy selector="#pgT1Name">{`${control.pgElements.pgT1Name}`}</SvgProxy>
+          <SvgProxy selector="#pgT2Name">{`${control.pgElements.pgT2Name}`}</SvgProxy>*/}
+          <SvgProxy selector="#team1Banner" href={`${team1Banner}`}/>
+          <SvgProxy selector="#team2Banner" href={`${team2Banner}`}/>
           <SvgProxy selector="#team1Score">{`${gameinfo.teams[0].score}`}</SvgProxy>
           <SvgProxy selector="#team2Score">{`${gameinfo.teams[1].score}`}</SvgProxy>
-          <SvgProxy selector="#team1Grad" stop-color={gamestate.teamColors[0].primary}/>
+          {/*<SvgProxy selector="#team1Grad" stop-color={gamestate.teamColors[0].primary}/>
           <SvgProxy selector="#team2Grad" stop-color={gamestate.teamColors[1].primary}/>
           <SvgProxy selector="#GRADIENT-2" fill={gamestate.teamColors[0].primary}/>
-          <SvgProxy selector="#GRADIENT-4" fill={gamestate.teamColors[1].primary}/>
+          <SvgProxy selector="#GRADIENT-4" fill={gamestate.teamColors[1].primary}/>*/}
           <SvgProxy selector="#team1P1Name">{!isEmpty(players[team1[0]]) ? `${players[team1[0]].name.toUpperCase()}` : ""}</SvgProxy>
           <SvgProxy selector="#team1P1Score">{!isEmpty(players[team1[0]]) ? `${players[team1[0]].score}` : ""}</SvgProxy>
           <SvgProxy selector="#team1P1Goals">{!isEmpty(players[team1[0]]) ? `${players[team1[0]].goals}` : ""}</SvgProxy>

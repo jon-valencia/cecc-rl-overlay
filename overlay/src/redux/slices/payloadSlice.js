@@ -27,10 +27,11 @@ export const payloadSlice = createSlice({
     handlePayload: (state, action) => {
       if (action.payload.type === 'control') {
         state.control.bestOfChoice = action.payload.data.bestOfChoice;
-        if (action.payload.data.team1 !== '' && action.payload.data.team2 !== '') {
-          state.control.team1Logo = `${action.payload.data.team1}.png`;
-          state.control.team2Logo = `${action.payload.data.team2}.png`;
-        }
+        state.control.seriesLogo = action.payload.data.seriesLogo;
+        state.control.team1Logo = action.payload.data.team1Logo;
+        state.control.team1Banner = action.payload.data.team1Banner;
+        state.control.team2Logo = action.payload.data.team2Logo;
+        state.control.team2Banner = action.payload.data.team2Banner;
         state.control.team1SeriesScore = action.payload.data.team1SeriesScore;
         state.control.team2SeriesScore = action.payload.data.team2SeriesScore;
         state.control.sbElements.sbSeriesTitle = action.payload.data.sbSeriesTitle;

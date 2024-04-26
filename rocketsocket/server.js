@@ -36,7 +36,9 @@ console.log(process.env.CORS.split(', '));
 
 // Init socket.io, pass server for connection
 // place hosts in dot env file for CORS origins
+// increased maxHttpBufferSize to 100 mb
 const io = require('socket.io')(server, {
+  maxHttpBufferSize: 1e8,
   cors: {
     origin: process.env.CORS.split(', '),
     methods: ['GET', 'POST'],
