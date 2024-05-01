@@ -12,6 +12,7 @@ function ControlPanel() {
     const [team2Logo, setTeam2Logo] = useState('');
     const [team1Banner, setTeam1Banner] = useState('');
     const [team2Banner, setTeam2Banner] = useState('');
+    const [isChecked, setCheck] = useState(false);
     function seriesLogoToB64(e) {
       let file = e.target.files[0];
       let reader = new FileReader();
@@ -57,6 +58,9 @@ function ControlPanel() {
         setTeam2Banner(reader.result);
       }
     }
+    function handleCheck() {
+      setCheck(!isChecked);
+    }
     function handleSubmit(e) {
       // Prevent the browser from reloading the page
       e.preventDefault();
@@ -77,7 +81,8 @@ function ControlPanel() {
       socket.emit('payload', {
         type: 'control',
         data: { ...formJson,
-          seriesLogo: `${seriesLogo}`, 
+          seriesLogo: `${seriesLogo}`,
+          isLAN: `${isChecked}`, 
           team1Logo: `${team1Logo}`,
           team1Banner: `${team1Banner}`,
           team2Logo: `${team2Logo}`,
@@ -102,12 +107,16 @@ function ControlPanel() {
             <div>
               SERIES LOGO:
               <input type="file" name="seriesLogo" onChange={seriesLogoToB64}/>
-              <img src={seriesLogo} width="100" height="100"/>
+              <img src={seriesLogo} width="100" height="100" alt=""/>
             </div>
             <div>
               BEST OF:
               <label><input type="radio" name="bestOfChoice" value={5} defaultChecked={true} /> 5</label>
               <label><input type="radio" name="bestOfChoice" value={7} /> 7</label>
+            </div>
+            <div>
+              LAN LOBBY?:
+              <label><input type="checkbox" name="isLAN" checked={isChecked} onChange={handleCheck}/></label>
             </div>
             <br/>
             <div>
@@ -148,49 +157,6 @@ function ControlPanel() {
               <img src={team2Banner} height="38" width="190" alt=""/>
             </div>
             <br/>
-            {/*<div>
-              TEAMS 1:
-              <select name="team1">
-                <option value="brewton">Brewton-Parker</option>
-                <option value="stockton">Stockton</option>
-                <option value="gcu">Grand Canyon</option>
-                <option value="northwood">Northwood</option>
-                <option value="fisher">Fisher</option>
-                <option value="columbia">Columbia</option>
-                <option value="staten">Staten Island</option>
-                <option value="akron">Akron</option>
-                <option value="union">Mount Union</option>
-                <option value="boise">Boise State</option>
-                <option value="uta">UT Arlington</option>
-                <option value="george">George Mason</option>
-                <option value="weber">Weber State</option>
-                <option value="iona">Iona</option>
-                <option value="indian">Indian River State</option>
-                <option value="wvu">West Virgina</option>
-                <option value="dominion">Old Dominion</option>
-              </select>
-              TEAM 2:
-              <select name="team2">
-                <option value="brewton">Brewton-Parker</option>
-                <option value="stockton">Stockton</option>
-                <option value="gcu">Grand Canyon</option>
-                <option value="northwood">Northwood</option>
-                <option value="fisher">Fisher</option>
-                <option value="columbia">Columbia</option>
-                <option value="staten">Staten Island</option>
-                <option value="akron">Akron</option>
-                <option value="union">Mount Union</option>
-                <option value="boise">Boise State</option>
-                <option value="uta">UT Arlington</option>
-                <option value="george">George Mason</option>
-                <option value="weber">Weber State</option>
-                <option value="iona">Iona</option>
-                <option value="indian">Indian River State</option>
-                <option value="wvu">West Virgina</option>
-                <option value="dominion">Old Dominion</option>
-              </select>
-            </div>*/}
-            <br/>
           </div>
           <hr/>
           <div className="scorebug-info">
@@ -207,10 +173,6 @@ function ControlPanel() {
             <input type="text" name="pgTitle"/><br/>
             <label htmlFor="pgSeriesTitle">SERIES TITLE:</label><br/>
             <input type="text" name="pgSeriesTitle"/><br/>
-            {/*<label htmlFor="pgT1Name">TEAM 1 NAME:</label><br/>
-            <input type="text" name="pgT1Name"/><br/>
-            <label htmlFor="pgT2Name">TEAM 2 NAME:</label><br/>
-            <input type="text" name="pgT2Name"/><br/><br/>*/}
           </div>
           <hr />
           <button type="reset">Reset form</button>

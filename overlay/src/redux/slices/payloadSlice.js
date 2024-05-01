@@ -2,7 +2,9 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   control: {
+    seriesLogo: "",
     bestOfChoice: 5,
+    isLAN: false,
     team1Logo: "",
     team2Logo: "",
     team1SeriesScore: 0,
@@ -28,6 +30,7 @@ export const payloadSlice = createSlice({
       if (action.payload.type === 'control') {
         state.control.bestOfChoice = action.payload.data.bestOfChoice;
         state.control.seriesLogo = action.payload.data.seriesLogo;
+        state.control.isLAN = action.payload.data.isLAN;
         state.control.team1Logo = action.payload.data.team1Logo;
         state.control.team1Banner = action.payload.data.team1Banner;
         state.control.team2Logo = action.payload.data.team2Logo;
