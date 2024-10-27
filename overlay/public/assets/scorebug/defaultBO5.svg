@@ -45,7 +45,7 @@
       }
 
       .cls-9 {
-        fill: url(#linear-gradient);
+        fill: url(#linear-gradient-clock);
       }
 
       .cls-10 {
@@ -56,16 +56,17 @@
         fill: #101010;
       }
     </style>
-    <linearGradient id="linear-gradient" x1="145" y1="271" x2="145" y2="221" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#e6e6e6"/>
-      <stop offset=".5" stop-color="#fff"/>
-      <stop offset="1" stop-color="#e6e6e6"/>
-    </linearGradient>
+    
   </defs>
   <!-- Generator: Adobe Illustrator 28.7.2, SVG Export Plug-In . SVG Version: 1.2.0 Build 154)  -->
   <g>
     <g id="Layer_1">
       <g id="_x3C_defs">
+        <LinearGradient id="linear-gradient-clock" x1="145" y1="271" x2="145" y2="221" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#e6e6e6"/>
+          <stop offset=".5" stop-color="#fff"/>
+          <stop offset="1" stop-color="#e6e6e6"/>
+        </LinearGradient>
         <LinearGradient id="linear-gradient" x1="322" y1="221" x2="322" y2="31" gradientUnits="userSpaceOnUse">
           <stop offset="0%" stop-color="#151515"/>
           <stop offset="50%" stop-color="#252525"/>
@@ -142,14 +143,15 @@
         </LinearGradient>
       </g>
       <g id="Scoreboard">
-        <rect id="Scoreboard_base" class="cls-2" x="42" y="31" width="560" height="190"/>
-        <rect id="Scoreboard_base-2" class="cls-11" x="248" y="71" width="354" height="150"/>
+        <rect id="Scoreboard_base" fill="url(#linear-gradient)" x="42" y="31" width="560" height="190"/>
+        <image id="seriesLogo" data-name="Series Logo" x="42" y="31" width="206" height="190"/>
+        <rect id="Scoreboard_base-2" fill="101010" x="248" y="71" width="354" height="150"/>
         <g id="Team_1">
           <rect id="team_1_gradient" fill="url(#linear-gradient-2)" x="338" y="71" width="264" height="70"/>
-          <g id="team1Bar">
-            <rect id="team_1_vertical_bar" class="cls-1" x="334" y="61" width="4" height="80"/>
-            <rect id="team_1_vertical_bar-2" class="cls-1" x="248" y="61" width="8" height="80"/>
-            <rect id="team_1_top_line" class="cls-1" x="248" y="61" width="354" height="10"/>
+          <g id="team1Bar" color="blue">
+            <rect id="team_1_vertical_bar"  x="334" y="61" width="4" height="80" fill="currentColor"/>
+            <rect id="team_1_vertical_bar-2" x="248" y="61" width="8" height="80" fill="currentColor"/>
+            <rect id="team_1_top_line" x="248" y="61" width="354" height="10" fill="currentColor"/>
           </g>
           <text id="team1Name" class="cls-5" transform="translate(350.6 116.4)">BSU</text>
           <g id="team1Bo5">
@@ -157,14 +159,15 @@
             <polygon id="team1Bo5Box2" class="cls-10" points="449.2 135 404.2 135 408.8 126 453.8 126 449.2 135"/>
             <polygon id="team1Bo5Box3" class="cls-10" points="503.5 135 458.5 135 463 126 508 126 503.5 135"/>
           </g>
-          <text id="team1Score" class="cls-6" transform="translate(531.9 126.9)">14</text>
+          <text id="team1Score" class="cls-6" transform="translate(595 126.93)" text-anchor="end">14</text>
+          <image id="team1Logo" data-name="SCHOOL LOGO" width="1080" height="1080" transform="translate(260 71) scale(.06)" />
         </g>
         <g id="Team_2">
           <rect id="team_2_gradient" fill="url(#linear-gradient-3)" x="338" y="151" width="264" height="70"/>
-          <g id="team2Bar">
-            <rect id="team_2_vertical_bar" class="cls-8" x="334" y="141" width="4" height="80"/>
-            <rect id="team_2_vertical_bar-2" class="cls-8" x="248" y="141" width="8" height="80"/>
-            <rect id="team_2_top_line" class="cls-8" x="248" y="141" width="354" height="10"/>
+          <g id="team2Bar" color="green">
+            <rect id="team_2_vertical_bar" x="334" y="141" width="4" height="80" fill="currentColor"/>
+            <rect id="team_2_vertical_bar-2" x="248" y="141" width="8" height="80" fill="currentColor"/>
+            <rect id="team_2_top_line" x="248" y="141" width="354" height="10" fill="currentColor"/>
           </g>
           <text id="team2Name" class="cls-5" transform="translate(350.6 196.4)">CPP</text>
           <g id="team2Bo5">
@@ -172,13 +175,14 @@
             <polygon id="team2Bo5Box2" class="cls-10" points="449.2 215 404.2 215 408.8 206 453.8 206 449.2 215"/>
             <polygon id="team2Bo5Box3" class="cls-10" points="503.5 215 458.5 215 463 206 508 206 503.5 215"/>
           </g>
-          <text id="team2Score" class="cls-6" transform="translate(558.9 206.9)">3</text>
+          <text id="team2Score" class="cls-6" transform="translate(595 206.93)" text-anchor="end">3</text>
+          <image id="team2Logo" data-name="school logo" width="1080" height="1080" transform="translate(260 151) scale(.06)"/>
         </g>
-        <text id="gameInfo" class="cls-4" transform="translate(501.4 53.6)">BEST OF 5</text>
+        <text id="gameInfo" class="cls-4" transform="translate(596 53.59)" text-anchor="end">BEST OF 5</text>
         <text id="seriesTitle" class="cls-3" transform="translate(251.2 53.7)">GRAND FINALS</text>
         <g id="Timer_jet_out">
           <rect class="cls-9" x="42" y="221" width="206" height="50"/>
-          <text id="clock" class="cls-7" transform="translate(66.4 262.6)">+00:00</text>
+          <text id="clock" class="cls-7" transform="translate(143 262.59)" text-anchor="middle">+00:00</text>
         </g>
       </g>
     </g>
