@@ -23,7 +23,8 @@ const SpecPlayer = ({ specPlayer, gamestate, control }) => {
     gamestate && specPlayer && control &&
     (
       <SvgLoader path={theme}>
-        <SvgProxy selector="#primaryColor" stop-color={specPlayer.team ? team2PC : team1PC}/>
+        <SvgProxy selector="#primaryColorStart" stop-color={specPlayer.team ? team2PC : team1PC}/>
+        <SvgProxy selector="#primaryColorStop" stop-color={specPlayer.team ? team2PC : team1PC}/>
         <SvgProxy selector="#specLogo" href={specPlayer.team ? team2Logo : team1Logo}/>        
         <SvgProxy selector="#specCard2" fill={specPlayer.team ? team2PC : team1PC}/>
         <SvgProxy selector="#specName">{`${specPlayer.player.toUpperCase()}`}</SvgProxy>

@@ -5,8 +5,8 @@
       <rect id="Team_Logo_Mask" data-name="Team Logo Mask" fill="none" width="600" height="90"/>
     </clipPath>
     <LinearGradient id="gradient" x1="300" y1="90" x2="300" y2="90">
-      <stop offset="0" stop-color="black" stop-opacity=".04" id="primaryColor"/>
-      <stop offset="1" stop-color="black" stop-opacity=".3" id="primaryColor"/>
+      <stop offset="0" stop-color="black" stop-opacity=".04" id="primaryColorStart"/>
+      <stop offset="1" stop-color="black" stop-opacity=".3" id="primaryColorStop"/>
     </LinearGradient>
   </defs>
   <g>

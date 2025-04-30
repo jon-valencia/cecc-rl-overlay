@@ -33,10 +33,10 @@ function PostGame() {
           <SvgProxy selector="#team2Logo" href={`${control.team2Logo}`}/>
           <SvgProxy selector="#team1Score">{`${gameinfo.teams[0].score}`}</SvgProxy>
           <SvgProxy selector="#team2Score">{`${gameinfo.teams[1].score}`}</SvgProxy>
-          {/*<SvgProxy selector="#team1Grad" stop-color={gamestate.teamColors[0].primary}/>
-          <SvgProxy selector="#team2Grad" stop-color={gamestate.teamColors[1].primary}/>
-          <SvgProxy selector="#GRADIENT-2" fill={gamestate.teamColors[0].primary}/>
-          <SvgProxy selector="#GRADIENT-4" fill={gamestate.teamColors[1].primary}/>*/}
+          <SvgProxy selector="#team1ColorStart" stop-color={gamestate.teamColors[0].primary}/>
+          <SvgProxy selector="#team2ColorStart" stop-color={gamestate.teamColors[1].primary}/>
+          <SvgProxy selector="#team1ColorStop" fill={gamestate.teamColors[0].primary}/>
+          <SvgProxy selector="#team2ColorStop" fill={gamestate.teamColors[1].primary}/>
           <SvgProxy selector="#team1P1Name">{`${players[team1[0]].name.toUpperCase()}`}</SvgProxy>
           <SvgProxy selector="#team1P1Score">{!isEmpty(players[team1[0]]) ? `${players[team1[0]].score}` : ""}</SvgProxy>
           <SvgProxy selector="#team1P1Goals">{!isEmpty(players[team1[0]]) ? `${players[team1[0]].goals}` : ""}</SvgProxy>
