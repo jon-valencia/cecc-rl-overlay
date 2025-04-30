@@ -130,8 +130,8 @@
       <rect id="Team_Logo_Mask" data-name="Team Logo Mask" class="cls-14" x="660.37" y="976.78" width="600" height="90"/>
     </clipPath>
     <linearGradient id="linear-gradient" x1="960.37" y1="976.78" x2="960.37" y2="1066.78" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#098040" stop-opacity=".04"/>
-      <stop offset="1" stop-color="#098040" stop-opacity=".3"/>
+      <stop offset="0" stop-color="#098040" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#098040" stop-opacity=".8"/>
     </linearGradient>
   </defs>
   <rect id="Gray_Boost" data-name="Gray Boost" class="cls-15" x="1600.37" y="869.78" width="320" height="10"/>

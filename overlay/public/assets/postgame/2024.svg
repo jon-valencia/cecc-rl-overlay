@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-6, .cls-7, .cls-8, .cls-3, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6, .cls-7, .cls-9, .cls-10 {
+        font-family: Industry-Bold, Industry;
+        font-weight: 700;
+      }
+
+      .cls-6, .cls-8 {
+        font-size: 40px;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-15 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-16 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-17 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-18 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        font-size: 28px;
+      }
+
+      .cls-19 {
+        letter-spacing: 0em;
+      }
+
+      .cls-20 {
+        letter-spacing: 0em;
+      }
+
+      .cls-21 {
+        letter-spacing: 0em;
+      }
+
+      .cls-22 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-8 {
+        filter: url(#drop-shadow-2);
+        font-family: Industry-Demi, Industry;
+        font-weight: 300;
+      }
+
+      .cls-23 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-24 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-25 {
+        letter-spacing: 0em;
+      }
+
+      .cls-26 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-9 {
+        font-size: 36px;
+      }
+
+      .cls-9, .cls-4 {
+        fill: #000;
+      }
+
+      .cls-10 {
+        fill: #fee87f;
+        filter: url(#drop-shadow-1);
+        font-size: 80px;
+      }
+
+      .cls-27 {
+        letter-spacing: 0em;
+      }
+
+      .cls-28 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-4, .cls-5 {
+        opacity: .1;
+      }
+    </style>
+    <LinearGradient id="linear-gradient" x1="1147.5" y1="238" x2="1147.5" y2="503" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#202020"/>
+      <stop offset="1" stop-color="#121212"/>
+    </LinearGradient>
+    <LinearGradient id="linear-gradient-2" y1="578" y2="843" xlink:href="#linear-gradient"/>
+    <Filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3"/>
+      <feGaussianBlur result="blur" stdDeviation="0"/>
+      <feFlood flood-color="#000" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </Filter>
+    <Filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2"/>
+      <feGaussianBlur result="blur-2" stdDeviation="0"/>
+      <feFlood flood-color="#000" flood-opacity="1"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </Filter>
+  </defs>
+  <g id="RL_Scoreboard" data-name="RL Scoreboard">
+    <g id="Top_Team" data-name="Top Team">
+      <image id="team1Banner" data-name="Team Nameplate" transform="translate(310 237.99) scale(.16)"/>
+      <g id="Backplate_Line" data-name="Backplate &amp;amp; Line">
+        <rect class="cls-1" x="685" y="238" width="925" height="265"/>
+        <g id="Layer_66" data-name="Layer 66">
+          <rect class="cls-3" x="685" y="313" width="925" height="3"/>
+        </g>
+      </g>
+      <rect id="white_plate" data-name="white plate" class="cls-3" x="310" y="313" width="375" height="190"/>
+      <rect id="white_graying" data-name="white graying" class="cls-4" x="310" y="378" width="375" height="63"/>
+      <rect id="black_graying" data-name="black graying" class="cls-5" x="685" y="378" width="925" height="63"/>
+      <g id="P3_Stats" data-name="P3 Stats">
+        <text class="cls-6" transform="translate(758.49 486.26)" id="team1P3Score" text-anchor="middle">347</text>
+        <text class="cls-6" transform="translate(912.41 486.26)" id="team1P3Goals" text-anchor="middle">3</text>
+        <text class="cls-6" transform="translate(1059.27 486.26)" id="team1P3Assists" text-anchor="middle">5</text>
+        <text class="cls-6" transform="translate(1209.93 486.26)" id="team1P3Shots" text-anchor="middle">7</text>
+        <text class="cls-6" transform="translate(1360.11 486.26)" id="team1P3Saves" text-anchor="middle">1</text>
+        <text class="cls-6" transform="translate(1510.41 486.26)" id="team1P3Demos" text-anchor="middle">3</text>
+      </g>
+      <g id="P2_Stats" data-name="P2 Stats">
+        <text class="cls-6" transform="translate(758.49 424.26)" id="team1P2Score" text-anchor="middle">347</text>
+        <text class="cls-6" transform="translate(912.41 424.26)" id="team1P2Goals" text-anchor="middle">3</text>
+        <text class="cls-6" transform="translate(1059.27 424.26)" id="team1P2Assists" text-anchor="middle">5</text>
+        <text class="cls-6" transform="translate(1209.93 424.26)" id="team1P2Shots" text-anchor="middle">7</text>
+        <text class="cls-6" transform="translate(1360.11 424.26)" id="team1P2Saves" text-anchor="middle">1</text>
+        <text class="cls-6" transform="translate(1510.41 424.26)" id="team1P2Demos" text-anchor="middle">3</text>
+      </g>
+      <g id="PMax_Stats" data-name="PMax Stats">
+        <text class="cls-6" transform="translate(758.59 361.26)" id="team1P1Score" text-anchor="middle">347</text>
+        <text class="cls-6" transform="translate(912.41 361.26)" id="team1P1Goals" text-anchor="middle">3</text>
+        <text class="cls-6" transform="translate(1059.27 361.26)" id="team1P1Assists" text-anchor="middle">5</text>
+        <text class="cls-6" transform="translate(1209.93 361.26)" id="team1P1Shots" text-anchor="middle">7</text>
+        <text class="cls-6" transform="translate(1360.11 361.26)" id="team1P1Saves" text-anchor="middle">1</text>
+        <text class="cls-6" transform="translate(1510.41 361.26)" id="team1P1Demos" text-anchor="middle">3</text>
+      </g>
+      <g id="Player_Names" data-name="Player Names">
+        <text class="cls-9" transform="translate(337.87 359.24)" id="team1P1Name">Nahsie</text>
+        <text class="cls-9" transform="translate(337.87 422.24)" id="team1P2Name">Moobs</text>
+        <text class="cls-9" transform="translate(337.87 484.24)" id="team1P3Name">A77</text>
+      </g>
+      <g id="Stat_Labels" data-name="Stat Labels">
+        <text class="cls-7" transform="translate(758.59 285.26)" text-anchor="middle">SCORE</text>
+        <text class="cls-7" transform="translate(912.41 285.26)" text-anchor="middle">GOALS</text>
+        <text class="cls-7" transform="translate(1059.27 285.26)" text-anchor="middle">ASSISTS</text>
+        <text class="cls-7" transform="translate(1209.93 285.26)" text-anchor="middle">SHOTS</text>
+        <text class="cls-7" transform="translate(1360.11 285.26)" text-anchor="middle">SAVES</text>
+        <text class="cls-7" transform="translate(1510.41 285.26)" text-anchor="middle">DEMOS</text>
+      </g>
+    </g>
+    <g id="Bot_Team" data-name="Bot Team">
+      <image id="team2Banner" data-name="Team Nameplate" transform="translate(310 577.99) scale(.16)" />
+      <g id="Backplate_Line_copy" data-name="Backplate &amp;amp; Line copy">
+        <rect class="cls-2" x="685" y="578" width="925" height="265"/>
+        <g id="Layer_66_copy" data-name="Layer 66 copy">
+          <rect class="cls-3" x="685" y="653" width="925" height="3"/>
+        </g>
+      </g>
+      <rect id="white_plate-2" data-name="white plate" class="cls-3" x="310" y="653" width="375" height="190"/>
+      <rect id="white_graying-2" data-name="white graying" class="cls-4" x="310" y="718" width="375" height="63"/>
+      <rect id="black_graying-2" data-name="black graying" class="cls-5" x="685" y="718" width="925" height="63"/>
+      
+      <g id="P3_Stats_copy" data-name="P3 Stats copy">
+        <text class="cls-6" transform="translate(758.49 826.26)" id="team2P1Score" text-anchor="middle">347</text>
+        <text class="cls-6" transform="translate(912.41 826.26)" id="team2P1Goals" text-anchor="middle">3</text>
+        <text class="cls-6" transform="translate(1059.27 826.26)" id="team2P1Assists" text-anchor="middle">5</text>
+        <text class="cls-6" transform="translate(1209.93 826.26)" id="team2P1Shots" text-anchor="middle">7</text>
+        <text class="cls-6" transform="translate(1360.11 826.26)" id="team2P1Saves" text-anchor="middle">1</text>
+        <text class="cls-6" transform="translate(1510.41 826.26)" id="team2P1Demos" text-anchor="middle">3</text>
+      </g>
+      <g id="P2_Stats_copy" data-name="P2 Stats copy">
+        <text class="cls-6" transform="translate(758.49 764.26)" id="team2P2Score" text-anchor="middle">347</text>
+        <text class="cls-6" transform="translate(912.41 764.26)" id="team2P2Goals" text-anchor="middle">3</text>
+        <text class="cls-6" transform="translate(1059.27 764.26)" id="team2P2Assists" text-anchor="middle">5</text>
+        <text class="cls-6" transform="translate(1209.93 764.26)" id="team2P2Shots" text-anchor="middle">7</text>
+        <text class="cls-6" transform="translate(1360.11 764.26)" id="team2P2Saves" text-anchor="middle">1</text>
+        <text class="cls-6" transform="translate(1510.41 764.26)" id="team2P2Demos" text-anchor="middle">3</text>
+      </g>
+      <g id="PMax_Stats_copy" data-name="PMax Stats copy">
+        <text class="cls-6" transform="translate(758.49 701.26)" id="team2P3Score" text-anchor="middle">347</text>
+        <text class="cls-6" transform="translate(912.41 701.26)" id="team2P3Goals" text-anchor="middle">3</text>
+        <text class="cls-6" transform="translate(1059.27 701.26)" id="team2P3Assists" text-anchor="middle">5</text>
+        <text class="cls-6" transform="translate(1209.93 701.26)" id="team2P3Shots" text-anchor="middle">7</text>
+        <text class="cls-6" transform="translate(1360.11 701.26)" id="team2P3Saves" text-anchor="middle">1</text>
+        <text class="cls-6" transform="translate(1510.41 701.26)" id="team2P3Demos" text-anchor="middle">3</text>
+      </g>
+      <g id="Player_Names_copy" data-name="Player Names copy">
+        <text class="cls-9" transform="translate(337.87 699.24)" id="team2P1Name">Nahsie</text>
+        <text class="cls-9" transform="translate(337.87 762.24)" id="team2P2Name">Moobs</text>
+        <text class="cls-9" transform="translate(337.87 824.24)" id="team2P3Name">A77</text>
+      </g>
+      <g id="Stat_Labels_copy" data-name="Stat Labels copy">
+        <text class="cls-7" transform="translate(758.59 625.26)" text-anchor="middle">SCORE</text>
+        <text class="cls-7" transform="translate(912.41 625.26)" text-anchor="middle">GOALS</text>
+        <text class="cls-7" transform="translate(1059.27 625.26)" text-anchor="middle">ASSISTS</text>
+        <text class="cls-7" transform="translate(1209.93 625.26)" text-anchor="middle">SHOTS</text>
+        <text class="cls-7" transform="translate(1360.11 625.26)" text-anchor="middle">SAVES</text>
+        <text class="cls-7" transform="translate(1510.41 625.26)" text-anchor="middle">DEMOS</text>
+      </g>
+    </g>
+    <text class="cls-10" transform="translate(30.31 92.08)" id="pgTitle">GAME 1 SUMMARY</text>
+    <text class="cls-8" transform="translate(30.31 138.08)" id="pgSeriesTitle">Group Stage - Group B Lower Finals</text>
+  </g>
+</svg>

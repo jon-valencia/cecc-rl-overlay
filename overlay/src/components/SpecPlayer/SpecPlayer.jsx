@@ -20,7 +20,7 @@ const SpecPlayer = ({ specPlayer, gamestate, control }) => {
   }
   let theme = 'assets/specplayer/default.svg';
   return (
-    gamestate && specPlayer && gameinfo &&
+    gamestate && specPlayer && control &&
     (
       <SvgLoader path={theme}>
         <SvgProxy selector="#primaryColor" stop-color={specPlayer.team ? team2PC : team1PC}/>

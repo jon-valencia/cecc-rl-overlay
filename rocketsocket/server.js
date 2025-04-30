@@ -24,7 +24,7 @@ const port = 6969;
 const server = app.listen(port, () => {
   console.log(
     chalk.green(
-      `Server listening at ${chalk.whiteBright(`http://192.168.50.168:${port} ✓`)}`
+      `Server listening at ${chalk.whiteBright(`http://localhost:${port} ✓`)}`
     )
   );
   console.log(chalk.greenBright(`Ready...`));

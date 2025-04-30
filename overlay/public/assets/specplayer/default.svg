@@ -1,15 +1,20 @@
 <!-- sample rectangle -->
 <svg width="600" height="94" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <LinearGradient id="gradient" gradientTransform="rotate(90)">
-      <stop offset="20%" stop-color="black" id="secondaryColor"/>
-      <stop offset="80%" stop-color="black" id="primaryColor"/>
+    <clipPath id="clippath">
+      <rect id="Team_Logo_Mask" data-name="Team Logo Mask" fill="none" width="600" height="90"/>
+    </clipPath>
+    <LinearGradient id="gradient" x1="300" y1="90" x2="300" y2="90">
+      <stop offset="0" stop-color="black" stop-opacity=".04" id="primaryColor"/>
+      <stop offset="1" stop-color="black" stop-opacity=".3" id="primaryColor"/>
     </LinearGradient>
   </defs>
-  <g id="card">
-    <image id="specLogo" opacity="0.3" width="1695" height="1695" transform="scale(.21)" />
-    <rect width="600" height="4.05" x="0" y="94" id="specCard2"/>
-    <rect width="600" height="90" fill="url('gradient')" id="specCard"/>
+  <g>
+    <g clipPath="url(#clippath)">
+      <image id="specLogo" opacity="0.3" width="1695" height="1695" transform="translate(0 -157.63) scale(.21)"/>
+    </g>
+    <rect width="600" height="4" x="0" y="86" id="specCard2"/>
+    <rect width="600" height="90" fill="url(#gradient)" id="specCard"/>
     <g id="boostBar">
       <rect width="550" height="8" x="25" y="70" fill="#282a2d" fill-opacity="0.80" />
       <rect width="225" height="8" x="25" y="70" fill="white" id="specBoost"/>

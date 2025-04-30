@@ -1,7 +1,4 @@
 .specplayer {
-    font-family: Industry;
-    font-size: 12px;
-    font-weight: bold;
     position: absolute;
     left: 50%;
     bottom: 10px;
@@ -9,14 +6,20 @@
     transform: translateX(-50%)
 }
 
+#stats {
+  font-family: Oswald-Medium, Oswald;
+  font-weight: 500;
+  font-size: 14px;
+}
+
 #specShots, #specGoals, #specAssists, #specSaves {
-    font-family: Industry;
-    font-size: 20px;
-    font-weight: bold;
+    font-family: Oswald-SemiBold, Oswald;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 #specName {
-    font-family: Industry;
-    font-size: 28px;
-    font-weight: bold;
+    font-family: Oswald-SemiBold, Oswald;
+    font-size: 26px;
+    font-weight: 600;
 }

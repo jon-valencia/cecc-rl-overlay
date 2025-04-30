@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { SvgLoader, SvgProxy } from 'react-svgmt';
 
 
-function ReplayBug({ goal, gamestate, gameinfo }) {
+function ReplayBug({ goal, gamestate, control }) {
   ReplayBug.propTypes = {
     goal:PropTypes.object,
     gamestate:PropTypes.object,
@@ -22,7 +22,7 @@ function ReplayBug({ goal, gamestate, gameinfo }) {
 
   return (
     <SvgLoader path={theme}>
-      <SvgProxy selector="#base_shape2" fill={goal.scorer.teamnum === 0 ? `${gamestate.teamColors[0].primary}` : `${gamestate.teamColors[1].primary}`}/>
+      <SvgProxy selector="#replayBase" color={goal.scorer.teamnum === 0 ? `${gamestate.teamColors[0].primary}` : `${gamestate.teamColors[1].primary}`}/>
       <SvgProxy selector="#goalIcon" href="assets/icons/stat-icons/goal.svg"/>
       <SvgProxy selector="#assistIcon" href={goal.assister.name !== "" ? "assets/icons/stat-icons/assist.svg" : ""} />
       <SvgProxy selector="#scorerLogo" href={goal.scorer.teamnum === 0 ? team1Logo : team2Logo}/>

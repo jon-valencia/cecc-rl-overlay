@@ -109,11 +109,11 @@ function ControlPanel() {
               <input type="file" name="seriesLogo" onChange={seriesLogoToB64}/>
               <img src={seriesLogo} width="100" height="100" alt=""/>
             </div>
-            <div>
+            {/*<div>
               BEST OF:
               <label><input type="radio" name="bestOfChoice" value={5} defaultChecked={true} /> 5</label>
               <label><input type="radio" name="bestOfChoice" value={7} /> 7</label>
-            </div>
+            </div>*/}
             <div>
               LAN LOBBY?:
               <label><input type="checkbox" name="isLAN" checked={isChecked} onChange={handleCheck}/></label>
@@ -140,21 +140,11 @@ function ControlPanel() {
               <input type="file" name="team1Logo" onChange={t1LogoToB64}/>
               <img src={team1Logo} height="38" width="38" alt=""/>
             </div>
-            <div>
-              TEAM 1 BANNER:
-              <input type="file" name="team1Banner" onChange={t1BannerToB64}/>
-              <img src={team1Banner} height="38" width="190" alt=""/>
-            </div>
             <br/>
             <div>
               TEAM 2 LOGO:
               <input type="file" name="team2Logo" onChange={t2LogoToB64}/>
               <img src={team2Logo} height="38" width="38" alt=""/>
-            </div>
-            <div>
-              TEAM 2 BANNER:
-              <input type="file" name="team2Banner" onChange={t2BannerToB64}/>
-              <img src={team2Banner} height="38" width="190" alt=""/>
             </div>
             <br/>
           </div>
@@ -169,10 +159,14 @@ function ControlPanel() {
           <hr/>
           <div className="postgame-info">
             <h2>POSTGAME TEXT</h2>
-            <label htmlFor="pgTitle">POSTGAME TITLE:</label><br/>
-            <input type="text" name="pgTitle"/><br/>
             <label htmlFor="pgSeriesTitle">SERIES TITLE:</label><br/>
             <input type="text" name="pgSeriesTitle"/><br/>
+            <label htmlFor="pgTitle">POSTGAME TITLE:</label><br/>
+            <input type="text" name="pgTitle"/><br/>
+            <label htmlFor="pgT1Name">TEAM 1 NAME:</label><br/>
+            <input type="text" name="pgT1Name"/><br/>
+            <label htmlFor="pgT2Name">TEAM 1 NAME:</label><br/>
+            <input type="text" name="pgT2Name"/><br/>
           </div>
           <hr />
           <button type="reset">Reset form</button>

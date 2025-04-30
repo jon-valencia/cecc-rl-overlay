@@ -68,8 +68,10 @@
     </filter>
   </defs>
   <g id="RL_Replay_v2_MCD" data-name="RL Replay v2 MCD">
-    <rect id="base_shape2" data-name="base shape" fill="#101010" x="12" y="124" width="680" height="4.05"/>
-    <rect id="base_shape" data-name="base shape" fill="#101010" x="12" y="40" width="680" height="80"/>
+    <g id="replayBase" color="blue">
+      <rect id="base_shape2" data-name="base shape" fill="currentColor" x="12" y="122" width="680" height="3"/>
+      <rect id="base_shape" data-name="base shape" fill="#101010" x="12" y="40" width="680" height="80"/>
+    </g>
     <rect id="team_1_gradient" data-name="team 1 gradient" fill="url(#rpLG)" x="12" y="40" width="680" height="80"/>
     <g id="ASSIST_copy_2" data-name="ASSIST copy 2">
       <image width="128" height="128" transform="translate(531 86) scale(.25)" id="assistIcon"/>
@@ -88,7 +90,7 @@
       <circle filter="url(#rpDS1)" fill="red" cx="23" cy="28" r="5"/>
       <text id="rpWing1" transform="translate(32.35 35.01)" fill="red">REPLAY</text>
       <circle filter="url(#rpDS1)" fill="red" cx="681" cy="28" r="5"/>
-      <text id="rpWing2" transform="translate(598.75 35.01)" fill="red">REPLAY</text>
+      <text id="rpWing2" transform="translate(613 35.01)" fill="red">REPLAY</text>
     </g>
     <image width="1695" height="1695" transform="translate(29 46) scale(.04)" id="scorerLogo"/>-
     <!--<text id="smallRP" transform="translate(28.82 115.09)" fill="white">REPLAY</text>-->
