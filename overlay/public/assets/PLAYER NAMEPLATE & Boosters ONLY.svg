@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Player_Plate_and_Booster" data-name="Player Plate and Booster" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-6, .cls-7 {
+        font-size: 24px;
+      }
+
+      .cls-3, .cls-8 {
+        font-family: Oswald-Medium, Oswald;
+        font-weight: 500;
+      }
+
+      .cls-9 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-11 {
+        fill: #121212;
+      }
+
+      .cls-12 {
+        opacity: .3;
+      }
+
+      .cls-13 {
+        letter-spacing: 0em;
+      }
+
+      .cls-14 {
+        fill: none;
+      }
+
+      .cls-15 {
+        fill: #303030;
+      }
+
+      .cls-16 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-17 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-18 {
+        fill: #202020;
+      }
+
+      .cls-19 {
+        fill: #0a5dff;
+      }
+
+      .cls-5 {
+        font-size: 26px;
+      }
+
+      .cls-5, .cls-6 {
+        font-family: Oswald-SemiBold, Oswald;
+        font-weight: 600;
+      }
+
+      .cls-20 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-21 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        fill: #ccc;
+        font-size: 14px;
+      }
+
+      .cls-22 {
+        fill: #098040;
+      }
+
+      .cls-23 {
+        letter-spacing: 0em;
+      }
+
+      .cls-24 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-25 {
+        letter-spacing: 0em;
+      }
+
+      .cls-26 {
+        letter-spacing: 0em;
+      }
+
+      .cls-27 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-28 {
+        fill: #101010;
+      }
+
+      .cls-7 {
+        font-family: Industry-Bold, Industry;
+        font-weight: 700;
+      }
+
+      .cls-29 {
+        letter-spacing: -.1em;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect id="Team_Logo_Mask" data-name="Team Logo Mask" class="cls-14" x="660.37" y="976.78" width="600" height="90"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="960.37" y1="976.78" x2="960.37" y2="1066.78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#098040" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#098040" stop-opacity=".3"/>
+    </linearGradient>
+  </defs>
+  <rect id="Gray_Boost" data-name="Gray Boost" class="cls-15" x="1600.37" y="869.78" width="320" height="10"/>
+  <rect id="Color_boost" data-name="Color boost" class="cls-22" x="1878.37" y="869.78" width="42" height="10"/>
+  <rect id="nameplate" class="cls-11" x="1600.37" y="829.78" width="320" height="40"/>
+  <text class="cls-7" transform="translate(1740.57 858.55)"><tspan x="0" y="0">RIGH</tspan><tspan class="cls-17" x="54.91" y="0">T</tspan><tspan x="68.11" y="0" xml:space="preserve"> PL</tspan><tspan class="cls-9" x="102.21" y="0">A</tspan><tspan x="115.85" y="0">YER 1</tspan></text>
+  <text class="cls-7" transform="translate(1605.62 858.42)"><tspan x="0" y="0">13</tspan></text>
+  <rect id="Gray_Boost-2" data-name="Gray Boost" class="cls-15" x="1600.37" y="924.78" width="320" height="10"/>
+  <rect id="Color_boost-2" data-name="Color boost" class="cls-22" x="1600.37" y="924.78" width="320" height="10"/>
+  <rect id="nameplate-2" data-name="nameplate" class="cls-11" x="1600.37" y="884.78" width="320" height="40"/>
+  <text class="cls-7" transform="translate(1735.08 913.55)"><tspan x="0" y="0">RIGH</tspan><tspan class="cls-17" x="54.91" y="0">T</tspan><tspan x="68.11" y="0" xml:space="preserve"> PL</tspan><tspan class="cls-9" x="102.21" y="0">A</tspan><tspan x="115.85" y="0">YER 2</tspan></text>
+  <text class="cls-7" transform="translate(1606.04 913.42)"><tspan x="0" y="0">100</tspan></text>
+  <rect id="Gray_Boost-3" data-name="Gray Boost" class="cls-15" x="1600.37" y="979.78" width="320" height="10"/>
+  <rect id="Color_boost-3" data-name="Color boost" class="cls-22" x="1686.37" y="979.78" width="234" height="10"/>
+  <rect id="nameplate-3" data-name="nameplate" class="cls-11" x="1600.37" y="939.78" width="320" height="40"/>
+  <text class="cls-7" transform="translate(1735.13 968.55)"><tspan x="0" y="0">RIGH</tspan><tspan class="cls-17" x="54.91" y="0">T</tspan><tspan x="68.11" y="0" xml:space="preserve"> PL</tspan><tspan class="cls-9" x="102.21" y="0">A</tspan><tspan x="115.85" y="0">YER 3</tspan></text>
+  <text class="cls-7" transform="translate(1606.04 968.42)"><tspan x="0" y="0">73</tspan></text>
+  <rect id="Gray_Boost-4" data-name="Gray Boost" class="cls-15" x=".37" y="869.78" width="320" height="10"/>
+  <rect id="Color_boost-4" data-name="Color boost" class="cls-19" x=".37" y="869.78" width="42" height="10"/>
+  <rect id="nameplate-4" data-name="nameplate" class="cls-11" x=".37" y="829.78" width="320" height="40"/>
+  <text class="cls-7" transform="translate(6.82 858.55)"><tspan x="0" y="0">LEF</tspan><tspan class="cls-17" x="41.59" y="0">T</tspan><tspan x="54.79" y="0" xml:space="preserve"> PL</tspan><tspan class="cls-29" x="88.89" y="0">A</tspan><tspan class="cls-1" x="102.53" y="0">YER 1</tspan></text>
+  <text class="cls-7" transform="translate(288.59 858.42)"><tspan x="0" y="0">13</tspan></text>
+  <rect id="Gray_Boost-5" data-name="Gray Boost" class="cls-15" x=".37" y="924.78" width="320" height="10"/>
+  <rect id="Color_boost-5" data-name="Color boost" class="cls-19" x=".37" y="924.78" width="320" height="10"/>
+  <rect id="nameplate-5" data-name="nameplate" class="cls-11" x=".37" y="884.78" width="320" height="40"/>
+  <text class="cls-7" transform="translate(6.82 913.55)"><tspan x="0" y="0">LEF</tspan><tspan class="cls-17" x="41.59" y="0">T</tspan><tspan x="54.79" y="0" xml:space="preserve"> PL</tspan><tspan class="cls-29" x="88.89" y="0">A</tspan><tspan class="cls-1" x="102.53" y="0">YER 2</tspan></text>
+  <text class="cls-7" transform="translate(272.17 913.42)"><tspan x="0" y="0">100</tspan></text>
+  <rect id="Gray_Boost-6" data-name="Gray Boost" class="cls-15" x=".37" y="979.78" width="320" height="10"/>
+  <rect id="Color_boost-6" data-name="Color boost" class="cls-19" x=".37" y="979.78" width="234" height="10"/>
+  <rect id="nameplate-6" data-name="nameplate" class="cls-11" x=".37" y="939.78" width="320" height="40"/>
+  <text class="cls-7" transform="translate(6.82 968.55)"><tspan x="0" y="0">LEF</tspan><tspan class="cls-17" x="41.59" y="0">T</tspan><tspan x="54.79" y="0" xml:space="preserve"> PL</tspan><tspan class="cls-29" x="88.89" y="0">A</tspan><tspan class="cls-1" x="102.53" y="0">YER 3</tspan></text>
+  <text class="cls-7" transform="translate(284.77 968.42)"><tspan x="0" y="0">73</tspan></text>
+  <rect id="Gray_Boost-7" data-name="Gray Boost" class="cls-18" x="1600.37" y="869.78" width="320" height="10"/>
+  <rect id="Color_boost-7" data-name="Color boost" class="cls-4" x="1878.37" y="869.78" width="42" height="10"/>
+  <rect id="nameplate-7" data-name="nameplate" class="cls-22" x="1600.37" y="829.78" width="320" height="40"/>
+  <text class="cls-3" transform="translate(1767.95 859.79)"><tspan x="0" y="0">RIGHT PL</tspan><tspan class="cls-20" x="86.42" y="0">A</tspan><tspan class="cls-21" x="98.21" y="0">YER 1</tspan></text>
+  <text class="cls-3" transform="translate(1605.62 859.66)"><tspan x="0" y="0">13</tspan></text>
+  <rect id="Gray_Boost-8" data-name="Gray Boost" class="cls-18" x="1600.37" y="924.78" width="320" height="10"/>
+  <rect id="Color_boost-8" data-name="Color boost" class="cls-4" x="1600.37" y="924.78" width="320" height="10"/>
+  <rect id="nameplate-8" data-name="nameplate" class="cls-22" x="1600.37" y="884.78" width="320" height="40"/>
+  <text class="cls-3" transform="translate(1764.46 914.79)"><tspan x="0" y="0">RIGHT PL</tspan><tspan class="cls-20" x="86.42" y="0">A</tspan><tspan class="cls-21" x="98.21" y="0">YER 2</tspan></text>
+  <text class="cls-3" transform="translate(1606.04 914.66)"><tspan x="0" y="0">100</tspan></text>
+  <rect id="Gray_Boost-9" data-name="Gray Boost" class="cls-18" x="1600.37" y="979.78" width="320" height="10"/>
+  <rect id="Color_boost-9" data-name="Color boost" class="cls-4" x="1686.37" y="979.78" width="234" height="10"/>
+  <rect id="nameplate-9" data-name="nameplate" class="cls-22" x="1600.37" y="939.78" width="320" height="40"/>
+  <text class="cls-3" transform="translate(1764.46 969.79)"><tspan x="0" y="0">RIGHT PL</tspan><tspan class="cls-20" x="86.42" y="0">A</tspan><tspan class="cls-21" x="98.21" y="0">YER 3</tspan></text>
+  <text class="cls-3" transform="translate(1606.04 969.66)"><tspan x="0" y="0">73</tspan></text>
+  <rect id="Gray_Boost-10" data-name="Gray Boost" class="cls-28" x=".37" y="869.78" width="320" height="10"/>
+  <rect id="Color_boost-10" data-name="Color boost" class="cls-4" x=".37" y="869.78" width="42" height="10"/>
+  <rect id="nameplate-10" data-name="nameplate" class="cls-19" x=".37" y="829.78" width="320" height="40"/>
+  <text class="cls-3" transform="translate(6.82 859.77)"><tspan x="0" y="0">LEFT PL</tspan><tspan class="cls-20" x="69.17" y="0">A</tspan><tspan x="80.95" y="0">YER 1</tspan></text>
+  <text class="cls-3" transform="translate(291.73 859.49)"><tspan x="0" y="0">13</tspan></text>
+  <rect id="Gray_Boost-11" data-name="Gray Boost" class="cls-28" x=".37" y="924.78" width="320" height="10"/>
+  <rect id="Color_boost-11" data-name="Color boost" class="cls-4" x=".37" y="924.78" width="320" height="10"/>
+  <rect id="nameplate-11" data-name="nameplate" class="cls-19" x=".37" y="884.78" width="320" height="40"/>
+  <text class="cls-3" transform="translate(6.82 914.76)"><tspan x="0" y="0">LEFT PL</tspan><tspan class="cls-20" x="69.17" y="0">A</tspan><tspan x="80.95" y="0">YER 2</tspan></text>
+  <text class="cls-3" transform="translate(278 914.49)"><tspan x="0" y="0">100</tspan></text>
+  <rect id="Gray_Boost-12" data-name="Gray Boost" class="cls-28" x=".37" y="979.78" width="320" height="10"/>
+  <rect id="Color_boost-12" data-name="Color boost" class="cls-4" x=".37" y="979.78" width="234" height="10"/>
+  <rect id="nameplate-12" data-name="nameplate" class="cls-19" x=".37" y="939.78" width="320" height="40"/>
+  <text class="cls-3" transform="translate(6.82 969.77)"><tspan x="0" y="0">LEFT PL</tspan><tspan class="cls-20" x="69.17" y="0">A</tspan><tspan x="80.95" y="0">YER 3</tspan></text>
+  <text class="cls-3" transform="translate(291.23 969.49)"><tspan x="0" y="0">73</tspan></text>
+  <rect id="base_shape" data-name="base shape" class="cls-11" x="660.37" y="976.78" width="600" height="90"/>
+  <g class="cls-27">
+    <image class="cls-12" width="1695" height="1695" transform="translate(660.37 819.15) scale(.21)" />
+  </g>
+  <rect id="base_shape-2" data-name="base shape" class="cls-22" x="660.37" y="1062.78" width="600" height="4"/>
+  <rect id="base_gradient" data-name="base gradient" class="cls-24" x="660.37" y="976.78" width="600" height="90"/>
+  <rect id="gray_boost" data-name="gray boost" class="cls-28" x="685.37" y="1046.78" width="550" height="8"/>
+  <rect id="white_fill_boost" data-name="white (fill) boost" class="cls-4" x="685.37" y="1046.78" width="387" height="8"/>
+  <text class="cls-5" transform="translate(763.06 1022.34)"><tspan x="0" y="0">CO</tspan><tspan class="cls-16" x="29.35" y="0">L</tspan><tspan class="cls-23" x="39.34" y="0">T</tspan><tspan x="50.57" y="0">OON2000</tspan></text>
+  <text class="cls-8" transform="translate(1156.52 1009.07)"><tspan x="0" y="0">SH</tspan><tspan class="cls-2" x="15.12" y="0">O</tspan><tspan x="22.95" y="0">TS</tspan></text>
+  <text class="cls-6" transform="translate(1141.23 1009.02)"><tspan x="0" y="0">6</tspan></text>
+  <text class="cls-8" transform="translate(1031.52 1035.07)"><tspan class="cls-26" x="0" y="0">A</tspan><tspan class="cls-13" x="7.25" y="0">S</tspan><tspan x="14.06" y="0">SISTS</tspan></text>
+  <text class="cls-6" transform="translate(1016.59 1035.02)"><tspan x="0" y="0">4</tspan></text>
+  <text class="cls-8" transform="translate(1030.52 1009.07)"><tspan x="0" y="0">G</tspan><tspan class="cls-25" x="7.83" y="0">O</tspan><tspan x="15.62" y="0">A</tspan><tspan class="cls-26" x="22.93" y="0">L</tspan><tspan x="28.77" y="0">S</tspan></text>
+  <text class="cls-6" transform="translate(1015.81 1009.02)"><tspan x="0" y="0">2</tspan></text>
+  <text class="cls-8" transform="translate(1156.52 1035.07)"><tspan class="cls-2" x="0" y="0">S</tspan><tspan class="cls-10" x="6.86" y="0">A</tspan><tspan x="13.75" y="0">VES</tspan></text>
+  <text class="cls-6" transform="translate(1141.81 1035.02)"><tspan x="0" y="0">3</tspan></text>
+</svg>

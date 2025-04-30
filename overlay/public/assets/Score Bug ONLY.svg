@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Score_Bug_Only" data-name="Score Bug Only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-5);
+        filter: url(#drop-shadow-6);
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-9 {
+        font-size: 17.55px;
+      }
+
+      .cls-9, .cls-10, .cls-11, .cls-12 {
+        fill: #101010;
+      }
+
+      .cls-9, .cls-12 {
+        font-family: Oswald-Medium, Oswald;
+        font-weight: 500;
+      }
+
+      .cls-13 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-14 {
+        fill: #0a5dff;
+      }
+
+      .cls-5 {
+        font-size: 40.11px;
+      }
+
+      .cls-5, .cls-6, .cls-11 {
+        font-family: Oswald-SemiBold, Oswald;
+        font-weight: 600;
+      }
+
+      .cls-15 {
+        fill: #098040;
+      }
+
+      .cls-6 {
+        font-size: 50px;
+      }
+
+      .cls-16 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-11 {
+        font-size: 38.44px;
+      }
+
+      .cls-12 {
+        font-size: 16.71px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="293.72" y1="208.56" x2="293.72" y2="49.78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#151515"/>
+      <stop offset=".5" stop-color="#252525"/>
+      <stop offset="1" stop-color="#121212"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="379.79" y1="50.82" x2="379.79" y2="74.05" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ccc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="383.04" y1="141.71" x2="383.04" y2="74.78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a5dff" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#0a5dff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="383.04" y1="208.56" x2="383.04" y2="141.78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#098040" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#098040" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="59.72" y1="229.46" x2="231.87" y2="229.46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#959595"/>
+      <stop offset=".17" stop-color="#d4d4d4"/>
+      <stop offset=".33" stop-color="#fff"/>
+      <stop offset=".5" stop-color="#e6e6e6"/>
+      <stop offset=".66" stop-color="#e6e6e6"/>
+      <stop offset=".82" stop-color="#fff"/>
+      <stop offset="1" stop-color="#959595"/>
+    </linearGradient>
+    <filter id="drop-shadow-6" x="50" y="199" width="191" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".65"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Scoreboard_base" data-name="Scoreboard base" class="cls-16" x="59.72" y="49.78" width="468" height="158.79"/>
+  <rect id="teams_base" data-name="teams base" class="cls-10" x="231.87" y="74.78" width="295.84" height="133.79"/>
+  <rect id="Scoreboard_base-2" data-name="Scoreboard base" class="cls-1" x="231.87" y="49.78" width="295.84" height="25.07"/>
+  <rect id="team_1_gradient" data-name="team 1 gradient" class="cls-13" x="238.37" y="74.78" width="289.34" height="66.93"/>
+  <rect id="team_1_score_box" data-name="team 1 score box" class="cls-14" x="460.86" y="74.85" width="66.86" height="66.86"/>
+  <rect id="team_1_vertical_bar" data-name="team 1 vertical bar" class="cls-14" x="303.74" y="74.85" width="3.34" height="66.86"/>
+  <rect id="team_1_vertical_bar-2" data-name="team 1 vertical bar" class="cls-14" x="231.87" y="74.85" width="6.69" height="66.86"/>
+  <text class="cls-5" transform="translate(317.59 118.17)"><tspan x="0" y="0">BSU</tspan></text>
+  <polygon id="BOX_1" data-name="BOX 1" class="cls-10" points="354.72 136.69 317.12 136.69 320.88 129.17 358.48 129.17 354.72 136.69"/>
+  <polygon id="BOX_2" data-name="BOX 2" class="cls-10" points="400.06 136.69 362.45 136.69 366.21 129.17 403.82 129.17 400.06 136.69"/>
+  <polygon id="BOX_3" data-name="BOX 3" class="cls-10" points="445.4 136.69 407.79 136.69 411.55 129.17 449.16 129.17 445.4 136.69"/>
+  <polygon id="SCORE_1" data-name="SCORE 1" class="cls-4" points="354.72 136.69 317.12 136.69 320.88 129.17 358.48 129.17 354.72 136.69"/>
+  <polygon id="SCORE_2" data-name="SCORE 2" class="cls-4" points="400.06 136.69 362.45 136.69 366.21 129.17 403.82 129.17 400.06 136.69"/>
+  <polygon id="SCORE_3" data-name="SCORE 3" class="cls-4" points="445.4 136.69 407.79 136.69 411.55 129.17 449.16 129.17 445.4 136.69"/>
+  <polygon id="BOX_1-2" data-name="BOX 1" class="cls-10" points="346.37 136.69 317.12 136.69 320.88 129.17 350.13 129.17 346.37 136.69"/>
+  <polygon id="BOX_2-2" data-name="BOX 2" class="cls-10" points="379.8 136.69 350.54 136.69 354.3 129.17 383.56 129.17 379.8 136.69"/>
+  <polygon id="BOX_3-2" data-name="BOX 3" class="cls-10" points="413.22 136.69 383.97 136.69 387.73 129.17 416.99 129.17 413.22 136.69"/>
+  <polygon id="BOX_4" data-name="BOX 4" class="cls-10" points="446.65 136.69 417.4 136.69 421.16 129.17 450.41 129.17 446.65 136.69"/>
+  <polygon id="BOX_1-3" data-name="BOX 1" class="cls-4" points="346.37 136.69 317.12 136.69 320.88 129.17 350.13 129.17 346.37 136.69"/>
+  <polygon id="BOX_2-3" data-name="BOX 2" class="cls-4" points="379.8 136.69 350.54 136.69 354.3 129.17 383.56 129.17 379.8 136.69"/>
+  <polygon id="BOX_3-3" data-name="BOX 3" class="cls-4" points="413.22 136.69 383.97 136.69 387.73 129.17 416.99 129.17 413.22 136.69"/>
+  <polygon id="BOX_4-2" data-name="BOX 4" class="cls-4" points="446.65 136.69 417.4 136.69 421.16 129.17 450.41 129.17 446.65 136.69"/>
+  <text id="Score_TXT" data-name="Score TXT" class="cls-6" transform="translate(471.63 128.95)"><tspan x="0" y="0">14</tspan></text>
+  <image id="SCHOOL_LOGO" data-name="SCHOOL LOGO" width="1080" height="1080" transform="translate(242.37 78.78) scale(.05)" xlink:href=""/>
+  <text class="cls-12" transform="translate(458.68 69.46)"><tspan x="0" y="0">BEST OF 5</tspan></text>
+  <text class="cls-9" transform="translate(234.56 69.54)"><tspan x="0" y="0">G</tspan><tspan class="cls-7" x="9.81" y="0">R</tspan><tspan x="19.59" y="0">OUP A - </tspan><tspan class="cls-2" x="76.83" y="0">R</tspan><tspan x="86.61" y="0">OUND 2</tspan></text>
+  <rect class="cls-3" x="59.72" y="208.56" width="172.16" height="41.79"/>
+  <text class="cls-11" transform="translate(90.28 245.32)"><tspan x="0" y="0">+00:00</tspan></text>
+  <image width="1882" height="1672" transform="translate(72.25 63.15) scale(.08)" xlink:href="D:\Edited Stuff\EMP Stuff\CSMG\CECC Assets\CECC TEXAS\CECC MM 25 Blue Laurels.png"/>
+</svg>

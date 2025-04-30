@@ -11,6 +11,7 @@ function SpecPlayerApp() {
   const specPlayer = useSelector((state) => state.specPlayer);
   const gamestate = useSelector((state) => state.gamestate);
   const players = useSelector((state) => state.players.players);
+  const control = useSelector((state) => state.payload.control);
 
   let theme = 'assets/specplayer/default.svg'
 
@@ -18,7 +19,7 @@ function SpecPlayerApp() {
     if(gamestate.hasTarget === true && gameinfo.isReplay === false) {
       return (
         <div className="specplayer">
-          <SpecPlayer specPlayer={specPlayer} gamestate={gamestate}/>
+          <SpecPlayer specPlayer={specPlayer} gamestate={gamestate} control={control}/>
         </div>
       )
     }

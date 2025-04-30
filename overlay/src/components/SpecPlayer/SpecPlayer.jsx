@@ -3,19 +3,29 @@ import { SvgLoader, SvgProxy } from 'react-svgmt';
 
 import toPercent from 'functions/toPercent';
 
-const SpecPlayer = ({ specPlayer, gamestate }) => {
+const SpecPlayer = ({ specPlayer, gamestate, control }) => {
   SpecPlayer.propTypes = {
     specPlayer:PropTypes.object,
-    gamestate:PropTypes.object
+    gamestate:PropTypes.object,
+    control:PropTypes.object
   } 
   let team1PC = gamestate.teamColors[0].primary;
   let team2PC = gamestate.teamColors[1].primary;
+  if (control.team1Logo !== '' && control.team1Logo !== ''){
+    var team1Logo = control.team1Logo;
+    var team2Logo = control.team2Logo;
+  } else {
+    var team1Logo = '';
+    var team2Logo = '';
+  }
   let theme = 'assets/specplayer/default.svg';
   return (
-    gamestate && specPlayer &&
+    gamestate && specPlayer && gameinfo &&
     (
       <SvgLoader path={theme}>
         <SvgProxy selector="#primaryColor" stop-color={specPlayer.team ? team2PC : team1PC}/>
+        <SvgProxy selector="#specLogo" href={specPlayer.team ? team2Logo : team1Logo}/>        
+        <SvgProxy selector="#specCard2" fill={specPlayer.team ? team2PC : team1PC}/>
         <SvgProxy selector="#specName">{`${specPlayer.player.toUpperCase()}`}</SvgProxy>
         <SvgProxy selector="#specScore">{`${specPlayer.score}`}</SvgProxy>
         <SvgProxy selector="#specGoals">{`${specPlayer.goals}`}</SvgProxy>

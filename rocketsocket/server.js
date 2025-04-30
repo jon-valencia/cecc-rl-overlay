@@ -24,7 +24,7 @@ const port = 6969;
 const server = app.listen(port, () => {
   console.log(
     chalk.green(
-      `Server listening at ${chalk.whiteBright(`http://localhost:${port} ✓`)}`
+      `Server listening at ${chalk.whiteBright(`http://192.168.50.168:${port} ✓`)}`
     )
   );
   console.log(chalk.greenBright(`Ready...`));
@@ -235,7 +235,7 @@ const initRCONClient = () => {
 initRCONClient();
 
 // Declare this socket outside of function body to allow other functions to emit messages
-const rlsocket = io_client(`ws://localhost:${port}`);
+const rlsocket = io_client(`ws://192.168.50.168:${port}`);
 
 // teams array, store colours, team names, score, etc.
 let teams = [{}, {}];

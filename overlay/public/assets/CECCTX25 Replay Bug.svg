@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Replay_Bug" data-name="Replay Bug" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#drop-shadow-10);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #ff001c;
+      }
+
+      .cls-1, .cls-3 {
+        font-family: Industry-Medium, Industry;
+        font-size: 20px;
+      }
+
+      .cls-1, .cls-3, .cls-5, .cls-6, .cls-7 {
+        font-weight: 500;
+      }
+
+      .cls-8 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-2 {
+        filter: url(#drop-shadow-7);
+      }
+
+      .cls-3 {
+        filter: url(#drop-shadow-8);
+      }
+
+      .cls-9, .cls-10, .cls-5, .cls-6, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-13 {
+        letter-spacing: 0em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-15 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        font-family: Oswald-SemiBold, Oswald;
+        font-size: 32px;
+        font-weight: 600;
+      }
+
+      .cls-5 {
+        font-size: 16px;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        font-family: Oswald-Medium, Oswald;
+      }
+
+      .cls-6 {
+        font-size: 26px;
+      }
+
+      .cls-4 {
+        filter: url(#drop-shadow-9);
+      }
+
+      .cls-16 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-17 {
+        fill: #84293a;
+      }
+
+      .cls-18 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-7 {
+        font-size: 10px;
+      }
+
+      .cls-19 {
+        fill: #101010;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="964.96" y1="1029.98" x2="964.96" y2="949.98" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#84293a" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#84293a" stop-opacity=".1"/>
+    </linearGradient>
+    <filter id="drop-shadow-7" x="612" y="914" width="47" height="47" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="6"/>
+      <feFlood flood-color="red" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-8" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="6"/>
+      <feFlood flood-color="red" flood-opacity="1"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-9" x="1270" y="914" width="47" height="47" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-3" stdDeviation="6"/>
+      <feFlood flood-color="red" flood-opacity="1"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-10" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-4" stdDeviation="6"/>
+      <feFlood flood-color="red" flood-opacity="1"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="base_shape" data-name="base shape" class="cls-19" x="624.96" y="949.98" width="680" height="80"/>
+  <rect id="team_1_gradient" data-name="team 1 gradient" class="cls-18" x="624.96" y="949.98" width="680" height="80"/>
+  <rect id="line_color" data-name="line color" class="cls-17" x="624.96" y="1026.98" width="680" height="3"/>
+  <image id="assist_icon" data-name="assist icon" width="128" height="128" transform="translate(1143.96 996.98) scale(.25)" xlink:href=''/>
+  <text class="cls-5" transform="translate(1067.64 1019.2)"><tspan x="0" y="0">C</tspan><tspan class="cls-11" x="8.64" y="0">L</tspan><tspan class="cls-14" x="15.25" y="0">U</tspan><tspan class="cls-15" x="24.3" y="0">T</tspan><tspan class="cls-14" x="31.1" y="0">CHKEY</tspan></text>
+  <path class="cls-9" d="M1286.93,999.83c0-24.76-20.08-44.84-44.84-44.84s-44.84,20.08-44.84,44.84c0,9.65,3.05,18.84,8.24,26.16h73.2c5.19-7.32,8.24-16.51,8.24-26.16ZM1246.98,1021.91l-4.81-15.89-4.83,15.89h-27.75c-3.16-5.61-6.86-15.51-6.86-22.08,0-20.6,18.76-39.9,39.36-39.9s39.36,19.29,39.36,39.9c0,6.57-3.71,16.48-6.86,22.08h-27.6Z"/>
+  <text class="cls-6" transform="translate(1224.14 992.26)"><tspan x="0" y="0">125</tspan></text>
+  <text class="cls-7" transform="translate(1233.11 1003.69)"><tspan x="0" y="0">MPH</tspan></text>
+  <image id="goal_icon" data-name="goal icon" width="128" height="128" transform="translate(716.96 957.98) scale(.5)" xlink:href=''/>
+  <circle class="cls-2" cx="635.96" cy="937.98" r="5"/>
+  <text class="cls-3" transform="translate(645.31 944.99)"><tspan x="0" y="0">REPL</tspan><tspan class="cls-16" x="48.66" y="0">A</tspan><tspan class="cls-12" x="59.86" y="0">Y</tspan></text>
+  <circle class="cls-4" cx="1293.96" cy="937.98" r="5"/>
+  <text class="cls-1" transform="translate(1211.35 944.99)"><tspan x="0" y="0">REPL</tspan><tspan class="cls-16" x="48.66" y="0">A</tspan><tspan class="cls-12" x="59.86" y="0">Y</tspan></text>
+</svg>

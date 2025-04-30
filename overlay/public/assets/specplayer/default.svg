@@ -1,12 +1,14 @@
 <!-- sample rectangle -->
-<svg width="600" height="90" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="94" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gradient" gradientTransform="rotate(90)">
+    <LinearGradient id="gradient" gradientTransform="rotate(90)">
       <stop offset="20%" stop-color="black" id="secondaryColor"/>
       <stop offset="80%" stop-color="black" id="primaryColor"/>
-    </linearGradient>
+    </LinearGradient>
   </defs>
   <g id="card">
+    <image id="specLogo" opacity="0.3" width="1695" height="1695" transform="scale(.21)" />
+    <rect width="600" height="4.05" x="0" y="94" id="specCard2"/>
     <rect width="600" height="90" fill="url('gradient')" id="specCard"/>
     <g id="boostBar">
       <rect width="550" height="8" x="25" y="70" fill="#282a2d" fill-opacity="0.80" />

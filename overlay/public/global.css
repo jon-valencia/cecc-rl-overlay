@@ -7,3 +7,32 @@
   font-family: Industry;
   src: url('./fonts/IndustryTest-Bold.otf');
 }
+
+@font-face {
+  font-family: Oswald-Bold;
+  src: url('./fonts/Oswald-Boldotf');
+}
+@font-face {
+  font-family: Oswald-ExtraLight;
+  src: url('./fonts/Oswald-ExtraLight.otf');
+}
+@font-face {
+  font-family: Oswald-Heavy;
+  src: url('./fonts/Oswald-Heavy.otf');
+}
+@font-face {
+  font-family: Oswald-Light;
+  src: url('./fonts/Oswald-Light.otf');
+}
+@font-face {
+  font-family: Oswald-Medium;
+  src: url('./fonts/Oswald-Medium.otf');
+}
+@font-face {
+  font-family: Oswald-Regular;
+  src: url('./fonts/Oswald-Regular.otf');
+}
+@font-face {
+  font-family: Oswald-SemiBold;
+  src: url('./fonts/Oswald-SemiBold.otf');
+}

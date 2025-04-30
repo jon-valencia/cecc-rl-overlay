@@ -18,7 +18,7 @@ function ReplayBugApp() {
     if (gameinfo.isReplay === true) {
       return (
         <div className="replaybug">
-          <ReplayBug goal={goal} gamestate={gamestate}/>
+          <ReplayBug goal={goal} gamestate={gamestate} control={control}/>
         </div>
       )
     }
@@ -28,7 +28,6 @@ function ReplayBugApp() {
         <SvgLoader path={theme}>
           <SvgProxy selector="#goalIcon" href="assets/icons/stat-icons/goal.svg"/>
           <SvgProxy selector="#assistIcon" href="assets/icons/stat-icons/assist.svg" />
-          <SvgProxy selector="#mcdsLogo" href="assets/replaybug/mcds.png"/>
           <SvgProxy selector="#scorer">COLTOON2000</SvgProxy>
           <SvgProxy selector="#assister">CLUTCHKEY</SvgProxy>
         </SvgLoader>

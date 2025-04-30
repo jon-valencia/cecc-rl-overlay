@@ -2,19 +2,30 @@ import PropTypes from 'prop-types';
 import { SvgLoader, SvgProxy } from 'react-svgmt';
 
 
-function ReplayBug({ goal, gamestate }) {
+function ReplayBug({ goal, gamestate, gameinfo }) {
   ReplayBug.propTypes = {
     goal:PropTypes.object,
-    gamestate:PropTypes.object
+    gamestate:PropTypes.object,
+    control:PropTypes.object
   }
+
+  if (control.team1Logo !== '' && control.team1Logo !== ''){
+    var team1Logo = control.team1Logo;
+    var team2Logo = control.team2Logo;
+  } else {
+    var team1Logo = '';
+    var team2Logo = '';
+  }
+
 
   let theme = 'assets/replaybug/default.svg';
 
   return (
     <SvgLoader path={theme}>
+      <SvgProxy selector="#base_shape2" fill={goal.scorer.teamnum === 0 ? `${gamestate.teamColors[0].primary}` : `${gamestate.teamColors[1].primary}`}/>
       <SvgProxy selector="#goalIcon" href="assets/icons/stat-icons/goal.svg"/>
       <SvgProxy selector="#assistIcon" href={goal.assister.name !== "" ? "assets/icons/stat-icons/assist.svg" : ""} />
-      <SvgProxy selector="#mcdsLogo" href="assets/replaybug/mcds.png"/>
+      <SvgProxy selector="#scorerLogo" href={goal.scorer.teamnum === 0 ? team1Logo : team2Logo}/>
       <SvgProxy selector="#ballspeed">{`${goal.goalspeed}`}</SvgProxy>
       <SvgProxy selector="#rpTeamColor" stop-color={goal.scorer.teamnum === 0 ? `${gamestate.teamColors[0].primary}` : `${gamestate.teamColors[1].primary}`}/>
       <SvgProxy selector="#scorer">{`${goal.scorer.name.toUpperCase()}`}</SvgProxy>
