@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="704" height="124.69">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="704" height="124">
   <defs>
     <style>
       #ballspeed {
@@ -69,7 +69,7 @@
   </defs>
   <g id="RL_Replay_v2_MCD" data-name="RL Replay v2 MCD">
     <g id="replayBase" color="blue">
-      <rect id="base_shape2" data-name="base shape" fill="currentColor" x="12" y="122" width="680" height="3"/>
+      <rect id="base_shape2" data-name="base shape" fill="currentColor" x="12" y="120" width="680" height="4"/>
       <rect id="base_shape" data-name="base shape" fill="#101010" x="12" y="40" width="680" height="80"/>
     </g>
     <rect id="team_1_gradient" data-name="team 1 gradient" fill="url(#rpLG)" x="12" y="40" width="680" height="80"/>

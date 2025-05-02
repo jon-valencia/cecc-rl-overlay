@@ -1,18 +1,17 @@
 <!-- sample rectangle -->
 <svg width="600" height="94" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <clipPath id="clippath">
-      <rect id="Team_Logo_Mask" data-name="Team Logo Mask" fill="none" width="600" height="90"/>
-    </clipPath>
+    <ClipPath id="clippath">
+      <rect id="Team_Logo_Mask" data-name="Team Logo Mask" width="600" height="90"/>
+    </ClipPath>
     <LinearGradient id="gradient" x1="300" y1="90" x2="300" y2="90">
       <stop offset="0" stop-color="black" stop-opacity=".04" id="primaryColorStart"/>
       <stop offset="1" stop-color="black" stop-opacity=".3" id="primaryColorStop"/>
     </LinearGradient>
   </defs>
   <g>
-    <g clipPath="url(#clippath)">
-      <image id="specLogo" opacity="0.3" width="1695" height="1695" transform="translate(0 -157.63) scale(.21)"/>
-    </g>
+    <rect width="600" height="90" fill="black" id="specCardBase"/>
+    <image id="specLogo" opacity="0.3" width="1695" height="1695" transform="translate(0 -157.63) scale(.21)" clipPath="url(#clippath)"/>
     <rect width="600" height="4" x="0" y="86" id="specCard2"/>
     <rect width="600" height="90" fill="url(#gradient)" id="specCard"/>
     <g id="boostBar">

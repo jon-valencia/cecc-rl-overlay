@@ -1,15 +1,12 @@
-.replaybug {
-  position: fixed;
-  left: 50%;
-  bottom: 10px;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
-}
-
 .replayBorder {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+}
+.replaybug {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
 }

@@ -5,6 +5,7 @@ import SpecPlayerApp from 'components/SpecPlayer/index';
 import ReplayBugApp from 'components/ReplayBug';
 
 function Overlay() {  
+
   return (
     <div className="overlay-container">
       <ScoreBugApp/>

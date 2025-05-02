@@ -1,7 +1,7 @@
 .specplayer {
     position: absolute;
     left: 50%;
-    bottom: 10px;
+    bottom: 20px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%)
 }

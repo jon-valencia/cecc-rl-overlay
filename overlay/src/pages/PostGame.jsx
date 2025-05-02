@@ -7,6 +7,7 @@ function PostGame() {
   const gameinfo = useSelector((state) => state.gameinfo);
   const players = useSelector((state) => state.players.players);
   const control = useSelector((state) => state.payload.control);
+  const gamestate = useSelector((state) => state.gamestate);
 
   let theme = 'assets/postgame/default.svg';
   //let team1Logo = 'assets/logos/default.png';

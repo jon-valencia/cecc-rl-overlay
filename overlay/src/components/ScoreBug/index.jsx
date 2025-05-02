@@ -16,11 +16,11 @@ function ScoreBugApp() {
   let team2SeriesScore = 4;
   
   if (!isEmpty(gameinfo.teams[0]) && !isEmpty(gameinfo.teams[1])) {
-    return (
+    if (gameinfo.isReplay === false) {return (
       <div className="scorebug">
         <ScoreBug gameinfo={gameinfo} gamestate={gamestate} control={control} />
       </div>
-    );
+    );}
   } else {
     return (
       <div className="scorebug">

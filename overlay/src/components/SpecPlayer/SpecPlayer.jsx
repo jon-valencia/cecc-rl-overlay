@@ -14,15 +14,13 @@ const SpecPlayer = ({ specPlayer, gamestate, control }) => {
   if (control.team1Logo !== '' && control.team1Logo !== ''){
     var team1Logo = control.team1Logo;
     var team2Logo = control.team2Logo;
-  } else {
-    var team1Logo = '';
-    var team2Logo = '';
   }
   let theme = 'assets/specplayer/default.svg';
   return (
     gamestate && specPlayer && control &&
     (
       <SvgLoader path={theme}>
+        {/*<SvgProxy selector="#specCardBase" fill={specPlayer.team ? team2PC : team1PC}/>*/}
         <SvgProxy selector="#primaryColorStart" stop-color={specPlayer.team ? team2PC : team1PC}/>
         <SvgProxy selector="#primaryColorStop" stop-color={specPlayer.team ? team2PC : team1PC}/>
         <SvgProxy selector="#specLogo" href={specPlayer.team ? team2Logo : team1Logo}/>        

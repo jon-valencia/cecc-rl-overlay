@@ -103,13 +103,13 @@
       <stop offset=".82" stop-color="#fff"/>
       <stop offset="1" stop-color="#959595"/>
     </LinearGradient>
-    <filter id="drop-shadow-6" x="50" y="199" width="191" height="61" filterUnits="userSpaceOnUse">
+    <Filter id="drop-shadow-6" x="50" y="199" width="191" height="61" filterUnits="userSpaceOnUse">
       <feOffset dx="0" dy="0"/>
       <feGaussianBlur result="blur" stdDeviation="3"/>
       <feFlood flood-color="#000" flood-opacity=".65"/>
       <feComposite in2="blur" operator="in"/>
       <feComposite in="SourceGraphic"/>
-    </filter>
+    </Filter>
   </defs>
   <rect id="Scoreboard_base" data-name="Scoreboard base" class="cls-16" x="59.72" y="49.78" width="468" height="158.79"/>
   <rect id="teams_base" data-name="teams base" class="cls-10" x="231.87" y="74.78" width="295.84" height="133.79"/>

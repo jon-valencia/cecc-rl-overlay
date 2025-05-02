@@ -1,5 +1,6 @@
 import { SvgLoader, SvgProxy } from 'react-svgmt';
 import { useSelector } from 'react-redux';
+import ReactPlayer from 'react-player';
 import ReplayBug from './ReplayBug';
 
 import isEmpty from 'functions/isEmpty';
@@ -14,21 +15,21 @@ function ReplayBugApp() {
   const control = useSelector((state) => state.payload.control);
 
   let theme = 'assets/replaybug/default.svg'
-  let border = 'assets/replaybug/ani-border.mov'
+  let border = 'assets/replaybug/border.webm'
 
   if (!isEmpty(players)) {
     if (gameinfo.isReplay === true) {
       return (
         <div className="replay"> 
-          
-          <ReplayBug id="replaybug" goal={goal} gamestate={gamestate} control={control}/>
+          <ReactPlayer url={border} muted={true} playing={true} loop={true} width="1920px" height="1080px" className="replayBorder"/>
+          <ReplayBug className="replaybug" id="replaybug" goal={goal} gamestate={gamestate} control={control}/>
         </div>
       )
     }
   } else {
     return (
       <div className="replay">
-        
+        <ReactPlayer url={border} muted={true} playing={true} loop={true} width="1920px" height="1080px" className="replayBorder"/>
         <SvgLoader path={theme} className="replaybug">
           <SvgProxy selector="#goalIcon" href="assets/icons/stat-icons/goal.svg"/>
           <SvgProxy selector="#assistIcon" href="assets/icons/stat-icons/assist.svg" />

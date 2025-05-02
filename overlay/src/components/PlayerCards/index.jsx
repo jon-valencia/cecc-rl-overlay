@@ -8,11 +8,14 @@ import './playercard.css';
 function PlayerCardApp() {
     const players = useSelector((state) => state.players.players);
     const gamestate = useSelector((state) => state.gamestate);
+    const gameinfo = useSelector((state) => state.gameinfo)
     
     if(!isEmpty(players) && !isEmpty(gamestate)) {
+      if (gameinfo.isReplay === false) {
         return (
-            <PlayerCards players={players} gamestate={gamestate}/>
+          <PlayerCards players={players} gamestate={gamestate}/>
         )
+      }
     }
 }
 
