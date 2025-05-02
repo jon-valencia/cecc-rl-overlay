@@ -1,5 +1,5 @@
 <!-- sample rectangle -->
-<svg width="600" height="94" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="90" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <ClipPath id="clippath">
       <rect id="Team_Logo_Mask" data-name="Team Logo Mask" width="600" height="90"/>
