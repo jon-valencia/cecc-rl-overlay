@@ -21,7 +21,6 @@ function ReplayBugApp() {
     if (gameinfo.isReplay === true) {
       return (
         <div className="replay"> 
-          <ReactPlayer url={border} muted={true} playing={true} loop={true} width="1920px" height="1080px" className="replayBorder"/>
           <ReplayBug className="replaybug" id="replaybug" goal={goal} gamestate={gamestate} control={control}/>
         </div>
       )
