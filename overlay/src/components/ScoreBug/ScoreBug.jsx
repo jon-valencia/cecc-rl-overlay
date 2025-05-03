@@ -13,12 +13,12 @@ const ScoreBug = ({ gameinfo, gamestate, control }) => {
     //let team2Logo = 'default.png';
     let theme = `assets/scorebug/default.svg`
     let secs = gameinfo.time_seconds;
-    let mins = Math.floor(secs/60);
+    /*let mins = Math.floor(secs/60);
     let rSecs = secs - mins * 60;
     let fSecs = rSecs.toLocaleString('en-US', {
         minimumIntegerDigits: 2,
         useGrouping: false
-    })
+    })*/
     
 
     let clock = secondsToMinutes(gameinfo.time_seconds, gameinfo.isOT);
@@ -42,8 +42,9 @@ const ScoreBug = ({ gameinfo, gamestate, control }) => {
           <SvgProxy selector="#team2Bar" color={gamestate.teamColors[1].primary}/>
           <SvgProxy selector="#seriesTitle">{`${control.sbElements.sbSeriesTitle}`}</SvgProxy>
           <SvgProxy selector="#gameInfo">{`${control.sbElements.sbGameInfo}`}</SvgProxy>
-          <SvgProxy selector="#clockMins">{`${mins}`}</SvgProxy>
-          <SvgProxy selector="#clockSecs">{`${fSecs}`}</SvgProxy>
+          <SvgProxy selector="#clock">{`${clock}`}</SvgProxy>
+          {/*<SvgProxy selector="#clockMins">{`${mins}`}</SvgProxy>
+          <SvgProxy selector="#clockSecs">{`${fSecs}`}</SvgProxy>*/}
           <SvgProxy selector="#team1Name">{`${gameinfo.teams[0].name.toUpperCase()}`}</SvgProxy>
           <SvgProxy selector="#team1Score">{`${gameinfo.teams[0].score}`}</SvgProxy>
           <SvgProxy selector="#team2Name">{`${gameinfo.teams[1].name.toUpperCase()}`}</SvgProxy>

@@ -167,8 +167,9 @@
   <text id="gameInfo" class="cls-12" transform="translate(525 69.46)" text-anchor="end">BEST OF 7</text>
   <text id="seriesTitle" class="cls-9" transform="translate(234.56 69.54)">GROUP A - ROUND</text>
   <rect class="cls-3" x="59.72" y="208.56" width="172.16" height="41.79"/>
-  <text id="semi-colon" class="cls-11" transform="translate(142.5 245.32)" text-anchor="middle">:</text>
+  <!--<text id="semi-colon" class="cls-11" transform="translate(142.5 245.32)" text-anchor="middle">:</text>
   <text id="clockMins" class="cls-11" transform="translate(135 245.32)" text-anchor="end">+00</text>
-  <text id="clockSecs" class="cls-11" transform="translate(150 245.32)" text-anchor="start">00</text>
+  <text id="clockSecs" class="cls-11" transform="translate(150 245.32)" text-anchor="start">00</text>-->
+  <text id="clock" class="cls-11" transform="translate(144.5 245.32)" text-anchor="middle">5:00</text>
   <image id="seriesLogo" width="1882" height="1672" transform="translate(72.25 63.15) scale(.08)"/>
 </svg>

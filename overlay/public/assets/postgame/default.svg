@@ -170,7 +170,7 @@
     <polygon class="cls-29" points="1310 170 610 170 560 120 1360 120 1310 170"/>
     <path class="cls-34" d="M1360,120l-50,50h-700l-50-50h800M1374.49,114h-828.97l10.24,10.24,50,50,1.76,1.76h704.97l1.76-1.76,50-50,10.24-10.24h0Z"/>
   </g>
-  <text class="cls-10" transform="translate(960 156.93)" text-anchor="middle">SERIES TITLE</text>
+  <text id="pgSeriesTitle" class="cls-10" transform="translate(960 156.93)" text-anchor="middle">SERIES TITLE</text>
   <rect id="Backplate_Top_Bar" data-name="Backplate Top Bar" class="cls-29" y="0" width="1920" height="120"/>
   <g id="Left_Team" data-name="Left Team">
     <g id="Top_Bar_Element" data-name="Top Bar Element">
@@ -299,5 +299,5 @@
     <text class="cls-13" transform="translate(901.92 743.73)"><tspan class="cls-23" x="0" y="0">S</tspan><tspan class="cls-27" x="23.52" y="0">A</tspan><tspan x="47.13" y="0">VES</tspan></text>
     <text class="cls-13" transform="translate(894.6 843.73)"><tspan x="0" y="0">DEMOS</tspan></text>
   </g>
-  <text id="pgSeriesTitle" class="cls-8" transform="translate(960 244.73)" text-anchor="middle">POSTGAME TITLE</text>
+  <text id="pgTitle" class="cls-8" transform="translate(960 244.73)" text-anchor="middle">POSTGAME TITLE</text>
 </svg>
