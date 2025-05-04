@@ -38,34 +38,34 @@
       <stop offset="0" stop-color="blue" stop-opacity=".4" id="rpTeamColor"/>
       <stop offset="1" stop-color="#000" stop-opacity=".1"/>
     </LinearGradient>
-    <filter id="rpDS1" filterUnits="userSpaceOnUse">
+    <Filter id="rpDS1" filterUnits="userSpaceOnUse">
       <feOffset dx="0" dy="0"/>
       <feGaussianBlur result="blur" stdDeviation="6"/>
       <feFlood flood-color="red" flood-opacity="1"/>
       <feComposite in2="blur" operator="in"/>
       <feComposite in="SourceGraphic"/>
-    </filter>
-    <filter id="rpDS2" filterUnits="userSpaceOnUse">
+    </Filter>
+    <Filter id="rpDS2" filterUnits="userSpaceOnUse">
       <feOffset dx="0" dy="0"/>
       <feGaussianBlur result="blur-2" stdDeviation="6"/>
       <feFlood flood-color="red" flood-opacity="1"/>
       <feComposite in2="blur-2" operator="in"/>
       <feComposite in="SourceGraphic"/>
-    </filter>
-    <filter id="rpDS3" filterUnits="userSpaceOnUse">
+    </Filter>
+    <Filter id="rpDS3" filterUnits="userSpaceOnUse">
       <feOffset dx="0" dy="0"/>
       <feGaussianBlur result="blur-3" stdDeviation="6"/>
       <feFlood flood-color="red" flood-opacity="1"/>
       <feComposite in2="blur-3" operator="in"/>
       <feComposite in="SourceGraphic"/>
-    </filter>
-    <filter id="rpDS4" filterUnits="userSpaceOnUse">
+    </Filter>
+    <Filter id="rpDS4" filterUnits="userSpaceOnUse">
       <feOffset dx="0" dy="0"/>
       <feGaussianBlur result="blur-4" stdDeviation="6"/>
       <feFlood flood-color="red" flood-opacity="1"/>
       <feComposite in2="blur-4" operator="in"/>
       <feComposite in="SourceGraphic"/>
-    </filter>
+    </Filter>
   </defs>
   <g id="RL_Replay_v2_MCD" data-name="RL Replay v2 MCD">
     <g id="replayBase" color="blue">
