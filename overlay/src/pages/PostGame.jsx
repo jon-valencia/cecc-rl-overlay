@@ -26,6 +26,8 @@ function PostGame() {
     return (
       players && (
         <SvgLoader path={theme}>
+          <SvgProxy selector=".cls-26" fill={gamestate.teamColors[0].primary}/>
+          <SvgProxy selector=".cls-20" fill={gamestate.teamColors[1].primary}/>
           <SvgProxy selector="#pgSeriesTitle">{`${control.pgElements.pgSeriesTitle}`}</SvgProxy>
           <SvgProxy selector="#pgTitle">{`${control.pgElements.pgTitle}`}</SvgProxy>
           <SvgProxy selector="#team1Name">{`${control.pgElements.pgT1Name}`}</SvgProxy>
@@ -36,8 +38,8 @@ function PostGame() {
           <SvgProxy selector="#team2Score">{`${gameinfo.teams[1].score}`}</SvgProxy>
           <SvgProxy selector="#team1ColorStart" stop-color={gamestate.teamColors[0].primary}/>
           <SvgProxy selector="#team2ColorStart" stop-color={gamestate.teamColors[1].primary}/>
-          <SvgProxy selector="#team1ColorStop" fill={gamestate.teamColors[0].primary}/>
-          <SvgProxy selector="#team2ColorStop" fill={gamestate.teamColors[1].primary}/>
+          <SvgProxy selector="#team1ColorStop" stop-color={gamestate.teamColors[0].primary}/>
+          <SvgProxy selector="#team2ColorStop" stop-color={gamestate.teamColors[1].primary}/>
           <SvgProxy selector="#team1P1Name">{`${players[team1[0]].name.toUpperCase()}`}</SvgProxy>
           <SvgProxy selector="#team1P1Score">{!isEmpty(players[team1[0]]) ? `${players[team1[0]].score}` : ""}</SvgProxy>
           <SvgProxy selector="#team1P1Goals">{!isEmpty(players[team1[0]]) ? `${players[team1[0]].goals}` : ""}</SvgProxy>
@@ -94,6 +96,12 @@ function PostGame() {
   } else {
     return (
       <SvgLoader path={theme}>
+        <SvgProxy selector=".cls-26" fill="green"/>
+        <SvgProxy selector=".cls-20" fill="yellow"/>
+        <SvgProxy selector="#team1ColorStart" stop-color="green"/>
+        <SvgProxy selector="#team2ColorStart" stop-color="yellow"/>
+        <SvgProxy selector="#team1ColorStop" stop-color="green"/>
+        <SvgProxy selector="#team2ColorStop" stop-color="yellow"/>
         <SvgProxy selector="#halfPennant" href="assets/postgame/half_pennant.png"/>
         <SvgProxy selector="#team1Logo" href="assets/logos/default.png"/>
         <SvgProxy selector="#team2Logo" href="assets/logos/default.png"/>
