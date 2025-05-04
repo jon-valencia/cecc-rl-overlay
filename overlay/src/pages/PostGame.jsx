@@ -96,12 +96,12 @@ function PostGame() {
   } else {
     return (
       <SvgLoader path={theme}>
-        <SvgProxy selector=".cls-26" fill="green"/>
-        <SvgProxy selector=".cls-20" fill="yellow"/>
-        <SvgProxy selector="#team1ColorStart" stop-color="green"/>
-        <SvgProxy selector="#team2ColorStart" stop-color="yellow"/>
-        <SvgProxy selector="#team1ColorStop" stop-color="green"/>
-        <SvgProxy selector="#team2ColorStop" stop-color="yellow"/>
+        <SvgProxy selector=".cls-26" fill="red"/>
+        <SvgProxy selector=".cls-20" fill="blue"/>
+        <SvgProxy selector="#team1ColorStart" stop-color="red"/>
+        <SvgProxy selector="#team2ColorStart" stop-color="blue"/>
+        <SvgProxy selector="#team1ColorStop" stop-color="red"/>
+        <SvgProxy selector="#team2ColorStop" stop-color="blue"/>
         <SvgProxy selector="#halfPennant" href="assets/postgame/half_pennant.png"/>
         <SvgProxy selector="#team1Logo" href="assets/logos/default.png"/>
         <SvgProxy selector="#team2Logo" href="assets/logos/default.png"/>

@@ -1,4 +1,4 @@
-import { SvgLoader } from 'react-svgmt';
+import { SvgLoader, SvgProxy } from 'react-svgmt';
 import { useSelector } from 'react-redux';
 
 import SpecPlayer from './SpecPlayer';
@@ -26,7 +26,13 @@ function SpecPlayerApp() {
   } else {
     return (
       <div className="specplayer">
-        <SvgLoader path={theme}/>
+        <SvgLoader path={theme}>
+          <SvgProxy selector="#specCardBase" fill="#121212"/>
+          <SvgProxy selector="#primaryColorStart" stop-color="red"/>
+          <SvgProxy selector="#primaryColorStop" stop-color="red"/>
+          <SvgProxy selector="#specLogo" href="https://upload.wikimedia.org/wikipedia/commons/1/16/100_Thieves_logo.svg"/>
+          <SvgProxy selector="#specCard2" fill="red"/>    
+        </SvgLoader>
       </div>
     )
   }

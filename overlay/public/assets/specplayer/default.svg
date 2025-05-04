@@ -4,14 +4,14 @@
     <ClipPath id="clippath">
       <rect id="Team_Logo_Mask" data-name="Team Logo Mask" width="600" height="90"/>
     </ClipPath>
-    <LinearGradient id="gradient" x1="300" y1="90" x2="300" y2="90">
+    <LinearGradient id="gradient" x1="0" y1="0" x2="0" y2="90" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="black" stop-opacity=".04" id="primaryColorStart"/>
       <stop offset="1" stop-color="black" stop-opacity=".3" id="primaryColorStop"/>
     </LinearGradient>
   </defs>
   <g>
-    <rect width="600" height="90" fill="black" id="specCardBase"/>
-    <image id="specLogo" opacity="0.3" width="1695" height="1695" transform="translate(0 -157.63) scale(.21)" clipPath="url(#clippath)"/>
+    <rect width="600" height="90" fill="#121212" id="specCardBase"/>
+    <image id="specLogo" width="1695" height="1695" transform="translate(0 -157.63) scale(.21)" clipPath="url(#clippath)"/>
     <rect width="600" height="4" x="0" y="86" id="specCard2"/>
     <rect width="600" height="90" fill="url(#gradient)" id="specCard"/>
     <g id="boostBar">
