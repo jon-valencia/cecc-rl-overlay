@@ -11,7 +11,8 @@ const ScoreBug = ({ gameinfo, gamestate, control }) => {
     }
     //let team1Logo = 'default.png';
     //let team2Logo = 'default.png';
-    let theme = `assets/scorebug/default.svg`
+    let theme = control.bestOfChoice === 5 ? `assets/scorebug/defaultBO5.svg` : `assets/scorebug/defaultBO7.svg`;
+    let bestOf = control.bestOfChoice === 5 ? 'Bo5' : 'Bo7'
     let secs = gameinfo.time_seconds;
     /*let mins = Math.floor(secs/60);
     let rSecs = secs - mins * 60;
@@ -43,28 +44,20 @@ const ScoreBug = ({ gameinfo, gamestate, control }) => {
           <SvgProxy selector="#seriesTitle">{`${control.sbElements.sbSeriesTitle}`}</SvgProxy>
           <SvgProxy selector="#gameInfo">{`${control.sbElements.sbGameInfo}`}</SvgProxy>
           <SvgProxy selector="#clock">{`${clock}`}</SvgProxy>
-          {/*<SvgProxy selector="#clockMins">{`${mins}`}</SvgProxy>
-          <SvgProxy selector="#clockSecs">{`${fSecs}`}</SvgProxy>*/}
           <SvgProxy selector="#team1Name">{`${gameinfo.teams[0].name.toUpperCase()}`}</SvgProxy>
           <SvgProxy selector="#team1Score">{`${gameinfo.teams[0].score}`}</SvgProxy>
           <SvgProxy selector="#team2Name">{`${gameinfo.teams[1].name.toUpperCase()}`}</SvgProxy>
           <SvgProxy selector="#team2Score">{`${gameinfo.teams[1].score}`}</SvgProxy>
           <SvgProxy selector="#team1Logo" href={`${team1Logo}`}/>
           <SvgProxy selector="#team2Logo" href={`${team2Logo}`}/>
-          {/*<SvgProxy selector="#team1Bo5Box1" fill={control.team1SeriesScore > 0 ? "white" : ""}/>
-          <SvgProxy selector="#team1Bo5Box2" fill={control.team1SeriesScore > 1 ? "white" : ""}/>
-          <SvgProxy selector="#team1Bo5Box3" fill={control.team1SeriesScore > 2 ? "white" : ""}/>
-          <SvgProxy selector="#team2Bo5Box1" fill={control.team2SeriesScore > 0 ? "white" : ""}/>
-          <SvgProxy selector="#team2Bo5Box2" fill={control.team2SeriesScore > 1 ? "white" : ""}/>
-          <SvgProxy selector="#team2Bo5Box3" fill={control.team2SeriesScore > 2 ? "white" : ""}/>*/}
-          <SvgProxy selector="#team1Bo7Box1" fill={control.team1SeriesScore > 0 ? "white" : ""}/>
-          <SvgProxy selector="#team1Bo7Box2" fill={control.team1SeriesScore > 1 ? "white" : ""}/>
-          <SvgProxy selector="#team1Bo7Box3" fill={control.team1SeriesScore > 2 ? "white" : ""}/>
-          <SvgProxy selector="#team1Bo7Box4" fill={control.team1SeriesScore > 3 ? "white" : ""}/>
-          <SvgProxy selector="#team2Bo7Box1" fill={control.team2SeriesScore > 0 ? "white" : ""}/>
-          <SvgProxy selector="#team2Bo7Box2" fill={control.team2SeriesScore > 1 ? "white" : ""}/>
-          <SvgProxy selector="#team2Bo7Box3" fill={control.team2SeriesScore > 2 ? "white" : ""}/>
-          <SvgProxy selector="#team2Bo7Box4" fill={control.team2SeriesScore > 3 ? "white" : ""}/>
+          <SvgProxy selector={`#team1${bestOf}Box1`} fill={control.team1SeriesScore > 0 ? "white" : ""}/>
+          <SvgProxy selector={`#team1${bestOf}Box2`} fill={control.team1SeriesScore > 1 ? "white" : ""}/>
+          <SvgProxy selector={`#team1${bestOf}Box3`} fill={control.team1SeriesScore > 2 ? "white" : ""}/>
+          <SvgProxy selector={`#team1${bestOf}Box4`} fill={control.team1SeriesScore > 3 ? "white" : ""}/>
+          <SvgProxy selector={`#team2${bestOf}Box1`} fill={control.team2SeriesScore > 0 ? "white" : ""}/>
+          <SvgProxy selector={`#team2${bestOf}Box2`} fill={control.team2SeriesScore > 1 ? "white" : ""}/>
+          <SvgProxy selector={`#team2${bestOf}Box3`} fill={control.team2SeriesScore > 2 ? "white" : ""}/>
+          <SvgProxy selector={`#team2${bestOf}Box4`} fill={control.team2SeriesScore > 3 ? "white" : ""}/>
         </SvgLoader>
       )
     );

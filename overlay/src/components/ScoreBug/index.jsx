@@ -10,7 +10,7 @@ function ScoreBugApp() {
   const gameinfo = useSelector((state) => state.gameinfo); 
   const gamestate = useSelector((state) => state.gamestate);
   const control = useSelector((state) => state.payload.control);
-  let theme = 'assets/scorebug/default.svg'; 
+  let theme = 'assets/scorebug/defaultBO7.svg'; 
 
   let team1SeriesScore = 1;
   let team2SeriesScore = 4;

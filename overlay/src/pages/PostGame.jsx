@@ -9,7 +9,7 @@ function PostGame() {
   const control = useSelector((state) => state.payload.control);
   const gamestate = useSelector((state) => state.gamestate);
 
-  let theme = 'assets/postgame/default.svg';
+  let theme = control.bestOfChoice === 5 ? 'assets/postgame/defaultBO5.svg' : 'assets/postgame/defaultBO7.svg';
   //let team1Logo = 'assets/logos/default.png';
   //let team2Logo ='assets/logos/default.png';
   let team1 = [];

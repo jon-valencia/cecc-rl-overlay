@@ -1,182 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="659" height="300">
+<svg id="Score_Bug_Only" data-name="Score Bug Only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="659" height="300">
   <defs>
     <style>
-      .cls-1 {
-        fill: blue;
+      .cls-1, .cls-3 {
+        fill: #ff863d;
       }
 
-      .cls-2 {
-        fill: none;
-      }
-
-      .cls-3 {
-        font-size: 21px;
-      }
-
-      .cls-3, .cls-4, .cls-5, .cls-6 {
+      .cls-4, .cls-5, .cls-6, .cls-9, .cls-11, .cls-12  {
         fill: #fff;
       }
 
-      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
-        font-family: Industry-Bold, Industry;
-        font-weight: 700;
-        isolation: isolate;
-      }
-
-      .cls-4 {
-        font-size: 20px;
-      }
-
-      .cls-5 {
-        font-size: 48px;
-      }
-
-      .cls-6 {
-        font-size: 60px;
-      }
-
       .cls-7 {
-        font-size: 46px;
+        letter-spacing: 0em;
       }
 
       .cls-8 {
-        fill: green;
+        fill: url(#linear-gradient-4);
       }
 
       .cls-9 {
-        fill: url(#linear-gradient-clock);
+        font-size: 17.55px;
       }
 
-      .cls-10 {
-        stroke: #fff;
+      .cls-10, {
+        fill: #101010;
+      }
+
+      .cls-9, .cls-12 {
+        font-family: Futura-Bold, 'Futura PT Cond';
+        font-weight: 700
+      }
+
+      .cls-13 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-14 {
+        fill: #0a5dff;
+      }
+
+      .cls-5 {
+        font-size: 40.11px;
+      }
+
+      .cls-5, .cls-6, .cls-11 {
+        font-family: Futura-ExtraBold, 'Futura PT Cond';
+        font-weight: 700
+      }
+
+      .cls-15 {
+        fill: #098040;
+      }
+
+      .cls-6 {
+        font-size: 50px;
+      }
+
+      .cls-16 {
+        fill: url(#linear-gradient);
       }
 
       .cls-11 {
-        fill: #101010;
+        font-size: 38.44px;
+      }
+
+      .cls-12 {
+        font-size: 16.71px;
       }
     </style>
+    <LinearGradient id="linear-gradient" x1="293.72" y1="208.56" x2="293.72" y2="49.78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#151515"/>
+      <stop offset=".5" stop-color="#252525"/>
+      <stop offset="1" stop-color="#121212"/>
+    </LinearGradient>
+    <LinearGradient id="linear-gradient-2" x1="379.79" y1="50.82" x2="379.79" y2="74.05" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ccc"/>
+    </LinearGradient>
+    <LinearGradient id="linear-gradient-3" x1="383.04" y1="141.71" x2="383.04" y2="74.78" gradientUnits="userSpaceOnUse">
+      <stop id="team1GradStart" offset="0" stop-color="#0a5dff" stop-opacity=".4"/>
+      <stop id="team1GradEnd" offset="1" stop-color="#0a5dff" stop-opacity="0"/>
+    </LinearGradient>
+    <LinearGradient id="linear-gradient-4" x1="383.04" y1="208.56" x2="383.04" y2="141.78" gradientUnits="userSpaceOnUse">
+      <stop id="team2GradStart" offset="0" stop-color="#098040" stop-opacity=".4"/>
+      <stop id="team2GradEnd" offset="1" stop-color="#098040" stop-opacity="0"/>
+    </LinearGradient>
+    <LinearGradient id="linear-gradient-5" x1="59.72" y1="229.46" x2="231.87" y2="229.46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#959595"/>
+      <stop offset=".17" stop-color="#d4d4d4"/>
+      <stop offset=".33" stop-color="#fff"/>
+      <stop offset=".5" stop-color="#e6e6e6"/>
+      <stop offset=".66" stop-color="#e6e6e6"/>
+      <stop offset=".82" stop-color="#fff"/>
+      <stop offset="1" stop-color="#959595"/>
+    </LinearGradient>
+    <Filter id="drop-shadow-6" x="50" y="199" width="191" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".65"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </Filter>
   </defs>
-  <!-- Generator: Adobe Illustrator 28.7.2, SVG Export Plug-In . SVG Version: 1.2.0 Build 154)  -->
-  <g>
-    <g id="Layer_1">
-      <g id="_x3C_defs">
-        <LinearGradient id="linear-gradient" x1="322" y1="221" x2="322" y2="31" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stop-color="#151515"/>
-          <stop offset="50%" stop-color="#252525"/>
-          <stop offset="100%" stop-color="#121212"/>
-        </LinearGradient>
-        <LinearGradient id="linear-gradient-2" x1="470" y1="141" x2="470" y2="71" gradientUnits="userSpaceOnUse">
-          <stop id="team1GradStart" offset="0%" stop-color="blue" stop-opacity="70%"/>
-          <stop id="team1GradEnd" offset="100%" stop-color="blue" stop-opacity="0%"/>
-        </LinearGradient>
-        <LinearGradient id="linear-gradient-3" x1="470" y1="221" x2="470" y2="151" gradientUnits="userSpaceOnUse">
-          <stop id="team2GradStart" offset="0" stop-color="green" stop-opacity=".7"/>
-          <stop id="team2GradEnd" offset="1" stop-color="green" stop-opacity="0"/>
-        </LinearGradient>
-        <LinearGradient id="linear-gradient-clock" x1="145" y1="271" x2="145" y2="221" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#e6e6e6"/>
-          <stop offset=".5" stop-color="#fff"/>
-          <stop offset="1" stop-color="#e6e6e6"/>
-        </LinearGradient>
-        <Filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
-          <feOffset dx="0" dy="0"/>
-          <feGaussianBlur result="blur" stdDeviation="3"/>
-          <feFlood flood-color="#000" flood-opacity=".65"/>
-          <feComposite in2="blur" operator="in"/>
-          <feComposite in="SourceGraphic"/>
-        </Filter>
-        <LinearGradient id="linear-gradient-4" x1="84.27" y1="51.18" x2="84.27" y2="196.48" gradientUnits="userSpaceOnUse">
-          <stop offset=".02" stop-color="#c8c8c8"/>
-          <stop offset=".2" stop-color="#fff"/>
-          <stop offset=".41" stop-color="#ababab"/>
-          <stop offset=".52" stop-color="#fff"/>
-          <stop offset=".66" stop-color="#2c2c2c"/>
-        </LinearGradient>
-        <LinearGradient id="linear-gradient-5" x1="75.35" y1="51.18" x2="75.35" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-6" x1="71.6" y1="51.18" x2="71.6" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-7" x1="83.57" y1="51.18" x2="83.57" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-8" x1="79.7" y1="51.18" x2="79.7" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-9" x1="84.38" y1="51.18" x2="84.38" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-10" x1="98.43" x2="98.43" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-11" x1="115.25" y1="51.18" x2="115.25" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-12" x1="91.87" y1="51.18" x2="91.87" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-13" x1="68.48" y1="51.18" x2="68.48" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-14" x1="71.28" y1="51.18" x2="71.28" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-15" x1="74.33" y1="51.18" x2="74.33" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-16" x1="85.97" y1="51.18" x2="85.97" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-17" x1="103.94" y1="51.18" x2="103.94" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-18" x1="205.73" y1="51.18" x2="205.73" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-19" x1="214.65" y1="51.18" x2="214.65" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-20" x1="218.4" y1="51.18" x2="218.4" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-21" x1="206.43" y1="51.18" x2="206.43" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-22" x1="210.3" y1="51.18" x2="210.3" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-23" x1="205.62" y1="51.18" x2="205.62" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-24" x1="191.57" y1="51.18" x2="191.57" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-25" x1="174.75" y1="51.18" x2="174.75" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-26" x1="198.13" y1="51.18" x2="198.13" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-27" x1="221.52" y1="51.18" x2="221.52" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-28" x1="218.72" y1="51.18" x2="218.72" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-29" x1="215.67" y1="51.18" x2="215.67" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-30" x1="204.03" y1="51.18" x2="204.03" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-31" x1="186.06" y1="51.18" x2="186.06" y2="196.48" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-32" x1="133.53" y1="188.08" x2="156.49" y2="188.08" gradientUnits="userSpaceOnUse">
-          <stop offset=".35" stop-color="#fff"/>
-          <stop offset="1" stop-color="#474747"/>
-        </LinearGradient>
-        <LinearGradient id="linear-gradient-33" x1="146.16" y1="104.04" x2="139.05" y2="169.57" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-34" x1="155.18" y1="136.59" x2="125.41" y2="186.47" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-35" x1="145.07" y1="141.08" x2="145.25" y2="151.44" href="#linear-gradient-4"/>
-        <LinearGradient id="linear-gradient-36" x1="960" y1="977" x2="960" y2="1067" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#000" stop-opacity="0"/>
-          <stop offset="1" stop-color="#098040" stop-opacity=".7"/>
-        </LinearGradient>
-      </g>
-      <g id="Scoreboard">
-        <rect id="Scoreboard_base" fill="url(#linear-gradient)" x="42" y="31" width="560" height="190"/>
-        <image id="seriesLogo" data-name="Series Logo" x="42" y="31" width="206" height="190"/>
-        <rect id="Scoreboard_base-2" fill="101010" x="248" y="71" width="354" height="150"/>
-        <g id="Team_1">
-          <rect id="team_1_gradient" fill="url(#linear-gradient-2)" x="338" y="71" width="264" height="70"/>
-          <g id="team1Bar" color="blue">
-            <rect id="team_1_vertical_bar"  x="334" y="61" width="4" height="80" fill="currentColor"/>
-            <rect id="team_1_vertical_bar-2" x="248" y="61" width="8" height="80" fill="currentColor"/>
-            <rect id="team_1_top_line" x="248" y="61" width="354" height="10" fill="currentColor"/>
-          </g>
-          <text id="team1Name" class="cls-5" transform="translate(350.6 116.4)">BSU</text>
-          <g id="BO7_PTS_not_scored">
-            <polygon id="team1Bo7Box1" class="cls-10" points="385 135 350 135 354.5 126 389.5 126 385 135"/>
-            <polygon id="team1Bo7Box2" class="cls-10" points="425 135 390 135 394.5 126 429.5 126 425 135"/>
-            <polygon id="team1Bo7Box3" class="cls-10" points="465 135 430 135 434.5 126 469.5 126 465 135"/>
-            <polygon id="team1Bo7Box4" class="cls-10" points="505 135 470 135 474.5 126 509.5 126 505 135"/>
-          </g>
-          <text id="team1Score" class="cls-6" transform="translate(595 126.93)" text-anchor="end">14</text>
-          <image id="team1Logo" data-name="SCHOOL LOGO" width="1080" height="1080" transform="translate(260 71) scale(.06)" />
-        </g>
-        <g id="Team_2">
-          <rect id="team_2_gradient" fill="url(#linear-gradient-3)" x="338" y="151" width="264" height="70"/>
-          <g id="team2Bar" color="green">
-            <rect id="team_2_vertical_bar" x="334" y="141" width="4" height="80" fill="currentColor"/>
-            <rect id="team_2_vertical_bar-2" x="248" y="141" width="8" height="80" fill="currentColor"/>
-            <rect id="team_2_top_line" x="248" y="141" width="354" height="10" fill="currentColor"/>
-          </g>
-          <text id="team2Name" class="cls-5" transform="translate(350.6 196.4)">CPP</text>
-          <g id="BO7_PTS_not_scored_copy">
-            <polygon id="team2Bo7Box1" class="cls-10" points="385 215 350 215 354.5 206 389.5 206 385 215"/>
-            <polygon id="team2Bo7Box2" class="cls-10" points="425 215 390 215 394.5 206 429.5 206 425 215"/>
-            <polygon id="team2Bo7Box3" class="cls-10" points="465 215 430 215 434.5 206 469.5 206 465 215"/>
-            <polygon id="team2Bo7Box4" class="cls-10" points="505 215 470 215 474.5 206 509.5 206 505 215"/>
-          </g>
-          <text id="team2Score" class="cls-6" transform="translate(595 206.93)" text-anchor="end">3</text>
-          <image id="team2Logo" data-name="school logo" width="1080" height="1080" transform="translate(260 151) scale(.06)"/>
-        </g>
-        <text id="gameInfo" class="cls-4" transform="translate(596 53.59)" text-anchor="end">BEST OF 5</text>
-        <text id="seriesTitle" class="cls-3" transform="translate(251.2 53.7)">CECC GRAND FINALS</text>
-        <g id="Timer_jet_out">
-          <rect class="cls-9" x="42" y="221" width="206" height="50"/>
-          <text id="clock" class="cls-7" transform="translate(143 262.59)" text-anchor="middle">+00:00</text>
-        </g>
-      </g>
+  <rect id="Scoreboard_base" data-name="Scoreboard base" class="cls-16" x="59.72" y="49.78" width="468" height="158.79"/>
+  <rect id="teams_base" data-name="teams base" class="cls-10" x="231.87" y="74.78" width="295.84" height="133.79"/>
+  <rect id="Scoreboard_base-2" data-name="Scoreboard base" class="cls-1" x="231.87" y="49.78" width="295.84" height="25.07"/>
+  <g id="Team_1">
+    <rect id="team_1_gradient" data-name="team 1 gradient" class="cls-13" x="238.37" y="74.78" width="289.34" height="66.93"/>
+    <g id="team1Bar" color="blue">
+      <rect id="team_1_score_box" data-name="team 1 score box" fill="currentColor" x="460.86" y="74.85" width="66.86" height="66.86"/>
+      <rect id="team_1_vertical_bar" data-name="team 1 vertical bar" fill="currentColor" x="303.74" y="74.85" width="3.34" height="66.86"/>
+      <rect id="team_1_vertical_bar-2" data-name="team 1 vertical bar" fill="currentColor" x="231.87" y="74.85" width="6.69" height="66.86"/>
     </g>
+    <text class="cls-5" id="team1Name" transform="translate(317.59 118.17)">BSU</text>
+    <!--<polygon id="BOX_1" data-name="BOX 1" class="cls-10" points="354.72 136.69 317.12 136.69 320.88 129.17 358.48 129.17 354.72 136.69"/>
+    <polygon id="BOX_2" data-name="BOX 2" class="cls-10" points="400.06 136.69 362.45 136.69 366.21 129.17 403.82 129.17 400.06 136.69"/>
+    <polygon id="BOX_3" data-name="BOX 3" class="cls-10" points="445.4 136.69 407.79 136.69 411.55 129.17 449.16 129.17 445.4 136.69"/>
+    <polygon id="SCORE_1" data-name="SCORE 1" class="cls-4" points="354.72 136.69 317.12 136.69 320.88 129.17 358.48 129.17 354.72 136.69"/>
+    <polygon id="SCORE_2" data-name="SCORE 2" class="cls-4" points="400.06 136.69 362.45 136.69 366.21 129.17 403.82 129.17 400.06 136.69"/>
+    <polygon id="SCORE_3" data-name="SCORE 3" class="cls-4" points="445.4 136.69 407.79 136.69 411.55 129.17 449.16 129.17 445.4 136.69"/>-->
+    <polygon id="BOX_1-2" data-name="BOX 1" class="cls-10" points="346.37 136.69 317.12 136.69 320.88 129.17 350.13 129.17 346.37 136.69"/>
+    <polygon id="BOX_2-2" data-name="BOX 2" class="cls-10" points="379.8 136.69 350.54 136.69 354.3 129.17 383.56 129.17 379.8 136.69"/>
+    <polygon id="BOX_3-2" data-name="BOX 3" class="cls-10" points="413.22 136.69 383.97 136.69 387.73 129.17 416.99 129.17 413.22 136.69"/>
+    <polygon id="BOX_4" data-name="BOX 4" class="cls-10" points="446.65 136.69 417.4 136.69 421.16 129.17 450.41 129.17 446.65 136.69"/>
+    <polygon id="team1Bo7Box1" data-name="BOX 1" points="346.37 136.69 317.12 136.69 320.88 129.17 350.13 129.17 346.37 136.69"/>
+    <polygon id="team1Bo7Box2" data-name="BOX 2" points="379.8 136.69 350.54 136.69 354.3 129.17 383.56 129.17 379.8 136.69"/>
+    <polygon id="team1Bo7Box3" data-name="BOX 3" points="413.22 136.69 383.97 136.69 387.73 129.17 416.99 129.17 413.22 136.69"/>
+    <polygon id="team1Bo7Box4" data-name="BOX 4" points="446.65 136.69 417.4 136.69 421.16 129.17 450.41 129.17 446.65 136.69"/>
+    <text id="team1Score" data-name="Score TXT" class="cls-6" transform="translate(495 128.95)" text-anchor="middle">14</text> 
+    <image id="team1Logo" data-name="SCHOOL LOGO" width="1080" height="1080" transform="translate(242.37 78.78) scale(.05)"/>
   </g>
+  <g id="Team_2">
+    <rect id="team_2_gradient" data-name="team 2 gradient" class="cls-8" x="238.37" y="141.78" width="289.34" height="66.79"/>
+    <g id="team2Bar" color="green">
+      <rect id="team_2_score_box" data-name="team 2 score box" fill="currentColor" x="460.86" y="141.71" width="66.86" height="66.86"/>
+      <rect id="team_2_vertical_bar" data-name="team 2 vertical bar" fill="currentColor" x="303.74" y="141.71" width="3.34" height="66.86"/>
+      <rect id="team_2_vertical_bar-2" data-name="team 2 vertical bar" fill="currentColor" x="231.87" y="141.78" width="6.69" height="66.79"/>
+    </g>
+    <text class="cls-5" id="team2Name" transform="translate(317.59 185.03)">CPP</text>
+    <!--<polygon id="BOX_1-4" data-name="BOX 1" class="cls-10" points="354.72 203.55 317.12 203.55 320.88 196.03 358.48 196.03 354.72 203.55"/>
+    <polygon id="BOX_2-4" data-name="BOX 2" class="cls-10" points="400.06 203.55 362.45 203.55 366.21 196.03 403.82 196.03 400.06 203.55"/>
+    <polygon id="BOX_3-4" data-name="BOX 3" class="cls-10" points="445.4 203.55 407.79 203.55 411.55 196.03 449.16 196.03 445.4 203.55"/>
+    <polygon id="SCORE_1-2" data-name="SCORE 1" class="cls-4" points="354.72 203.55 317.12 203.55 320.88 196.03 358.48 196.03 354.72 203.55"/>
+    <polygon id="SCORE_2-2" data-name="SCORE 2" class="cls-4" points="400.06 203.55 362.45 203.55 366.21 196.03 403.82 196.03 400.06 203.55"/>
+    <polygon id="SCORE_3-2" data-name="SCORE 3" class="cls-4" points="445.4 203.55 407.79 203.55 411.55 196.03 449.16 196.03 445.4 203.55"/>-->
+    <polygon id="BOX_1-5" data-name="BOX 1" class="cls-10" points="346.37 203.55 317.12 203.55 320.88 196.03 350.13 196.03 346.37 203.55"/>
+    <polygon id="BOX_2-5" data-name="BOX 2" class="cls-10" points="379.8 203.55 350.54 203.55 354.3 196.03 383.56 196.03 379.8 203.55"/>
+    <polygon id="BOX_3-5" data-name="BOX 3" class="cls-10" points="413.22 203.55 383.97 203.55 387.73 196.03 416.99 196.03 413.22 203.55"/>
+    <polygon id="BOX_4-3" data-name="BOX 4" class="cls-10" points="446.65 203.55 417.4 203.55 421.16 196.03 450.41 196.03 446.65 203.55"/>
+    <polygon id="team2Bo7Box1" data-name="BOX 1" points="346.37 203.55 317.12 203.55 320.88 196.03 350.13 196.03 346.37 203.55"/>
+    <polygon id="team2Bo7Box2" data-name="BOX 2" points="379.8 203.55 350.54 203.55 354.3 196.03 383.56 196.03 379.8 203.55"/>
+    <polygon id="team2Bo7Box3" data-name="BOX 3" points="413.22 203.55 383.97 203.55 387.73 196.03 416.99 196.03 413.22 203.55"/>
+    <polygon id="team2Bo7Box4" data-name="BOX 4" points="446.65 203.55 417.4 203.55 421.16 196.03 450.41 196.03 446.65 203.55"/>
+    <text id="team2Score" data-name="Score TXT" class="cls-6" transform="translate(495 194.81)" text-anchor="middle">3</text>
+    <image id="team2Logo" data-name="school logo" width="1080" height="1080" transform="translate(242.37 145.78) scale(.05)" />
+  </g>
+  <text id="gameInfo" class="cls-12" transform="translate(525 69.46)" text-anchor="end">BEST OF 7</text>
+  <text id="seriesTitle" class="cls-9" transform="translate(234.56 69.54)">GROUP A - ROUND</text>
+  <rect class="cls-3" x="59.72" y="208.56" width="172.16" height="41.79"/>
+  <!--<text id="semi-colon" class="cls-11" transform="translate(142.5 245.32)" text-anchor="middle">:</text>
+  <text id="clockMins" class="cls-11" transform="translate(135 245.32)" text-anchor="end">+00</text>
+  <text id="clockSecs" class="cls-11" transform="translate(150 245.32)" text-anchor="start">00</text>-->
+  <text id="clock" class="cls-11" transform="translate(144.5 245.32)" text-anchor="middle">5:00</text>
+  <image id="seriesLogo" width="1882" height="1672" transform="translate(72.25 63.15) scale(.08)"/>
 </svg>
