@@ -28,7 +28,7 @@ function ReplayBugApp() {
   } else {
     return (
       <div className="replay">
-        <ReactPlayer url={border} muted={true} playing={true} loop={true} width="1920px" height="1080px" className="replayBorder"/>
+        {/*<ReactPlayer url={border} muted={true} playing={true} loop={true} width="1920px" height="1080px" className="replayBorder"/>*/}
         <SvgLoader path={theme} className="replaybug">
           <SvgProxy selector="#goalIcon" href="assets/icons/stat-icons/goal.svg"/>
           <SvgProxy selector="#assistIcon" href="assets/icons/stat-icons/assist.svg" />

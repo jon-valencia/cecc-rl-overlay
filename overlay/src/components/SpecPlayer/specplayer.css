@@ -7,19 +7,19 @@
 }
 
 #stats {
-  font-family: Oswald-Medium, Oswald;
+  font-family: Futura-Bold;
   font-weight: 500;
   font-size: 14px;
 }
 
 #specShots, #specGoals, #specAssists, #specSaves {
-    font-family: Oswald-SemiBold, Oswald;
+    font-family: Futura-ExtraBold;
     font-weight: 600;
     font-size: 24px;
 }
 
 #specName {
-    font-family: Oswald-SemiBold, Oswald;
+    font-family: Futura-ExtraBold;
     font-size: 26px;
     font-weight: 600;
 }

@@ -18,12 +18,12 @@ function ReplayBug({ goal, gamestate, control }) {
     var team2Logo = '';
   }
 
-  let border= 'assets/replaybug/border.webm';
+let border= 'assets/replaybug/border.webm';
   let theme = 'assets/replaybug/default.svg';
 
   return (
     <div>
-      <ReactPlayer url={border} muted={true} playing={true} loop={true} width="1920px" height="1080px" className="replayBorder"/>
+      {/*<ReactPlayer url={border} muted={true} playing={true} loop={true} width="1920px" height="1080px" className="replayBorder"/>*/}
       <SvgLoader path={theme} className="replaybug">
         <SvgProxy selector="#replayBase" color={goal.scorer.teamnum === 0 ? `${gamestate.teamColors[0].primary}` : `${gamestate.teamColors[1].primary}`}/>
         <SvgProxy selector="#goalIcon" href="assets/icons/stat-icons/goal.svg"/>

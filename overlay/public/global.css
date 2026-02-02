@@ -36,3 +36,13 @@
   font-family: Oswald-SemiBold;
   src: url('./fonts/Oswald-SemiBold.otf');
 }
+
+@font-face {
+  font-family: Futura-Bold;
+  src: url('./fonts/Futura PT Cond Bold.otf');
+}
+
+@font-face {
+  font-family: Futura-ExtraBold;
+  src: url('./fonts/Futura PT Cond Extra Bold.otf');
+}

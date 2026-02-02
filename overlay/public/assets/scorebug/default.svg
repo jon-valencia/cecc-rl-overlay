@@ -2,20 +2,11 @@
 <svg id="Score_Bug_Only" data-name="Score Bug Only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="659" height="300">
   <defs>
     <style>
-      .cls-1 {
-        fill: url(#linear-gradient-2);
+      .cls-1, .cls-3 {
+        fill: #ff863d;
       }
 
-      .cls-2 {
-        letter-spacing: 0em;
-      }
-
-      .cls-3 {
-        fill: url(#linear-gradient-5);
-        filter: url(#drop-shadow-6);
-      }
-
-      .cls-4, .cls-5, .cls-6 {
+      .cls-4, .cls-5, .cls-6, .cls-9, .cls-11, .cls-12  {
         fill: #fff;
       }
 
@@ -31,13 +22,13 @@
         font-size: 17.55px;
       }
 
-      .cls-9, .cls-10, .cls-11, .cls-12 {
+      .cls-10, {
         fill: #101010;
       }
 
       .cls-9, .cls-12 {
-        font-family: Oswald-Medium, Oswald;
-        font-weight: 500;
+        font-family: Futura-Bold, 'Futura PT Cond';
+        font-weight: 700
       }
 
       .cls-13 {
@@ -53,8 +44,8 @@
       }
 
       .cls-5, .cls-6, .cls-11 {
-        font-family: Oswald-SemiBold, Oswald;
-        font-weight: 600;
+        font-family: Futura-ExtraBold, 'Futura PT Cond';
+        font-weight: 700
       }
 
       .cls-15 {

@@ -27,7 +27,7 @@
       }
 
       .cls-5, .cls-8, .cls-9, .cls-11 {
-        font-family: Oswald-SemiBold, Oswald;
+        font-family: Futura-ExtraBold;
         font-weight: 600;
       }
 
@@ -36,7 +36,7 @@
       }
 
       .cls-6, .cls-13, .cls-10, .cls-12 {
-        font-family: Oswald-Medium, Oswald;
+        font-family: Futura-Bold;
         font-weight: 500;
       }
 
@@ -110,7 +110,11 @@
         letter-spacing: 0em;
       }
 
-      .cls-29 {
+      .cls-29, .cls-34 {
+        fill: #ff863d
+      }
+
+      .cls-99 {
         fill: #1a1a1a;
       }
 
@@ -131,7 +135,7 @@
       }
 
       .cls-10 {
-        font-size: 30px;
+        font-size: 32px;
       }
 
       .cls-11 {
@@ -140,10 +144,6 @@
 
       .cls-12 {
         font-size: 64px;
-      }
-
-      .cls-34 {
-        fill: url(#linear-gradient);
       }
     </style>
     <LinearGradient id="linear-gradient" x1="545.51" y1="145" x2="1374.49" y2="145" gradientUnits="userSpaceOnUse">
@@ -168,8 +168,8 @@
     <polygon class="cls-29" points="1310 170 610 170 560 120 1360 120 1310 170"/>
     <path class="cls-34" d="M1360,120l-50,50h-700l-50-50h800M1374.49,114h-828.97l10.24,10.24,50,50,1.76,1.76h704.97l1.76-1.76,50-50,10.24-10.24h0Z"/>
   </g>
-  <text id="pgSeriesTitle" class="cls-10" transform="translate(960 156.93)" text-anchor="middle">SERIES TITLE</text>
-  <rect id="Backplate_Top_Bar" data-name="Backplate Top Bar" class="cls-29" y="0" width="1920" height="120"/>
+  <text id="pgSeriesTitle" class="cls-10" transform="translate(960 158)" text-anchor="middle">SERIES TITLE</text>
+  <rect id="Backplate_Top_Bar" data-name="Backplate Top Bar" class="cls-99" y="0" width="1920" height="120"/>
   <g id="Left_Team" data-name="Left Team">
     <g id="Top_Bar_Element" data-name="Top Bar Element">
       <rect id="Team_Gradient" data-name="Team Gradient" class="cls-3" y="0" width="780" height="120"/>
@@ -290,12 +290,12 @@
     </g>
   </g>
   <g id="Stat_Labels" data-name="Stat Labels">
-    <text class="cls-13" transform="translate(897.94 343.73)"><tspan x="0" y="0">SCORE</tspan></text>
-    <text class="cls-13" transform="translate(898.82 443.73)"><tspan x="0" y="0">G</tspan><tspan class="cls-1" x="26.83" y="0">O</tspan><tspan class="cls-25" x="53.57" y="0">A</tspan><tspan class="cls-23" x="78.62" y="0">L</tspan><tspan class="cls-2" x="98.64" y="0">S</tspan></text>
-    <text class="cls-13" transform="translate(883.44 543.73)"><tspan class="cls-23" x="0" y="0">A</tspan><tspan class="cls-21" x="24.86" y="0">S</tspan><tspan x="48.19" y="0">SISTS</tspan></text>
-    <text class="cls-13" transform="translate(898.51 643.73)"><tspan x="0" y="0">SH</tspan><tspan class="cls-23" x="51.84" y="0">O</tspan><tspan x="78.67" y="0">TS</tspan></text>
-    <text class="cls-13" transform="translate(901.92 743.73)"><tspan class="cls-23" x="0" y="0">S</tspan><tspan class="cls-27" x="23.52" y="0">A</tspan><tspan x="47.13" y="0">VES</tspan></text>
-    <text class="cls-13" transform="translate(894.6 843.73)"><tspan x="0" y="0">DEMOS</tspan></text>
+    <text class="cls-13" transform="translate(960 343.73)" text-anchor="middle">SCORE</text>
+    <text class="cls-13" transform="translate(960 443.73)" text-anchor="middle">GOALS</text>
+    <text class="cls-13" transform="translate(960 543.73)" text-anchor="middle">ASSISTS</text>
+    <text class="cls-13" transform="translate(960 643.73)" text-anchor="middle">SHOTS</text>
+    <text class="cls-13" transform="translate(960 743.73)" text-anchor="middle">SAVES</text>
+    <text class="cls-13" transform="translate(960 843.73)" text-anchor="middle">DEMOS</text>
   </g>
   <text id="pgTitle" class="cls-8" transform="translate(960 244.73)" text-anchor="middle">POSTGAME TITLE</text>
 </svg>
