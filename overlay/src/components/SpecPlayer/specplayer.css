@@ -10,16 +10,31 @@
   font-family: Futura-Bold;
   font-weight: 500;
   font-size: 14px;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 #specShots, #specGoals, #specAssists, #specSaves {
-    font-family: Futura-ExtraBold;
-    font-weight: 600;
-    font-size: 24px;
+  font-family: Futura-ExtraBold;
+  font-weight: 600;
+  font-size: 24px;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 #specName {
-    font-family: Futura-ExtraBold;
-    font-size: 26px;
-    font-weight: 600;
+  font-family: Futura-ExtraBold;
+  font-size: 26px;
+  font-weight: 600;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
