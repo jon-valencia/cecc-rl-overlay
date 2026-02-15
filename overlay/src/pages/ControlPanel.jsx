@@ -109,11 +109,11 @@ function ControlPanel() {
               <input type="file" name="seriesLogo" onChange={seriesLogoToB64}/>
               <img src={seriesLogo} width="100" height="100" alt=""/>
             </div>
-            {<div>
+            <div>
               BEST OF:
               <label><input type="radio" name="bestOfChoice" value={5} defaultChecked={true} /> 5</label>
               <label><input type="radio" name="bestOfChoice" value={7} /> 7</label>
-            </div>}
+            </div>
             <div>
               LAN LOBBY?:
               <label><input type="checkbox" name="isLAN" checked={isChecked} onChange={handleCheck}/></label>
