@@ -86,7 +86,7 @@ function ControlPanel() {
           team1Logo: `${team1Logo}`,
           team1Banner: `${team1Banner}`,
           team2Logo: `${team2Logo}`,
-          team2Banner: `${team2Banner}` }
+          team2Banner: `${team2Banner}`}
       });
     }
     

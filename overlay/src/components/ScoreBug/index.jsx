@@ -10,10 +10,10 @@ function ScoreBugApp() {
   const gameinfo = useSelector((state) => state.gameinfo); 
   const gamestate = useSelector((state) => state.gamestate);
   const control = useSelector((state) => state.payload.control);
-  let theme = 'assets/scorebug/defaultBO7.svg'; 
+  let theme = 'assets/scorebug/defaultBO5.svg'; 
 
   let team1SeriesScore = 1;
-  let team2SeriesScore = 4;
+  let team2SeriesScore = 2;
   
   if (!isEmpty(gameinfo.teams[0]) && !isEmpty(gameinfo.teams[1])) {
     if (gameinfo.isReplay === false) {return (

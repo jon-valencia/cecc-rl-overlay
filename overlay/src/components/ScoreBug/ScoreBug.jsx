@@ -9,18 +9,9 @@ const ScoreBug = ({ gameinfo, gamestate, control }) => {
         gamestate:PropTypes.object,
         control:PropTypes.object
     }
-    //let team1Logo = 'default.png';
-    //let team2Logo = 'default.png';
-    let theme = control.bestOfChoice === 5 ? `assets/scorebug/defaultBO5.svg` : `assets/scorebug/defaultBO7.svg`;
-    let bestOf = control.bestOfChoice === 5 ? 'Bo5' : 'Bo7'
-    let secs = gameinfo.time_seconds;
-    /*let mins = Math.floor(secs/60);
-    let rSecs = secs - mins * 60;
-    let fSecs = rSecs.toLocaleString('en-US', {
-        minimumIntegerDigits: 2,
-        useGrouping: false
-    })*/
     
+    let theme = control.bestOfChoice === "5" ? `assets/scorebug/defaultBO5.svg` : `assets/scorebug/defaultBO7.svg`;
+    let bestOf = control.bestOfChoice === "5" ? 'Bo5' : 'Bo7'
 
     let clock = secondsToMinutes(gameinfo.time_seconds, gameinfo.isOT);
     if (control.seriesLogo !== '') var seriesLogo = control.seriesLogo
